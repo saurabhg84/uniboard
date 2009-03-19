@@ -1,4 +1,4 @@
-#summary Expectations from uNiBoard users
+#summary Work for uNiBoard users
 #labels Phase-Requirements
 
 = Projects to be undertaken for uNiBoard v1.1 =
