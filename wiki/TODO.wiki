@@ -36,7 +36,7 @@ The following are projects which we plan to undertake/delegate. The list is not 
 
 14. Bluetooth API's for uNiBoard
 
-15. Audio (*.wav,*.mp3) playback from uNiBoard
+15. Audio (`*`.wav,`*`.mp3) playback from uNiBoard
 
 16. Pymite porting on uNiBoard
 
