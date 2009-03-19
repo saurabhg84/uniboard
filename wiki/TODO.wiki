@@ -23,3 +23,27 @@ The following are projects which we plan to undertake/delegate. The list is not 
 7. Porting uip stack (along with SPI based Ethernet controller)
 
 8. Demonstrating telnet on uNiBoard
+
+9. Multi-board communication using CAN transceivers
+
+10. Mesh Network using Xbee modules
+
+11. FTP using Xbee
+
+12. Command interpreter on uNiBoard (using boot-loader)
+
+13. Text editor on uNiBoard using EFSL
+
+14. Bluetooth API's for uNiBoard
+
+15. Audio (*.wav,*.mp3) playback from uNiBoard
+
+16. Pymite porting on uNiBoard
+
+17. Cheap and reliable RF protocol for multi-board communication
+
+18. Wireless Bootloader
+
+19. JTAG hardware development
+
+20. nanoVM porting on uNiBoard
