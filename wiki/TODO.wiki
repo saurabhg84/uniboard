@@ -1,0 +1,25 @@
+#summary One-sentence summary of this page.
+#labels Phase-Requirements
+
+= Projects to be undertaken for uNiBoard v1.1 =
+
+The following are projects which we plan to undertake/delegate. The list is not exhaustive and open for more additions
+
+
+= Recommended topics =
+
+1. Adding PS2 interface: To start off with, this would include displaying characters typed using keyboard on UART or LCD
+
+2. Interfacing GLCD (Nokia 3310)
+
+3. Interfacing Color LCD 
+
+4. Converting VT102 (Hyper-terminal/GTk-term) based game applications to GLCD based game applications
+
+5. Adding CMOS Image sensor (C3088) module interface
+
+6. Software UART (to have additional virtual UART interfaces on the board)
+
+7. Porting uip stack (along with SPI based Ethernet controller)
+
+8. Demonstrating telnet on uNiBoard
