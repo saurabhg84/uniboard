@@ -1,4 +1,4 @@
-#summary Sample programs on uNiBoard v 1.1.
+#summary Sample codes
 #labels Phase-Deploy
 
 Sample programs for uNiBoard v1.1  are available in the downloads section. There are two categories of sample codes one without RTOS and another with RTOS (uC/OS-II based). Both links are as follows: The download links are as follows:
