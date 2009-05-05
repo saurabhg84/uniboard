@@ -10,7 +10,7 @@ I would like to appreciate Mrs. Vignya Mistry and Ms. Kruttika Pendharkar for co
 The article is going to publish on our website in resources section very soon.
 link: http://thinklabs.in/resources
 
-The project report is also uploaded in which you will find a complete project details. If you are interested you can download it from the download section link: http://
+The project report is also uploaded in which you will find a complete project details. If you are interested you can download it from the download section link: http://uniboard.googlecode.com/files/Wireless_Kbd_Prj_report.pdf
 
 Again the source code is quite modular an is upload on the google codes in the download section.
 link: http://uniboard.googlecode.com/files/wireless_keyboard_interface_using_zigbee_sourcecode.zip
