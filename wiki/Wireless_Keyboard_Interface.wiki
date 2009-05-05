@@ -1,7 +1,7 @@
+#summary Interfacing a keyboard with uNiBoard v1.1 using a PS2 connector and making it wireless using Zigbee.
 #labels Phase-Deploy,Phase-Implementation
-Interfacing a keyboard with uNiBoard v1.1 using a PS2 connector and making it wireless using Zigbee.
 
-Keyboard is interfaced with the uNiBoard v1.1 using four lines of PS2 connector, two for power, one for clock and one for data. The Clock is connected to INT7(external interrupt line) and data is connected to a GPIO Pin PC0. We are using Xbee modules (from maxstream), between two uNiBoard to make the keyboard wireless. 
+==Description:== Keyboard is interfaced with the uNiBoard v1.1 using four lines of PS2 connector, two for power, one for clock and one for data. The Clock is connected to INT7(external interrupt line) and data is connected to a GPIO Pin PC0. We are using Xbee modules (from maxstream), between two uNiBoard to make the keyboard wireless. 
 
 There are two sections, transmitter section and Receiver section. On transmitter side, the frames sent by keyboard is buffered and sent to the receiver section and then the frames are processed. After decoding the scan code, the related ASCII value of the key pressed is returned.
 
