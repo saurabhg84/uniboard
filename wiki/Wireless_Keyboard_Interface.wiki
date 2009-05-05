@@ -1,16 +1,13 @@
-#labels Featured
-Interfacing a keyboard with uNiBoard v1.1 using a PS2 connector and making it wireless using zigbee.
+#labels Phase-Deploy,Phase-Implementation
+Interfacing a keyboard with uNiBoard v1.1 using a PS2 connector and making it wireless using Zigbee.
 
-Keyboard is interface with the uNiBoard v 1.1 using just four lines of PS2 connector, two for power, one for clock and one for data. The Clock is connected on INT7 and data is connected on a GPIO Pin(PORTC.0). Again we are using Xbee-PRO module, between two uNiBoard to make the keyboard wireless. This is an added advantage because zigbee consumes very low power.
+Keyboard is interfaced with the uNiBoard v1.1 using four lines of PS2 connector, two for power, one for clock and one for data. The Clock is connected to INT7(external interrupt line) and data is connected to a GPIO Pin PC0. We are using Xbee modules (from maxstream), between two uNiBoard to make the keyboard wireless. 
 
-There are two sections, transmitter section and Receiver section. On transmitter side, just the frames send by keyboard is buffered and send to the receiver section and then the frames are processed. After decoding the scancode, the related ascii value of the key pressed is returned.
+There are two sections, transmitter section and Receiver section. On transmitter side, the frames sent by keyboard is buffered and sent to the receiver section and then the frames are processed. After decoding the scan code, the related ASCII value of the key pressed is returned.
 
-I would like to appreciate Mrs. Vignya Mistry and Ms. Kruttika Pendharkar for completing this project successfully and writing such a nice code.
+Authors: Mrs. Vignya Mistry and Ms. Kruttika Pendharkar
 
-The article is going to publish on our website in resources section very soon.
-link: http://thinklabs.in/resources
+Complete project details can be found from the link: http://uniboard.googlecode.com/files/Wireless_Kbd_Prj_report.pdf
 
-The project report is also uploaded in which you will find a complete project details. If you are interested you can download it from the download section link: http://uniboard.googlecode.com/files/Wireless_Kbd_Prj_report.pdf
-
-Again the source code is quite modular an is upload on the google codes in the download section.
-link: http://uniboard.googlecode.com/files/wireless_keyboard_interface_using_zigbee_sourcecode.zip
+Source code can be downloaded from this link:
+Link: http://uniboard.googlecode.com/files/wireless_keyboard_interface_using_zigbee_sourcecode.zip
