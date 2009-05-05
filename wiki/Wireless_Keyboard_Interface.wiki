@@ -10,4 +10,4 @@ Authors: Mrs. Vignya Mistry and Ms. Kruttika Pendharkar
 Complete project details can be found from the link: http://uniboard.googlecode.com/files/Wireless_Kbd_Prj_report.pdf
 
 Source code can be downloaded from this link:
-Link: http://uniboard.googlecode.com/files/wireless_keyboard_interface_using_zigbee_sourcecode.zip
+http://uniboard.googlecode.com/files/wireless_keyboard_interface_using_zigbee_sourcecode.zip
