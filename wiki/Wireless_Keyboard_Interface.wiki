@@ -12,7 +12,7 @@ Mrs. Vignya Mistry and Ms. Kruttika Pendharkar
 
 
 ==Download links==
-Pproject details: http://uniboard.googlecode.com/files/Wireless_Kbd_Prj_report.pdf
+Project details: http://uniboard.googlecode.com/files/Wireless_Kbd_Prj_report.pdf
 
 Source code: 
 http://uniboard.googlecode.com/files/wireless_keyboard_interface_using_zigbee_sourcecode.zip
