@@ -1,4 +1,4 @@
-#summary Interfacing a keyboard with uNiBoard v1.1 using a PS2 connector and making it wireless using Zigbee.
+#summary Interfacing a PS2 keyboard with uNiBoard v1.1 and making it wireless using Zigbee.
 #labels Phase-Deploy,Phase-Implementation
 
 ==Description==
