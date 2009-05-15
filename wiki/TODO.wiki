@@ -47,3 +47,5 @@ The following are projects which we plan to undertake/delegate. The list is not 
 19. JTAG hardware development
 
 20. nanoVM porting on uNiBoard
+
+21. Developing a JTAG hardware for uNiBoard v1.1 for on-chip debugging (AVR studio compliant)
