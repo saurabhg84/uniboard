@@ -7,9 +7,7 @@ This is one of the better projects that has been built using the Ethernet interf
 
 http://uniboard.googlecode.com/files/uNiBoard_Ethernet_rev1.png
 
-Interesting applications can be built using this concept including remote monitoring and control of sensors, remotely configuring or programming the board and more. 
-
-A more detailed article on this along with the uIP architecture can be found on this link:
+Interesting applications can be built using this concept including remote monitoring and control of sensors, remotely configuring or programming the board and more. More details of the telnet project on uNiBoard v1.1 can be found on this link:
 http://www.thinklabs.in/resources/?p=745
 
 ==Authors==
