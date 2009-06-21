@@ -7,7 +7,7 @@ Keyboard is interfaced with the uNiBoard v1.1 using four lines of PS2 connector,
 
 http://uniboard.googlecode.com/files/IMG_3619.JPG
 
-There are two sections, transmitter section and Receiver section. On transmitter side, the frames sent by keyboard is buffered and sent to the receiver section and then the frames are processed. After decoding the scan code, the related ASCII value of the key pressed is returned. More details of this project can be found here: http://www.thinklabs.in/resources/?p=403
+There are two sections, transmitter section and Receiver section. On transmitter side, the frames sent by keyboard is buffered and sent to the receiver section and then the frames are processed. After decoding the scan code, the related ASCII value of the key pressed is returned. More details of this project can be found [here: http://www.thinklabs.in/resources/?p=403]
 
 ==Authors==
 Mrs. Vignya Mistry and Ms. Kruttika Pendharkar
