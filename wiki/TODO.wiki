@@ -12,105 +12,147 @@ Lately,we have seen quite some positive developments on most of the below mentio
 
 ===1. Adding PS2 interface===
 Status: 
+
 Author:
+
 Information:
 
 ===2. Interfacing GLCD (Nokia 3310)===
 Status: 
+
 Author:
+
 Information:
 
 ===3. Interfacing Color LCD===
 Status: 
+
 Author:
+
 Information:
 
 ===4. Converting VT102 (Hyper-terminal/GTk-term) based game applications to GLCD based game applications===
 Status: 
+
 Author:
+
 Information:
 
 ===5. Adding CMOS Image sensor (C3088) module interface===
 Status: 
+
 Author:
+
 Information:
 
 ===6. Software UART (to have additional virtual UART interfaces on the board)===
 Status: 
+
 Author:
+
 Information:
 
 ===7. Porting uip stack (along with SPI based Ethernet controller)===
 Status: 
+
 Author:
+
 Information:
 
 ===8. Demonstrating Telnet on uNiBoard===
 Status: 
+
 Author:
+
 Information:
 
 ===9. Multi-board communication using CAN transceivers===
 Status: 
+
 Author:
+
 Information:
 
 ===10. Mesh Network using Xbee modules===
 Status: 
+
 Author:
+
 Information:
 
 ===11. FTP using Xbee===
 Status: 
+
 Author:
+
 Information:
 
 ===12. Command interpreter on uNiBoard (using boot-loader)===
 Status: 
+
 Author:
+
 Information:
 
 ===13. Text editor on uNiBoard using EFSL===
 Status: 
+
 Author:
+
 Information:
 
 ===14. Bluetooth API's for uNiBoard===
 Status: 
+
 Author:
+
 Information:
 
 ===15. Audio (`*`.wav,`*`.mp3) playback from uNiBoard===
 Status: 
+
 Author:
+
 Information:
 
 ===16. Pymite porting on uNiBoard===
 Status: 
+
 Author:
+
 Information:
 
 ===17. Cheap and reliable RF protocol for multi-board communication===
 Status: 
+
 Author:
+
 Information:
 
 ===18. Wireless Bootloader===
 Status: 
+
 Author:
+
 Information:
 
 ===19. JTAG hardware development===
 Status: 
+
 Author:
+
 Information:
 
 ===20. nanoVM porting on uNiBoard===
 Status: 
+
 Author:
+
 Information:
 
 ===21. Developing a JTAG hardware for uNiBoard v1.1 for on-chip debugging (AVR studio compliant)===
 Status: 
+
 Author:
+
 Information:
