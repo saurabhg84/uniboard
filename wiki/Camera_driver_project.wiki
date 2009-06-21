@@ -1,0 +1,17 @@
+#summary Interfacing C3088 with uNiBoard v1.1
+#labels Phase-Requirements,Phase-Design
+
+= Introduction =
+
+The project would primarily involve studying the C3088 camera sensor module which uses OV6620 (Camera sensor from Omnivision). The OV6620 supports CIF resolution, which would be sufficient for any building any kind of surveillance/monitoring system. The challenge out here would be to be able to manage within 4K of internal SRAM and dump CIF/QCIF sized BMP images. The process of conversion from bayer format to BMP format would be handled by the uNiBoard v1.1 by doing some on-the-fly processing.
+
+
+= References =
+1. [C3088 datasheet]
+2. [OV6620 datasheet]
+3. [Sample project] (ATMega16 interfacing with C3088)
+4. [BMP file format]
+5. [Bayer image format]
+6. [SD/MMC card interface](if required)
+7. [AVRcam project] (similar project)
+8. [CMUcam project] (similar project)
