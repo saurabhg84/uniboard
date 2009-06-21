@@ -7,18 +7,18 @@ The project would primarily involve studying the C3088 camera sensor module whic
 
 
 === References ===
-1. [C3088 datasheet]
+1. [http://uniboard.googlecode.com/files/C3088.pdf C3088 datasheet]
 
-2. [OV6620 datasheet]
+2. [http://uniboard.googlecode.com/files/ov6620DSLF.PDF OV6620 datasheet]
 
-3. [Sample project] (ATMega16 interfacing with C3088)
+3. [http://uniboard.googlecode.com/files/C3088_interfacing_reference.pdf Sample project] (ATMega16 interfacing with C3088)
 
 4. [http://en.wikipedia.org/wiki/BMP_file_format BMP file format]
 
 5. [http://en.wikipedia.org/wiki/RAW_image_format Bayer image format]
 
-6. [http://uniboard.googlecode.com/files/SD-MMC_reference_manual.pdf SD/MMC card interface](if required)
+6. [http://uniboard.googlecode.com/files/SD-MMC_reference_manual.pdf SD/MMC card interface] 
 
-7. [http://www.jrobot.net/Projects/AVRcam.html AVRcam project] (similar project)
+7. [http://www.jrobot.net/Projects/AVRcam.html AVRcam project] 
 
-8. [http://www.cmucam.org/ CMUcam project] (similar project)
+8. [http://www.cmucam.org/ CMUcam project] 
