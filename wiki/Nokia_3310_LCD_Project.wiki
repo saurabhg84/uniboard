@@ -6,4 +6,5 @@ _interfacing 3310 LCD with uNiBoard v1.1_
 The Project is to implement graphic library for Nokia 3310 LCD.It involves studying the LCD protocol and implementing frame buffer based graphics library to render images and games.
 
 == References ==
-[http://uniboard.googlecode.com/files/PCD8544.pdf PCD8544 datasheet ]
+1) [http://uniboard.googlecode.com/files/PCD8544.pdf PCD8544 datasheet ]
+2) [http://uniboard.googlecode.com/files/3310_schematic.jpg lcd scematic]
