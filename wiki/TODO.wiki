@@ -22,7 +22,7 @@ Status: Pending
 
 Author: N.A.
 
-Information:  Yet to be uploaded
+Information:  http://code.google.com/p/uniboard/wiki/Nokia_3310_LCD_Project
 
 ===3. Interfacing Color LCD===
 Status: Pending
