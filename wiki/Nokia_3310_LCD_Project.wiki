@@ -8,6 +8,6 @@ The Project is to implement graphic library for Nokia 3310 LCD.It involves study
 == References ==
 1) [http://uniboard.googlecode.com/files/PCD8544.pdf PCD8544 datasheet ]
 
-2) [http://uniboard.googlecode.com/files/3310_schematic.jpg LCD scematic]
+2) [http://uniboard.googlecode.com/files/3310_schematic.jpg LCD schematic]
 
 3) [http://uniboard.googlecode.com/files/nokia3310picture.jpg LCD images ]
