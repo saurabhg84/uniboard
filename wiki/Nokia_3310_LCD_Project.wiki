@@ -1,4 +1,4 @@
-#labels Featured,Phase-Requirements,Phase-Implementation
+#labels Phase-Design,Phase-Requirements,Phase-Implementation
 _interfacing 3310 LCD with uNiBoard v1.1_
 
 == Introduction ==
