@@ -1,8 +1,8 @@
 #labels Featured,Phase-Requirements,Phase-Implementation
-#interfacing 3310 LCD with uNiBoard v1.1
+_interfacing 3310 LCD with uNiBoard v1.1_
 
-= Introduction =
+== Introduction ==
 
 The Project is to implement games on Nokia 3310 LCD.It involves studying the LCD protocol and implementing graphics library to render images and implementing games.
 
-= Details =
+== Details ==
