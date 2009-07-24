@@ -113,7 +113,7 @@ Status: Pending
 
 Author: N.A.
 
-Information: Yet to be uploaded
+Information: http://www.sparkfun.com/commerce/product_info.php?products_id=519
 
 ===16. Pymite porting on uNiBoard===
 Status: Pending
