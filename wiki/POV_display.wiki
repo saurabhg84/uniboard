@@ -2,20 +2,23 @@
 #labels Phase-Implementation
 
 ==POV Display==
-
 Some cool images of a POV display made using uNiBoard v1.1. Keep visiting this space for more updates (source etc.)
-
-http://uniboard.googlecode.com/files/1_uNiboard.jpg
-
-http://uniboard.googlecode.com/files/SP_A0733.jpg
-
-http://uniboard.googlecode.com/files/SP_A0789.jpg
-
-http://uniboard.googlecode.com/files/SP_A0973.jpg
-
-http://uniboard.googlecode.com/files/SP_A1024.jpg
 
 
 ==Author==
-
 Mr. Shashank Saxena
+
+http://uniboard.googlecode.com/files/1_uNiboard.jpg
+uNiBoard v1.1 with the LEDs all set for a POV effects
+
+http://uniboard.googlecode.com/files/SP_A0733.jpg
+Smileys...
+
+http://uniboard.googlecode.com/files/SP_A0789.jpg
+We are loving it too...
+
+http://uniboard.googlecode.com/files/SP_A0973.jpg
+Some more pics...
+
+http://uniboard.googlecode.com/files/SP_A1024.jpg
+The making of the POV effect...
