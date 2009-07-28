@@ -55,17 +55,17 @@ Teams (atleast one member) would need to be present for Round 2 of the contest. 
            * Resource utilization.
 
 ==FAQs==
-# What is Embedded System Design Contest?
+ # *What is Embedded System Design Contest?*
 
 
 The Embedded System Design Contest is a open software contest based on uNiBoard v1.1, which is an open source hardware platformmanufactured by ThinkLABS for Embedded and Real Time Systems Programming. The contest is open for students, hobbyists and embedded enthusiasts of any age group.
 
-# What is the format of this contest?
+ # *What is the format of this contest?*
 
 
 The contest is comprises of two rounds. The first round would be an online round in which the participating teams would be required to send (by email) the source code, synopsis and presentation of the project undertaken. Based on this round, teams would be shortlisted for the second round which would comprise of a demonstration round followed by an on­the­ spot competition based on the same platform. A detailed draft on the competition format including benefits, prizes, rules, rounds, judging driteria is given above. Refer the above draft for details.
 
-# Where and when will the Finals of this competition be held?
+ # *Where and when will the Finals of this competition be held?*
 
 
 The finals of the competition would be held at ThinkLABS, SINE, IIT Bombay.
