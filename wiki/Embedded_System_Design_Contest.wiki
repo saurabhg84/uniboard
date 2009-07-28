@@ -21,7 +21,7 @@ Over the years, engineering students have been found reinventing the wheel by fo
     * Provide a common development platform to all teams to make the contest unbiased
     * Help the teams focus on embedded software and algorithm development
     * Seek reference designs, applications and extensions featuring the uNiBoard v1.1 and to inturn widen the community base
-    * Compel students / hobbyists / enthusiasts to work on the most powerful and promising 8­bit architecture (AVR) and look beyond legacy architecture (8051) discussed in curriculum
+    * Compel students / hobbyists / enthusiasts to work on the most powerful and promising 8­-bit architecture (AVR) and look beyond legacy architecture (8051) discussed in curriculum
     * Inculcate Embedded C programming skills which the industry demands rather than knowledge of ALP (Assembly Language Programming) skills which refrains one from switching platforms
 
 ==Rules==
@@ -33,6 +33,6 @@ Over the years, engineering students have been found reinventing the wheel by fo
    # Participants can form a team of maximum two people. Individual entry is also allowed. Every team participating is allowed to submit just a single entry.
    # Peripherals can be procured from ThinkLABS roboshop or any other sources. Procurement assistance would be provided.
    # There are two rounds in the contest. Teams clearing the first round successfully will qualify for the second and final round.
-   # All content generated (documentation, source code, schematics) for the contest has to adhere to Creative Commons license, which has the philosophy of “Share, Remix, Reuse – Legally”.
+   # All content generated (documentation, source code, schematics) for the contest has to adhere to Creative Commons license, which has the philosophy of “Share, Remix, Reuse – Legally".
   # The contest winner title will be conferred to the team which has the highest cumulative total from both the rounds.
   # The ruling of the judges is final.
