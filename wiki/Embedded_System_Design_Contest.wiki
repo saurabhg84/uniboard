@@ -25,9 +25,9 @@ Over the years, engineering students have been found reinventing the wheel by fo
     * Inculcate Embedded C programming skills which the industry demands rather than knowledge of ALP (Assembly Language Programming) skills which refrains one from switching platforms
 
 ==Rules==
-   1.  The base board for the contest has to be uNiBoard v1.1, which is an ATMega128 based microcontroller board with 128KB flash memory, 4KB Internal SRAM and 4KB Internal EEPROM working at 16 MIPS.
-   2. Additional controllers (8-bit) and peripherals can be added if required.
-   3. A registering team will need to purchase the base board from ThinkLABS roboshop.
+   #  The base board for the contest has to be uNiBoard v1.1, which is an ATMega128 based microcontroller board with 128KB flash memory, 4KB Internal SRAM and 4KB Internal EEPROM working at 16 MIPS.
+   # Additional controllers (8-bit) and peripherals can be added if required.
+   #. A registering team will need to purchase the base board from ThinkLABS roboshop.
    4. Students, professionals, embedded enthusiasts and hobbyists are all allowed to participate.
    5. Participants can select any problem statement of their choice, however selection of a relevant problem statement carries weightage.
    6. Participants can form a team of maximum two people. Individual entry is also allowed. Every team participating is allowed to submit just a single entry.
