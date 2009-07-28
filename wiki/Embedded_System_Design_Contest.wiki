@@ -1,15 +1,25 @@
 #summary Embedded System Design Contest based on uNiBoard v1.1
 #labels Phase-Requirements,Featured
 
-= Introduction =
+==Purpose==
 
 ThinkLABS comes up with an Embedded System Design contest based on an open source development platform for Embedded and Real Time Systems Programming.The contest aims at recognizing and rewarding the best talents in logic, creativity and software design.
 
 
-= Benefits =
+==Benefits==
 
  * Compete with the best designers and developers from elite universities / companies
  * Chance to become an embedded geek
  * Prizes worth INR 200000 to be won in different categories
  * Get nurtured by ThinkLABS team of experts
- * Become a part of the ever­growing open source community
+ * Become a part of the ever­ growing open source community
+
+==Why participate?==
+
+Over the years, engineering students have been found reinventing the wheel by focusing mostly on hardware development during their formative years instead of embedded software which is the dominant part of an Embedded product development life-cycle. The uNiBoard v1.1 and related peripherals are meant to overcome this drawback and serve the following purposes:
+
+    * Provide a common development platform to all teams to make the contest unbiased
+    * Help the teams focus on embedded software and algorithm development
+    * Seek reference designs, applications and extensions featuring the uNiBoard v1.1 and to inturn widen the community base
+    * Compel students / hobbyists / enthusiasts to work on the most powerful and promising 8­bit architecture (AVR) and look beyond legacy architecture (8051) discussed in curriculum
+    * Inculcate Embedded C programming skills which the industry demands rather than knowledge of ALP (Assembly Language Programming) skills which refrains one from switching platforms
