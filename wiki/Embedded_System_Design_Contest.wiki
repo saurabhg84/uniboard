@@ -34,6 +34,5 @@ Over the years, engineering students have been found reinventing the wheel by fo
    # Peripherals can be procured from ThinkLABS roboshop or any other sources. Procurement assistance would be provided.
    # There are two rounds in the contest. Teams clearing the first round successfully will qualify for the second and final round.
    # All content generated (documentation, source code, schematics) for the contest has to adhere to Creative Commons license, which has the philosophy of “Share, Remix, Reuse – Legally".
- #
-  # The contest winner title will be conferred to the team which has the highest cumulative total from both the rounds.
-  # The ruling of the judges is final.
+  ## The contest winner title will be conferred to the team which has the highest cumulative total from both the rounds.
+  ## The ruling of the judges is final.
