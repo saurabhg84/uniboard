@@ -7,8 +7,13 @@ ThinkLABS comes up with an Embedded System Design contest based on an open sourc
 
 
 = Benefits =
+
 * Compete with the best designers and developers from elite universities / companies
+
 * Chance to become an embedded geek
+
 * Prizes worth INR 200000 to be won in different categories
+
 * Get nurtured by ThinkLABS team of experts
+
 * Become a part of the ever­growing open source community
