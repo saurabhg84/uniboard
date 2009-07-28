@@ -44,3 +44,12 @@ The contest winner title will be conferred to the team which has the highest cum
           * Hardware/software complexity and resource utilization.
           * Neatness and efficiency of source code.
           * Quality of submission (presentation, synopsis, code documentation).
+
+==Round 2==
+Teams (atleast one member) would need to be present for Round 2 of the contest. Round 2 will be held at SINE, IIT Bombay. It will involve two compulsory stages.
+          * Stage-I would be demonstration of the project developed on the board with a Q&A session from the judges.
+          * In Stage-II we will be hosting an On-the-spot contest, in which the participants would be given common problem statement to work on. Participants in this round would be graded on the following parameters:
+           * High level design.
+           * Efficiency.
+           * Power consumption.
+           * Resource utilization.
