@@ -5,6 +5,7 @@
 [http://triindia.co.in/shop/product_info.php?products_id=131 Order uNiBoard here]
 === Contains ===
   * Development Board uNiBoard v1.1
+  * 16*2 back light LCD
   * usb cable
   * serial cable
 
