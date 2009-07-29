@@ -3,7 +3,6 @@
 
 === Buy Basic uNiBoard ===
 [http://triindia.co.in/shop/product_info.php?products_id=131 Order uNiBoard here]
-
 === Contains ===
   * Development Board uNiBoard v1.1
   * usb cable
@@ -11,6 +10,7 @@
 
 ===Buy uNiBoard add-ons (SD-MMC)===
 [http://triindia.co.in/shop/product_info.php?cPath=58&products_id=144 Order SD-MMC]
-
 ===Buy uNiBoard add-ons (Sensors)===
 [http://triindia.co.in/shop/index.php?cPath=37 Order Sensors]
+===Buy uNiBoard add-ons (Ethernet)===
+[http://thinklabs.in/shop/product_info.php?cPath=58&products_id=148&osCsid=0798ffa358e790dd8ceece4aca645fc4 Order Ethernet]
