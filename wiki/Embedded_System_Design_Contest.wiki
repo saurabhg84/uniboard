@@ -37,7 +37,7 @@ Over the years, engineering students have been found reinventing the wheel by fo
 The contest winner title will be conferred to the team which has the highest cumulative total from both the rounds. The ruling of the judges is final.
 
 ==Round 1==
-   #  This would be an online round in which the teams will need to submit their project synopsis, a presentation (might include videos and photographs if required) explaining their project, along with source code. Sample template has been provided for download.[http://uniboard.googlecode.com/files/ESDC_Reference_template.pdf click here to download pdf][http://uniboard.googlecode.com/files/ESDC_Reference_template.ppt click here to download ppt]
+   #  This would be an online round in which the teams will need to submit their project synopsis, a presentation (might include videos and photographs if required) explaining their project, along with source code. Sample template has been provided for download.click here to download [http://uniboard.googlecode.com/files/ESDC_Reference_template.pdf pdf]  [http://uniboard.googlecode.com/files/ESDC_Reference_template.ppt /ppt]
    # Qualifying teams would be selected based on the following parameters:
           * Innovativeness of the project.
           * Hardware/software complexity and resource utilization.
