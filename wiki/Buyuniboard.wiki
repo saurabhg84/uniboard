@@ -17,3 +17,5 @@
 [http://thinklabs.in/shop/product_info.php?cPath=58&products_id=148&osCsid=0798ffa358e790dd8ceece4aca645fc4 Order Ethernet]
 ===Buy uNiBoard add-ons (RF modules)===
 [http://thinklabs.in/shop/index.php?cPath=44&osCsid=0798ffa358e790dd8ceece4aca645fc4 Order RF modules]
+===Buy uNiBoard add-ons (Motors)===
+[http://thinklabs.in/shop/product_info.php?cPath=64&products_id=171&osCsid=0798ffa358e790dd8ceece4aca645fc4 Order motors]
