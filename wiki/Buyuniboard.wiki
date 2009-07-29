@@ -21,3 +21,5 @@
 [http://thinklabs.in/shop/product_info.php?cPath=64&products_id=171&osCsid=0798ffa358e790dd8ceece4aca645fc4 Order motors]
 ===Buy uNiBoard add-ons (8.4v Battery)===
 [http://thinklabs.in/shop/product_info.php?cPath=33&products_id=124&osCsid=0798ffa358e790dd8ceece4aca645fc4 Order 8.4v Battery]
+===Buy uNiBoard add-ons (TSOP IR reciever)===
+[http://thinklabs.in/shop/product_info.php?cPath=34&products_id=49&osCsid=0798ffa358e790dd8ceece4aca645fc4 Order IR sensor]
