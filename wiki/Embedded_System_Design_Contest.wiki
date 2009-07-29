@@ -55,58 +55,46 @@ Teams (atleast one member) would need to be present for Round 2 of the contest. 
            * Resource utilization.
 
 ==FAQs==
- # *What is Embedded System Design Contest?*
+*What is Embedded System Design Contest?*
 
+The Embedded System Design Contest is a open software contest based on uNiBoard v1.1, which is an open source hardware platform designed by ThinkLABS for Embedded and Real Time Systems Programming. The contest is open for students, hobbyists and embedded enthusiasts of any age group.
 
-The Embedded System Design Contest is a open software contest based on uNiBoard v1.1, which is an open source hardware platformmanufactured by ThinkLABS for Embedded and Real Time Systems Programming. The contest is open for students, hobbyists and embedded enthusiasts of any age group.
+*What is the format of this contest?*
 
- # *What is the format of this contest?*
+The contest is comprises of two rounds. The first round would be an online round in which the participating teams would be required to send (by email) the source code, synopsis and presentation of the project undertaken. Based on this round, teams would be shortlisted for the second round which would comprise of a demonstration round followed by an on­the­ spot competition based on the same platform. A detailed draft on the competition format including benefits, prizes, rules, rounds, judging criteria is given above. Refer the above draft for details.
 
-
-The contest is comprises of two rounds. The first round would be an online round in which the participating teams would be required to send (by email) the source code, synopsis and presentation of the project undertaken. Based on this round, teams would be shortlisted for the second round which would comprise of a demonstration round followed by an on­the­ spot competition based on the same platform. A detailed draft on the competition format including benefits, prizes, rules, rounds, judging driteria is given above. Refer the above draft for details.
-
- # *Where and when will the Finals of this competition be held?*
-
+*Where and when will the Finals of this competition be held?*
 
 The finals of the competition would be held at ThinkLABS, SINE, IIT Bombay.
 
-# How are the judges chosen and where do they come from?
-
+*How are the judges chosen and where do they come from?*
 
 The judging panel would be a combination of team members of the ThinkLABS embedded team (associated with the uNiBoard project) along with other invited industry stalwarts.
 
-# Is this Competition limited to Indian participants?
-
+*Is this Competition limited to Indian participants?*
 
 No. We welcome international entries for the competition. For international participants who cannot be physically present for Round 2 we would be floating a separate policy. Contact us for more information.
 
-# Can I make my own uNiBoard and participate?
-
+*Can I make my own uNiBoard and participate?*
 
 Yes. Again we would advise you to instead put the effort in building something more unique. In any case you are still liable to the entry fees. You can use the vouchers to purchase other stuff from the shop as and when required.
 
-# I already have a uNiBoard which I have bought recently. Do I still need to pay the entry fees?
+*I already have a uNiBoard which I have bought recently. Do I still need to pay the entry fees?*
 
+Yes. You still need to pay the entry fees. In any case the voucher can be utilized to purchase other stuff from the shop as and when required. FYI, the voucher is also transferable in case you have other colleagues who are interested in buying the board or other related peripherals.
 
-Yes. You still need to pay the entry fees. In any case the voucher can be utilised to purchase other stuff from the shop as and when required. FYI, the voucher is also transferrable in case you have other colleagues who are interested in buying the board or other related peripherals.
-
-# Is the competition certified?
-
+*Is the competition certified?*
 
 The competition is certified by ThinkLABS, SINE IITB
 
-# What sort of support will I get for the competition and from whom?
+*What sort of support will I get for the competition and from whom?*
 
+You can make use of forums, our resource pool and googlegroups.
 
-You can make use of forums, our resource pool and online help.
+*How to register?*
 
-# How to register?
+Every registering team will need to pay an entry fee of Rs. 5000/- against which ThinkLABS will issue a shop voucher of an equal amount.This voucher can be utilized to purchase relevant components from the ThinkLABS shop.Post registration, every team will receive a sample project report format to be used for the competition.
 
+*What are the prizes to be won?*
 
-Every registering team will need to pay an entry fee of Rs. 5000/against which ThinkLABS will issue a shop voucher of an equal amount.This voucher can be utilized to purchase relevant components from the ThinkLABS shop.Post registration, every team will receive a sample project report format to be used for the competition.
-
-# Prizes to be won?
-
-
-Participation certificates would be given to all team members on submission of their entries for Round 1.
-Prizes worth Rs. 2,00,000 to be won including four consolation prizes.
+Participation certificates would be given to all team members on submission of their entries for Round 1. Prizes worth Rs. 2,00,000 to be won including four consolation prizes.
