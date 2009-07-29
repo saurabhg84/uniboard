@@ -1,0 +1,5 @@
+#summary want to download hardware details
+
+[http://code.google.com/p/uniboard/downloads/detail?name=uNiBoard_v1_1_schematic.zip&can=2&q=#makechanges Schematic]
+
+[http://code.google.com/p/uniboard/downloads/detail?name=uniboardBOM.xls&can=2&q=#makechanges Bill of material]
