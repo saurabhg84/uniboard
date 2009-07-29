@@ -1,0 +1,5 @@
+#summary Embedded Design Contest based on uNiBoard v1.1
+#labels Phase-Requirements
+
+[http://code.google.com/p/uniboard/wiki/Embedded_System_Design_Contest http://uniboard.googlecode.com/files/ESDC.jpg]
+
