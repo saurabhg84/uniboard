@@ -3,8 +3,7 @@
 
 ==Purpose==
 
-ThinkLABS comes up with an Embedded System Design contest based on an open source development platform for Embedded and Real Time Systems Programming.The contest aims at recognizing and rewarding the best talents in logic, creativity and software design.
-
+ThinkLABS comes up with an Embedded System Design contest based on uNiBoard v1.1, an open source development platform for Embedded and Real Time Systems Programming.The contest aims at recognizing and rewarding the best talents in logic, creativity and software design.
 
 ==Benefits==
 
@@ -29,7 +28,7 @@ Over the years, engineering students have been found reinventing the wheel by fo
    # Additional controllers (8-bit) and peripherals can be added if required.
    # A registering team will need to purchase the base board from ThinkLABS roboshop.
    # Students, professionals, embedded enthusiasts and hobbyists are all allowed to participate.
-   # Participants can select any problem statement of their choice, however selection of a relevant problem statement carries weightage.
+   # Participants can select any problem statement of their choice, however selection of a relevant problem statement carries weight-age.
    # Participants can form a team of maximum two people. Individual entry is also allowed. Every team participating is allowed to submit just a single entry.
    # Peripherals can be procured from ThinkLABS roboshop or any other sources. Procurement assistance would be provided.
    # There are two rounds in the contest. Teams clearing the first round successfully will qualify for the second and final round.
