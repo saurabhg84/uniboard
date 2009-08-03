@@ -53,6 +53,9 @@ Teams (atleast one member) would need to be present for Round 2 of the contest. 
            * Power consumption.
            * Resource utilization.
 
+==Register==
+Interested? Click [http://thinklabs.in/esdc/register.php here] to register
+
 ==FAQs==
 *What is Embedded System Design Contest?*
 
