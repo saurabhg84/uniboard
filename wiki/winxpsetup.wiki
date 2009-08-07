@@ -9,7 +9,7 @@
 
 == Getting started ==
 
- # After following the above procedure, download the test program folder given in the downloads section by clicking [http://uniboard.googlecode.com/files/Test_program_uniboard.zip here]. 
+ # After following the above procedure, download the test program folder by clicking [http://uniboard.googlecode.com/files/Test_program_uniboard.zip here]. 
  # The test program contains the hex file to be dumped on the uNiBoard v1.1 for two popular applications, SNAKE and ARKANOID game
  # On windows platform you can use the snake.bat file to program the SNAKE application.
  # Once that is done, you would be able to play SNAKE on your hyperterminal by selecting a baud rate of 115200 with 8 data bits, no parity and 1 stop bit.
