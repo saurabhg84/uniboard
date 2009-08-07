@@ -7,10 +7,10 @@ While you are using the uNiBoard v1.1 on windows you are bound to use WinAVR. Th
 
 == GETTING STARTED ==
 
-# Download the test program folder given in the downloads section by clicking here. 
-# The test program contains the hex file to be dumped on the uNiBoard v1.1 for two popular applications, SNAKE and ARKANOID game
-# On windows platform you can use the snake.bat file to program the SNAKE application.
-# Once that is done, you would be able to play SNAKE on your hyperterminal by selecting a baud rate of 115200 with 8 data bits, no parity and 1 stop bit.
-# Use arkonoid.bat to load the arkonoid game which would again work with the same hyperterminal settings
-# For Linux users, we have kept cript files, snake.sh and arkonoid.sh which can be run to program the uNiBoard v1.1
-# Linux would require super user privileges to program, which can be done by entering the root password when prompted on running the script
+ # Download the test program folder given in the downloads section by clicking here. 
+ # The test program contains the hex file to be dumped on the uNiBoard v1.1 for two popular applications, SNAKE and ARKANOID game
+ # On windows platform you can use the snake.bat file to program the SNAKE application.
+ # Once that is done, you would be able to play SNAKE on your hyperterminal by selecting a baud rate of 115200 with 8 data bits, no parity and 1 stop bit.
+ # Use arkonoid.bat to load the arkonoid game which would again work with the same  hyperterminal settings
+ # For Linux users, we have kept script files, snake.sh and arkonoid.sh which can be run to program the uNiBoard v1.1
+ # Linux would require super user privileges to program, which can be done by entering the root password when prompted on running the script
