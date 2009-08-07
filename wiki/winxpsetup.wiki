@@ -1,5 +1,5 @@
 #summary Things to be taken care of while using uNiBoard v1.1 on Windows XP
-#labels Phase-Deploy,Featured
+#labels Phase-Deploy
 
 == NOTE ==
 
