@@ -3,8 +3,8 @@
 
 == NOTE ==
 
- # While you are using the uNiBoard v1.1 on windows you are bound to use WinAVR. The usbasp driver provided  in the downloads section would sometimes fail to work with versions of WinAVR other than 2007 (provided in the downloads section). T
- #To ensure that your toolchain and driver works correctly, we advise you to use the [http://uniboard.googlecode.com/files/WinAVR-20070122-install.exe WinAVR2007 version] provided in the downloads section along with the [http://uniboard.googlecode.com/files/usbasp.zip usbasp driver] provided. 
+ # While you are using the uNiBoard v1.1 on windows you are bound to use WinAVR. The usbasp driver provided  in the downloads section would sometimes fail to work with versions of WinAVR other than 2007 (provided in the downloads section). 
+ # To ensure that your toolchain and driver works correctly, we advise you to use the [http://uniboard.googlecode.com/files/WinAVR-20070122-install.exe WinAVR2007 version] provided in the downloads section along with the [http://uniboard.googlecode.com/files/usbasp.zip usbasp driver] provided. 
  # For any other combinations of WinAVR and usbasp driver, we do not guarantee success. We will very soon find a usbasp driver that works with the latest version of WinAVR. Till then you can continue using WinAVR2007.
 
 == Getting started ==
