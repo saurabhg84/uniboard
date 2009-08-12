@@ -41,13 +41,13 @@ I have successfully tested the EFSL library using this interface on uNiBoard v1.
 
 ===Hardware Interface required for SD/MMC Cards===
 
-http://uniboard.googlecode.com/files/figure1___sdcard_aftercopying.JPG
+http://uniboard.googlecode.com/files/figure1___sd_mmc_card_interface.JPG
 
 The SD/MMC card interface provides you the SD/MMC slot where you can insert your card and the SPI lines on backside which you can connect to your target controller’s SPI lines. This interface requires +5V supply voltage, since the module takes care of providing a 3.3v output to the SD/MMC card.
 
 ===What is uNiBoard v1.1?===
 
-http://uniboard.googlecode.com/files/figure2___sdcard_aftercopying.JPG
+http://uniboard.googlecode.com/files/figure2___sd_uniboard.JPG
 
 The uNiBoard version 1.1 is an ideal open source development platform for Embedded and Real Time Systems Programming. Powered by a RISC machine (ATMega128) that provides a throughput of 16 MIPS and up to 128KB of internal storage (flash), the board would be suitable for any sort of embedded application development. You can purchase the uNiBoard from our shop (http://thinklabs.in/shop)
 
@@ -61,13 +61,13 @@ The sample code consists of the EFSL library with port code of Atmega128 and Dat
 
 The screenshots of the sample code using this SD/MMC Interface and uNiBoard v1.1 is as shown below.
 
-http://uniboard.googlecode.com/files/figure3___sdcard_aftercopying.JPG
+http://uniboard.googlecode.com/files/figure3___program_output.JPG
 
 When the “Init done” message is printed on UART, the EFSL has successfully mounted SD card. In this sample code, I am copying the image file SD.png and storing it on SD card as copy.png. The next parameters (i.e. 08, 32) are attributes of files denoted by EFSL (you need not bother about it). The file filename as CANNON_DC is just the SD card’s label name. The time displayed is 56:00 is the 56 seconds required to copy the image file of size 1002KB. Also you will get clear view by looking at the screen shoots of SD card.
 
 Previously, the SD card contents were as shown in the image below:
 
-http://uniboard.googlecode.com/files/figure4___sdcard_aftercopying.JPG
+http://uniboard.googlecode.com/files/figure4___sdcard_beforecopying.JPG
 
 After performing the copy operation, the SD card now shows the following contents:
 
