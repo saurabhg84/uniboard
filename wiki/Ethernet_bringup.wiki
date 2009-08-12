@@ -47,11 +47,11 @@ http://uniboard.googlecode.com/files/image2.png
 
 There are two different configurations that you can have with the board as shown below of which the first configuration can be used for testing and development purposes while the second one would be used for application purposes.
 
- # Connecting uNiBoard directly to the PC: Connection between the uNiBoard and Ethernet Interface Board is done as described below and PC is interfaced with the Ethernet Interface Board using the network cable.
+ 1. Connecting uNiBoard directly to the PC: Connection between the uNiBoard and Ethernet Interface Board is done as described below and PC is interfaced with the Ethernet Interface Board using the network cable.
 
 http://uniboard.googlecode.com/files/image3.png
 
- # Connecting uNiBoard directly on to the Network: Connection between the uNiBoard and Ethernet Interface Board is done as described above and Ethernet Interface Board is connected to the network directly. 
+ 2. Connecting uNiBoard directly on to the Network: Connection between the uNiBoard and Ethernet Interface Board is done as described above and Ethernet Interface Board is connected to the network directly. 
 
 http://uniboard.googlecode.com/files/image4.png
 
