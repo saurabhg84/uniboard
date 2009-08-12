@@ -1,0 +1,80 @@
+#summary Porting Embedded File System on uNiBoard v1.1
+#labels Phase-Design,Phase-Implementation
+
+If you are looking to use a File System in your embedded application, you will find that the EFSL (open source Embedded File System library) is very easy to use with any target controller. It also provides ported interfaces for latest ARM controllers such as SAM7 microprocessor from Atmel and LPC microprocessor of NXP (Philips), DSP processors TMS DSP from Texas Instruments, and also on Linux OS.
+
+==File System==
+
+A File System is an organization of blocks on a storage device into files and directories, so that they can be accessed in an systematic manner.
+
+Mostly the disk drive such as hard disk drives uses disk file system namely FAT file system (FAT12, FAT16, and FAT32). The same file system is also used on Flash storage devices namely pen drives, SD cards, MMC cards etc.
+
+==Use of FAT File System in Embedded Systems==
+
+The advantages of FAT file system is it is widely used and there is no limit defined on maximum path length. The maximum file size supported is 32MB, 2GB and 4GB in FAT12, FAT16 and FAT32 respectively. But there is a limit on the number of files per directory i.e. 512 files/directory in FAT16, and 65534 files/directory in FAT32. At present, these requirements are quite sufficient for using Flash memories in most embedded applications.
+
+==SD/MMC cards==
+
+Now days, the SD/MMC cards are generally used in mobile phones as storage devices. The SD cards are pin to pin compatible to MMC cards. There is less number of pins on MMC cards as compared to SD cards but with same functionality, so hardware interfacing slot would remain the same.
+
+==Modes of communication for SD/MMC cards==
+
+The MMC cards uses two communication protocols defined namely Multimedia Mode and SPI mode.
+
+Similarly, the SD cards also uses two communication protocols defined namely SD Mode and SPI mode. Note that the SPI mode is supported in both of these cards.
+
+==Why to use SPI mode==
+
+The 4-bit data mode (MMC mode and SD mode) is more complex and expensive protocol. Using SPI mode is more advantageous because you do not need to pay any license fee to these card associations. And it is uses only 4 pins for SPI communication.
+
+==Why SPI mode is slower than other modes==
+
+SPI mode is slow in speed as it uses only 1 data line for communication at a time, where as comparing with other mode it uses 4 data lines for communication, therefore 4-bit can be transferred at a time. Whereas in SPI mode only 1 bit at a time.
+
+==EFSL (Embedded File System Library)==
+
+EFSL library is very easy to use and takes around 1.5 KB of RAM space :-). Also this library is open source with LGPL license. It is even ported for ARM7 processors such as AT91SAM7and LPC2138 processor, AVR, TMS DSP processors from TI and for General purpose PC’s using Linux OS. I have used the FAT16/FAT32 on SD/MMC card using EFSL file system library. The usage has been demonstrated using our uNiboard v1.1 development platform. Infact, this module is available on our shop as an add-on accessory for uNiBoard v1.1. We envision users building interesting applications involving storage and manipulation of images/audio/log-files/binary files using this package (EFSL + SD/MMC interface v1.0 + uNiBoard v1.1).
+
+==Communication mode supported by EFSL==
+
+The SD cards can communicate in both the modes i.e. either SD/MMC mode or SPI mode. The EFSL uses SPI mode for communication with SD/MMC card. The maximum clock speed for MMC card is 20MHz in SPI mode, whereas the SD card supports up to 25MHz in SPI mode. So make a note while setting the SPI frequency. Also you need to comply with the voltage range for this cards (usually 3.3V is sufficient).
+
+==Using EFSL with uNiBoard v1.1==
+
+I have successfully tested the EFSL library using this interface on uNiBoard v1.1 (Target Controller- Atmega128).
+
+==Hardware Interface required for SD/MMC Cards==
+
+The SD/MMC card interface provides you the SD/MMC slot where you can insert your card and the SPI lines on backside which you can connect to your target controller’s SPI lines. This interface requires +5V supply voltage, since the module takes care of providing a 3.3v output to the SD/MMC card.
+
+==What is uNiBoard v1.1?==
+
+The uNiBoard version 1.1 is an ideal open source development platform for Embedded and Real Time Systems Programming. Powered by a RISC machine (ATMega128) that provides a throughput of 16 MIPS and up to 128KB of internal storage (flash), the board would be suitable for any sort of embedded application development. You can purchase the uNiBoard from our shop (http://thinklabs.in/shop)
+
+==Demonstrating EFSL capabilities on uNiBoard v1.1==
+
+Before reading this you can download the uNiBoard port for EFSL from this link:
+
+EFSL on uNiBoard
+
+The sample code consists of the EFSL library with port code of Atmega128 and Date and time support. I have tested for Date and time support in EFSL library for which you need to include this macro #define DATE_TIME_SUPPORT in EFSL’s configuration file i.e. config.h and you have to provide the API’s of date and time in your code. You need to provide the correct date and time return values of these functions which the EFSL uses this API’s to store the file’s date and time attributes on SD card. The uNiBoard v1.1 has RTC chip from which the date and time is given to these API’s.
+
+The screenshots of the sample code using this SD/MMC Interface and uNiBoard v1.1 is as shown below.
+
+When the “Init done” message is printed on UART, the EFSL has successfully mounted SD card. In this sample code, I am copying the image file SD.png and storing it on SD card as copy.png. The next parameters (i.e. 08, 32) are attributes of files denoted by EFSL (you need not bother about it). The file filename as CANNON_DC is just the SD card’s label name. The time displayed is 56:00 is the 56 seconds required to copy the image file of size 1002KB. Also you will get clear view by looking at the screen shoots of SD card.
+
+Previously, the SD card contents were as shown in the image below:
+
+After performing the copy operation, the SD card now shows the following contents:
+
+==Where to buy uNiBoard or SD/MMC Interface==
+
+You can buy the uNiBoard v1.1 and SD/MMC interface from our shop online at http://thinklabs.in/shop/.
+
+==Adding EFSL port for your target:==
+
+If your architecture port is currently not available in this EFSL library, you just need to update code that fetches or writes a 512 byte sector, and the library will do the rest for your specific hardware. The only work would be to do low level SPI implementation for transferring the bytes on SPI lines. To know more about EFSL visit: http://efsl.be/
+
+Kudos to Michael De Nil and Lennart Ysboodt for the amazing work!!
+
+-> Posted on behalf of Hardik Shah
