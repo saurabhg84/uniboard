@@ -1,4 +1,4 @@
-#summary UART stack written in ANSI C for uNiBoard v1.1 (ATmega128)
+#summary UART stack implemented in C for uNiBoard v1.1 (ATmega128)
 #labels Phase-Design,Phase-Deploy
 
 UART or Universal Asynchronous Receiver Transmitter is used for serial data communication; it converts bytes of data to and from asynchronous start‐stop bit streams represented as binary electrical impulses. UARTs are commonly used in conjunction with other communication standards such as RS‐232. The word *asynchronous* indicates that UARTs recover character timing information from the data stream, using designated *start* and *stop* bits to indicate the framing of each character. In synchronous transmission, the clock data is recovered separately from the data stream and no start / stop bits are used.
