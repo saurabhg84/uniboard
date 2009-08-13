@@ -46,11 +46,11 @@ Author: N.A.
 Information: http://code.google.com/p/uniboard/wiki/Camera_driver_project
 
 ===6. Software UART (to have additional virtual UART interfaces on the board)===
-Status: Pending
+Status: Done
 
-Author: N.A.
+Author: Prashant Mehta
 
-Information: Yet to be uploaded
+Information: http://code.google.com/p/uniboard/wiki/Software_UART
 
 ===7. Porting uip stack (along with SPI based Ethernet controller)===
 Status: Done
