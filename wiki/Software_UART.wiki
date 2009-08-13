@@ -31,23 +31,23 @@ In many microprocessors in built hardware is not available, or the available har
 
 The project consists of two main header files. “sw_uart.h” consists the functions and timer ISR of s/w UART. There is no need for user to change this file. For using s/w UART user has to include “sw_uart.h” file in the program. While “sw_uart_config.h” is a header file using which the user can configure the UART as per his requirement based upon application. The following modules are implemented in the solution-
 
- # int get_rx_pin_status(void)
+ # *int get_rx_pin_status(void)*
      Function which returns 0 or 1 dependent on whether the receive pin is high or low.
- # void set_tx_pin_high( void ) 
+ # *void set_tx_pin_high( void )* 
        Function to set the transmit pin to the high state.
- # void set_tx_pin_low( void ) 
+ # *void set_tx_pin_low( void )* 
        Function to set the transmit pin to the low state. 
- # void timer0_init( ) 
+ # *void timer0_init( )* 
        Function which sets the timer0 of Atmega 128 to 3 times the baud rate, enables interrupt and reset on every match of the timer counter. 
- # void sw_uart_init(void)
+ # *void sw_uart_init(void)*
         Function to initialize the sw UART to idle state and sets appropriate flags and initialize the timer.
- # void sw_UART_Transmit_char(char ch)
+ # *void sw_UART_Transmit_char(char ch)*
          Function which defines the frame to be transmitted and outputs the byte serially on the TX pin and initializes flags to initiate transfer on the next interrupt. 
- # char sw_UART_Receive_char( void )
+ # *char sw_UART_Receive_char( void )*
          Function which returns the data frame from the RX pin.
- # void flush_input_buffer( void )
+ # *void flush_input_buffer( void )*
          Function to clear the input buffer.
- # static void sw_uart_io_init(void)
+ # *static void sw_uart_io_init(void)*
         Function to initialize s/w UART Tx/Rx pins
- # void frame_calc(unsigned char)
+ # *void frame_calc(unsigned char)*
         Function to calculate the frame format according to start, stop and parity bits configuration.
