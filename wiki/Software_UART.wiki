@@ -1,0 +1,53 @@
+#summary UART stack written in ANSI C for uNiBoard v1.1 (ATmega128)
+#labels Phase-Design,Phase-Deploy
+
+UART or Universal Asynchronous Receiver Transmitter is used for serial data communication; it converts bytes of data to and from asynchronous start‐stop bit streams represented as binary electrical impulses. UARTs are commonly used in conjunction with other communication standards such as RS‐232. The word *asynchronous* indicates that UARTs recover character timing information from the data stream, using designated *start* and *stop* bits to indicate the framing of each character. In synchronous transmission, the clock data is recovered separately from the data stream and no start/stop bits are used.
+
+In many microprocessors in built hardware is not available, or the available hardware UART pins have been exhausted. Many times, the user might need one more UART for some application. A software based UART stack is what comes to your rescue in such cases. Generic Software UART written in C language can be implemented on any micro-controller with a C compiler.
+
+===Operation:===
+ * In idle state, the line is held at logic ‘1’. When data is to be transmitted, the start bit, which is a logic ‘0’ is transmitted for a period of 1 bit time. This causes a ‘1’ to ‘0’ transition at the line. This can be detected by the receiver and is used as a notification that data is coming.
+The data bits are then transferred serially, starting with the Least Significant Bit. The logic value corresponding to the data bit being transmitted is held at the line for 1 bit time. 
+ * When data bits have been transmitted, a stop bit is transferred. A stop bit is a logical ‘1’ and puts the line back to idle state before a new start bit followed by the data can be transmitted.
+ * An even or odd parity bit according to number of ones in the data can be send before stop bit if required by the user. This parity bit can be checked at receiver side which can be helpful in error detection. If parity error is detected while reception the program sets the parity_error flag to ‘1’.
+ * The receiver must sample the data during every bit time in order to receive the data properly. The sampling frequency is generally taken to be a multiple of the baud rate so that all the bits are samples correctly.
+ * This software UART requires a timer interrupt to be set to 3 times the baud rate and two software controlled pins for the receive and transmit functions. Hence the program enters the timer ISR for every delay of 3 times the baud rate.
+ * A counter for sampling is initialized to 4 at the start of receiving. After detection of start bit that counter is made to 3. This feature makes possible that after start bit each data bit is sampled around the middle of time-period of that bit.
+The received characters are buffered in an array so that there is no loss of data for a continuous sequence of characters.
+ * When the above functions are managed by software, the resulting module is known as software UART.
+
+===Key Features:===
+ # An interface similar to hardware UART with transmit and receive interrupts. 
+ # Interrupt driven implementation. 
+ # Allows user defined Baud rate, Clock frequency in sw_uart_config.h.
+ # Allows 5,6,7,8 bit Tx/Rx as defined by user.
+ # Allows 1 or 2 Stop bits as per need.
+ # Parity bit can be added or checked with data frame for error detection.
+ # Minimal hardware usage.
+ # User can change UART configuration in sw_uart_config.h
+ # Can be used for any microcontroller by changing timer control registers accordingly.
+
+===Implementation:===
+
+The project consists of two main header files. “sw_uart.h” consists the functions and timer ISR of s/w UART. There is no need for user to change this file. For using s/w UART user has to include “sw_uart.h” file in the program. While “sw_uart_config.h” is a header file using which the user can configure the UART as per his requirement based upon application. The following modules are implemented in the solution-
+
+ # int get_rx_pin_status(void)
+     Function which returns 0 or 1 dependent on whether the receive pin is high or low.
+ # void set_tx_pin_high( void ) 
+       Function to set the transmit pin to the high state.
+ # void set_tx_pin_low( void ) 
+       Function to set the transmit pin to the low state. 
+ # void timer0_init( ) 
+       Function which sets the timer0 of Atmega 128 to 3 times the baud rate, enables interrupt and reset on every match of the timer counter. 
+ # void sw_uart_init(void)
+        Function to initialize the sw UART to idle state and sets appropriate flags and initialize the timer.
+ # void sw_UART_Transmit_char(char ch)
+         Function which defines the frame to be transmitted and outputs the byte serially on the TX pin and initializes flags to initiate transfer on the next interrupt. 
+ # char sw_UART_Receive_char( void )
+         Function which returns the data frame from the RX pin.
+ # void flush_input_buffer( void )
+         Function to clear the input buffer.
+ # static void sw_uart_io_init(void)
+        Function to initialize s/w UART Tx/Rx pins
+ # void frame_calc(unsigned char)
+        Function to calculate the frame format according to start, stop and parity bits configuration.
