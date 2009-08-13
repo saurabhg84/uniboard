@@ -3,7 +3,7 @@
 
 UART or Universal Asynchronous Receiver Transmitter is used for serial data communication; it converts bytes of data to and from asynchronous start‐stop bit streams represented as binary electrical impulses. UARTs are commonly used in conjunction with other communication standards such as RS‐232. The word *asynchronous* indicates that UARTs recover character timing information from the data stream, using designated *start* and *stop* bits to indicate the framing of each character. In synchronous transmission, the clock data is recovered separately from the data stream and no start / stop bits are used.
 
-In many microprocessors in built hardware is not available, or the available hardware UART pins have been exhausted. Many times, the user might need one more UART for some application. A software based UART stack is what comes to your rescue in such cases. Generic Software UART written in C language can be implemented on any micro-controller with a C compiler.
+In many microprocessors in built hardware is not available, or the available hardware UART pins might have been exhausted. Many times, the user might need one more UART for some application. A software based UART stack is what comes to your rescue in such cases. Generic Software UART written in C language can be implemented on any micro-controller with a C compiler.
 
 ===Operation:===
  * In idle state, the line is held at logic ‘1’. When data is to be transmitted, the start bit, which is a logic ‘0’ is transmitted for a period of 1 bit time. This causes a ‘1’ to ‘0’ transition at the line. This can be detected by the receiver and is used as a notification that data is coming.
