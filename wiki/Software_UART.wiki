@@ -51,3 +51,7 @@ The project consists of two main header files. “sw_uart.h” consists the func
         Function to initialize s/w UART Tx/Rx pins
  # *void frame_calc(unsigned char)*
         Function to calculate the frame format according to start, stop and parity bits configuration.
+
+===Download source===
+
+The source code along with a sample example can be downloaded from [http://uniboard.googlecode.com/files/sw%20UART.zip here]
