@@ -32,7 +32,8 @@ It has been scientifically proved that tasks are generally a mix of CPU bound an
 
 Wouldn’t it have been better if the above scene was changed to the one shown below?
 
-http://uniboard.googlecode.com/files/rtos_demystified_image3.JPG
+<img src=http://uniboard.googlecode.com/files/rtos_demystified_image3.JPG
+width="500" height="500">
 
 That is precisely what having a multitasking kernel will lead to, thereby improving the average CPU utilisation. A kernel will make sure that anytime a task in execution waits/blocks, it will takeaway the CPU from that task and allocate it to another task which is ready for execution. Sounds great right? Seems like having a kernel is the solution to all our problems….does it?
 
