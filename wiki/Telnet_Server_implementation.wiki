@@ -15,8 +15,8 @@ To overcome this difficulty, uIP TCP/IP stack was devised. uIP is a protocol sui
 
 The uIP stack can be divided into the following layers for understanding:
 
- # Applications layer: These are the in-built libraries for applications such as E-Mail, Telnet, Web server, Web client, etc.
-
+ # Applications layer: These are the in-built libraries for applications such as E-Mail, Telnet, Web server, Web client, etc. 
+ 
  # uIP Application functions layer: This layer consists of different function calls used by uIP; like uip_rexmit(), uip_connected(), etc. results of which are used in application for decision making, and uip_send() for sending data. Some of these functions can be used in application as mentioned above, but some of them are for house-keeping.
 
  # uIP Initialization functions: These consist some functions which initialize the different structures like ‘uip_conn’ and ‘uip_stats’, etc. These are used at the time of booting uIP.
