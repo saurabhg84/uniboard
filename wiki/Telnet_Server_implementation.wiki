@@ -1,0 +1,72 @@
+#summary Telnet server on uNiBoard v1.1
+#labels Phase-Implementation,Phase-Design
+
+Heard about Internet enabled refrigerators lately ? The “Chip” inside monitors the milk level inside and notifies you on your cell-phone, and as soon as you give your nod, it orders the milk from one of the “online” shopping-malls. ‘Not practical…’ you may say, but the technology behind it is definitely worth checking out. Web enabled embedded devices are getting more & more popular these days. Companies like Microsoft, etc.are rushing to add devices like embedded web servers to their line of products. So it was only a matter of time that we thought of “connecting” our “uNiBoard v1.1” to the internet.
+
+We had already connected the uNiBoard using our very own “Ethernet Interface Board v1.0”. But this time we have ported uIP stack,a scaled down version of TCP/IP stack, which extends it’s capabilities beyond just being able to connect, it is one of the first-class network citizens now.
+
+===Ethernet Interface Board v1.0 :===
+“Ethernet Interface Board v1.0” is a tool to enable a Micro-controller with SPI interface to connect on to the network, which supports upto 10 Mb/s data rates. It is available in our online shop on this website.
+
+===uIP TCP/IP stack:===
+One of the most powerful and reliable tools in today’s networking world is the TCP/IP protocol suite. A full-blown TCP/IP stack can not be supported in small Embedded system. The required code-size is in range of a few hundreds of kilobytes, and plus several hundreds of kilobytes of RAM is needed, which obviously is the reason why it can not be supported by embedded web servers having only less than 100 kilobytes of program memory and few tens of kilobytes of RAM to spare.
+
+To overcome this difficulty, uIP TCP/IP stack was devised. uIP is a protocol suite consisting of only minimalistic features of TCP/IP suite to make it possible for even small 8-Bit micros to have intranet or even Internet connectivity. The minimum code-size required is of the order of few kilobytes and RAM usage can be configured as low as few hundred bytes. It can support IP, ICMP, TCP and UDP protocols. uIP is an open-source TCP/IP stack written in C, developed by Adam Dunkels of ‘Networked Embedded Systems Group’ at the ‘Swedish Institute of Computer Science’; but being open-source, is developed further by developers from all over the world.
+
+The uIP stack can be divided into the following layers for understanding:
+
+ # Applications layer
+These are the in-built libraries for applications such as E-Mail, Telnet, Web server, Web client, etc.
+
+ # uIP Application functions layer
+This layer consists of different function calls used by uIP; like uip_rexmit(), uip_connected(), etc. results of which are used in application for decision making, and uip_send() for sending data. Some of these functions can be used in application as mentioned above, but some of them are for house-keeping.
+
+ # uIP Initialization functions
+These consist some functions which initialize the different structures like ‘uip_conn’ and ‘uip_stats’, etc. These are used at the time of booting uIP.
+
+ # uIP Configuration functions
+These are used to set run-time parameters such as IP address, MAC address, port used, etc.
+
+ # Network device driver functions
+These are used by the ethernet interface i.e the network device driver to communicate with uIP. In our case. The network device driver is the our Ethernet Interface Board v1.0 . These functions read & write the data packets received or to be sent on through the network. These functions have to be implemented by us (by the party which writes a port for a particular architecture). The communication with device driver is done through SPI protocol, so we have to write driver for SPI based ENC28J60.
+
+ # Architecture specific functions
+These are the functions like Internet checksum calculation over calculation, 32-bit addition, etc. Since 32-bit addition is not native on all targets on which uIP can be implemented, thus the necessity of this 32-bit addition function.
+
+===Telnet server:===
+The idea of this project is a very simple one. The Internet technology has always been “Fat Server/Thin Client” oriented. In our case it is pretty much the opposite. The uNiBoard will be the Server, and any web enabled device can be the client.
+
+The uNiBoard is connected through Ethernet Interface Board v1.0 to the Internet. The client computer can be anything from a regular PC to a server. However , this project only utilizes the Telnet protocol, so the client side is required to connect using the Telnet protocol only.
+
+The main aim of this project is to be able to read status and control the different peripherals of uNiBoard. Anything from ADC (all channels) to UART and RTC can be controlled over the network.We can monitor any sensors connected on ADC channels graphically, configure the buzzer to sound if the ADC values go beyond a certain range. We can print messages on LCD, UART or write and read RTC times over the network.
+
+For controlling the uNiBoard, a graphical user-interface has been developed in C# language, which has to be installed on the client side.
+
+The application running on top of the uIP is a simple polling approach. The application keeps listening on a port and keeps checking if a new connection has been established, this is the ‘waiting’ state. When a client requests a connection, uIP perceives that a connection is being requested and establishes the connection, this is the connection ‘established’ state. After this the uIP keeps polling for new received data. If new data is received, this data is decoded, because these are the commands to control the different peripherals. According to the data received, appropriate actions are taken. In case of LCD,UART & RTC, etc. data is also sent in the ethernet frame, like messages to be displayed or date & time. When the job is done connection can be closed by client, on the server side uIP detects that the connection has been closed, so it also closes the current connection and again keeps checking for a new one.
+
+This is a snapshot of the GUI. We can see the server IP address in the top right corner, which is in connected state right now. Below it we can see the text boxes to read and/or write RTC values. Below that there is a provision for setting the LED port, and also the Buzzer ON/OFF control.
+
+Below this there are small windows for UART and LCD one below the other. All one has to do is to type in the message and click on send button, the messages will be displayed on serial port terminal or LCD accordingly, simple as that !!!
+
+On the left hand side, we can see the the status of all the ADC channels, which are monitored at predefined time intervals(configurable). There’s also the provision for setting a limit value for ADC for each channel. If the current value crosses this limit, the channel will be highlighted.This is like a warning message, after which we can take measures to prevent any mishap. At the bottom we can also see he same ADC channel as a Histogram.
+
+There’s also a provision for data logging. As can be seen in the snapshot above, the sensor data can be logged, exported to an excel spreadsheet, and analyzed at leisure.
+
+===Future scope:===
+This kind of an application can be further developed as a small dedicated server.
+
+As seen in above snapshots, we can be warned when a sensor value is beyond the set limit. Suppose that this is a temperature sensor, and temperature goes up beyond some limit which can be catastrophic to system. This feature can be exploited by applying more logic to shut down the system which that sensor is monitoring.
+
+Consider a remote place which is somewhat hostile for human inhabitation. This embedded server can be set up there instead. The server is connected to an array of weather sensors which are gathering data as per the server commands. The server can gather data from all the sensors and send it over the network to the research lab to be processed.
+
+These kind of devices can be set up in homes to monitor the security systems in your house, which can be controlled over the network while sitting in your office.
+
+===Downloads:===
+The above application can be downloaded from this link:
+http://code.google.com/p/uniboard/wiki/uIP_based_Telnet_application
+
+===Authors:===
+ # Mr. Aditya Gawand
+ # Mr. Nitin Gadmale
+ # Mr. Pravin Saini
+ # Mr. Dhiraj Shinde 
