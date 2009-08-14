@@ -14,6 +14,7 @@ One of the most powerful and reliable tools in today’s networking world is the
 To overcome this difficulty, uIP TCP/IP stack was devised. uIP is a protocol suite consisting of only minimalistic features of TCP/IP suite to make it possible for even small 8-Bit micros to have intranet or even Internet connectivity. The minimum code-size required is of the order of few kilobytes and RAM usage can be configured as low as few hundred bytes. It can support IP, ICMP, TCP and UDP protocols. uIP is an open-source TCP/IP stack written in C, developed by Adam Dunkels of ‘Networked Embedded Systems Group’ at the ‘Swedish Institute of Computer Science’; but being open-source, is developed further by developers from all over the world.
 
 The uIP stack can be divided into the following layers for understanding:
+http://uniboard.googlecode.com/files/uip_stack2.png
 
  # *Applications layer:* These are the in-built libraries for applications such as E-Mail, Telnet, Web server, Web client, etc. 
  # *uIP Application functions layer:* This layer consists of different function calls used by uIP; like uip_rexmit(), uip_connected(), etc. results of which are used in application for decision making, and uip_send() for sending data. Some of these functions can be used in application as mentioned above, but some of them are for house-keeping.
