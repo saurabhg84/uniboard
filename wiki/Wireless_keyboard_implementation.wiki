@@ -86,5 +86,5 @@ http://uniboard.googlecode.com/files/keyboard61.png
 Xbee receives the data transmitted from xbee on transmitter side using wireless communication and send it to UART0. When a frame is received at UART0 of uNiBoard, it is processed to extract the required data from the whole frame and decode data to its equivalent ASCII character. The character could be then either transmitted to UART1 via MAX232 and simultaneously displayed on gtkterminal or could be processed as user wants it to be.
 
 ===Authors:===
-
-Mrs. Vignya Mistry and Ms. Kruttika Pendharkar (Ex-student(s) ERTOS)
+ # [http://groups.google.com/groups/profile?enc_user=VM1MkBYAAADBCHrLneuc5CNEkAg91q9do4cocwWvDVg2RHsu8f1bCg Vignya Mistry]
+ # [http://groups.google.com/groups/profile?enc_user=KPs6DxwAAACggx1eFbZD-lf5N0KUy6PljZqoufU18RuXZi5-_VnlcQ Kruttika Pendharkar]
