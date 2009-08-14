@@ -7,13 +7,15 @@ The other day, while in office, one of my colleague asked me, “Can your RTOS d
 
 Before you are enlightened with what an RTOS is, let me ask you this simple question; are you aware of what role(s) an OS (General Purpose Operating System) plays in a computer? Some probable answers would be:
 
-Operating system acts as the interface between hardware and application software.Does it? Yes, ofcourse, but so does firmware for that matter. So, hows an operating system different from firmware?
+*Operating system acts as the interface between hardware and application software.* Does it? Yes, of course, but so does firmware for that matter. So, hows an operating system different from firmware?
 
-Operating system provides an environment for other high level applications like word processor, spreadsheet etc to run on it. Now, that’s a fairly accurate representation. But what is this operating environment that it provides? And why is it needed?
+*Operating system provides an environment for other high level applications like word processor, spreadsheet etc to run on it.* Now, that’s a fairly accurate representation. But what is this operating environment that it provides? And why is it needed?
 
-Operating system controls system resources like the processor time, memory etc. Again a reasonably good explanation (though straight out of an OS textbook…:P)
+*Operating system controls system resources like the processor time, memory etc.* Again a reasonably good explanation (though straight out of an OS textbook…:P)
 
-Operating system sets up a GUI based environment for users to utilize system resources. The advent of GUI based interfaces for an operating system has abstracted the role of an OS so much that unfortunately people have started believing that a sophisticated graphical user interface, a good web browser, lots of commonly used accessories like text editor, image editor, image viewing software package support and more are the benchmarking factors for a good operating system.
+http://uniboard.googlecode.com/files/rtos_demystified_image3.JPG
+
+*Operating system sets up a GUI based environment for users to utilize system resources.* The advent of GUI based interfaces for an operating system has abstracted the role of an OS so much that unfortunately people have started believing that a sophisticated graphical user interface, a good web browser, lots of commonly used accessories like text editor, image editor, image viewing software package support and more are the benchmarking factors for a good operating system.
 
 What has been forgotten amidst all this is the most important component of an operating system, the Kernel. So what exactly is the kernel’s role? The kernel and OS are so closely knit entities that it wouldn’t be a mistake to use these two terms interchangeably. Simply put, kernel can be regarded as the core of an operating system, which is responsible for setting up a multitasking/multi-processing environment.
 
@@ -24,9 +26,13 @@ Although the term multiprocessing is quite self explanatory some clarity is furt
 
 Let us discuss this diagrammatically.
 
- It has been scientifically proved that tasks are generally a mix of CPU bound and IO bound tasks. For instance, in the figure below, let’s say that task T1 starts at time t0 with some computational activity which needs the CPU. At time t1, the task has to wait for some sensor data to appear at one of the controller ports. It waits from time t1 to t2, thereby the CPU is also made to busy wait, when in reality, and the task did not require the CPU at all. This contributes to poor CPU utilization. Task T2 is all set to execute but is waiting for task T1 to relieve the CPU, since in a non-OS scenario things happen sequentially.
+http://uniboard.googlecode.com/files/rtos_demystified_image2.JPG
+
+It has been scientifically proved that tasks are generally a mix of CPU bound and IO bound tasks. For instance, in the figure below, let’s say that task T1 starts at time t0 with some computational activity which needs the CPU. At time t1, the task has to wait for some sensor data to appear at one of the controller ports. It waits from time t1 to t2, thereby the CPU is also made to busy wait, when in reality, and the task did not require the CPU at all. This contributes to poor CPU utilization. Task T2 is all set to execute but is waiting for task T1 to relieve the CPU, since in a non-OS scenario things happen sequentially.
 
 Wouldn’t it have been better if the above scene was changed to the one shown below?
+
+http://uniboard.googlecode.com/files/rtos_demystified_image3.JPG
 
 That is precisely what having a multitasking kernel will lead to, thereby improving the average CPU utilisation. A kernel will make sure that anytime a task in execution waits/blocks, it will takeaway the CPU from that task and allocate it to another task which is ready for execution. Sounds great right? Seems like having a kernel is the solution to all our problems….does it?
 
