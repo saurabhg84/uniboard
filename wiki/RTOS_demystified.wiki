@@ -1,0 +1,33 @@
+#summary The why, what and how of RTOS
+#labels Phase-Implementation,Phase-Requirements
+
+When it comes to discussing subjects that are grossly misunderstood in the technical community, RTOS (Real Time Operating Systems) would surely be a strong contender. This is an attempt to throw some light on the capabilities of an RTOS and refrain engineers from having undue expectations from it.
+
+The other day, while in office, one of my colleague asked me, “Can your RTOS do audio processing?”. I was dumbstruck for a moment and then I started wondering if that was a valid question. If it was, so was this one: “Kya tumhare paani se sharbat ban sakta hain?” (Can your water be used to make juice?”).
+
+Before you are enlightened with what an RTOS is, let me ask you this simple question; are you aware of what role(s) an OS (General Purpose Operating System) plays in a computer? Some probable answers would be:
+
+Operating system acts as the interface between hardware and application software.Does it? Yes, ofcourse, but so does firmware for that matter. So, hows an operating system different from firmware?
+
+Operating system provides an environment for other high level applications like word processor, spreadsheet etc to run on it. Now, that’s a fairly accurate representation. But what is this operating environment that it provides? And why is it needed?
+
+Operating system controls system resources like the processor time, memory etc. Again a reasonably good explanation (though straight out of an OS textbook…:P)
+
+Operating system sets up a GUI based environment for users to utilize system resources. The advent of GUI based interfaces for an operating system has abstracted the role of an OS so much that unfortunately people have started believing that a sophisticated graphical user interface, a good web browser, lots of commonly used accessories like text editor, image editor, image viewing software package support and more are the benchmarking factors for a good operating system.
+
+What has been forgotten amidst all this is the most important component of an operating system, the Kernel. So what exactly is the kernel’s role? The kernel and OS are so closely knit entities that it wouldn’t be a mistake to use these two terms interchangeably. Simply put, kernel can be regarded as the core of an operating system, which is responsible for setting up a multitasking/multi-processing environment.
+
+Although the term multiprocessing is quite self explanatory some clarity is further needed on why a multiprocessing environment is required. To cut things short, a multitasking environment increases system efficiency by improving CPU and resource utilization. Embedded system engineers who must have worked in a non-OS scenario would surely want to know:
+
+    * Why is the CPU/resource utilization low in a non-OS scenario?
+    * How does an OS/RTOS improve CPU utilization?
+
+Let us discuss this diagrammatically.
+
+ It has been scientifically proved that tasks are generally a mix of CPU bound and IO bound tasks. For instance, in the figure below, let’s say that task T1 starts at time t0 with some computational activity which needs the CPU. At time t1, the task has to wait for some sensor data to appear at one of the controller ports. It waits from time t1 to t2, thereby the CPU is also made to busy wait, when in reality, and the task did not require the CPU at all. This contributes to poor CPU utilization. Task T2 is all set to execute but is waiting for task T1 to relieve the CPU, since in a non-OS scenario things happen sequentially.
+
+Wouldn’t it have been better if the above scene was changed to the one shown below?
+
+That is precisely what having a multitasking kernel will lead to, thereby improving the average CPU utilisation. A kernel will make sure that anytime a task in execution waits/blocks, it will takeaway the CPU from that task and allocate it to another task which is ready for execution. Sounds great right? Seems like having a kernel is the solution to all our problems….does it?
+
+In the next series of articles we will have a look at the capabilities of an RTOS in a more comprehensive manner, pros and cons of an RTOS, how an RTOS differs from a GPOS, which are the most popular commercial and open source RTOSes followed by articles which demonstrate porting of a commercial DO-178B certified real time kernel (uC/OS-II) to one of our development boards (uNiBoard), and a real time application design using uC/OS-II.
