@@ -14,6 +14,7 @@ One of the most powerful and reliable tools in today’s networking world is the
 To overcome this difficulty, uIP TCP/IP stack was devised. uIP is a protocol suite consisting of only minimalistic features of TCP/IP suite to make it possible for even small 8-Bit micros to have intranet or even Internet connectivity. The minimum code-size required is of the order of few kilobytes and RAM usage can be configured as low as few hundred bytes. It can support IP, ICMP, TCP and UDP protocols. uIP is an open-source TCP/IP stack written in C, developed by Adam Dunkels of ‘Networked Embedded Systems Group’ at the ‘Swedish Institute of Computer Science’; but being open-source, is developed further by developers from all over the world.
 
 The uIP stack can be divided into the following layers for understanding:
+
 http://uniboard.googlecode.com/files/uip_stack2.png
 
  # *Applications layer:* These are the in-built libraries for applications such as E-Mail, Telnet, Web server, Web client, etc. 
@@ -34,11 +35,15 @@ For controlling the uNiBoard, a graphical user-interface has been developed in C
 
 The application running on top of the uIP is a simple polling approach. The application keeps listening on a port and keeps checking if a new connection has been established, this is the ‘waiting’ state. When a client requests a connection, uIP perceives that a connection is being requested and establishes the connection, this is the connection ‘established’ state. After this the uIP keeps polling for new received data. If new data is received, this data is decoded, because these are the commands to control the different peripherals. According to the data received, appropriate actions are taken. In case of LCD,UART & RTC, etc. data is also sent in the ethernet frame, like messages to be displayed or date & time. When the job is done connection can be closed by client, on the server side uIP detects that the connection has been closed, so it also closes the current connection and again keeps checking for a new one.
 
+http://uniboard.googlecode.com/files/remote_monitor1.jpg
+
 This is a snapshot of the GUI. We can see the server IP address in the top right corner, which is in connected state right now. Below it we can see the text boxes to read and/or write RTC values. Below that there is a provision for setting the LED port, and also the Buzzer ON/OFF control.
 
 Below this there are small windows for UART and LCD one below the other. All one has to do is to type in the message and click on send button, the messages will be displayed on serial port terminal or LCD accordingly, simple as that !!!
 
 On the left hand side, we can see the the status of all the ADC channels, which are monitored at predefined time intervals(configurable). There’s also the provision for setting a limit value for ADC for each channel. If the current value crosses this limit, the channel will be highlighted.This is like a warning message, after which we can take measures to prevent any mishap. At the bottom we can also see he same ADC channel as a Histogram.
+
+http://uniboard.googlecode.com/files/remote_monitor22.jpg
 
 There’s also a provision for data logging. As can be seen in the snapshot above, the sensor data can be logged, exported to an excel spreadsheet, and analyzed at leisure.
 
