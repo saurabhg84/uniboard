@@ -63,6 +63,8 @@ There are four lines that comprise the channel between the PC and the keyboard. 
 
 The transmission of data in the forward direction, i.e. Keyboard to Host is done with a frame of 11 bits. The first bit is a Start Bit (Logic 0) followed by 8 data bits (LSB First), one Parity Bit (Odd Parity) and a Stop Bit (Logic 1). Each bit should be read on the falling edge of the clock. The parity bit is set if there is an even number of 1’s in the data bits and reset (0) if there is an odd number of 1’s in the data bits.  This is used for error detection. 
 
+http://uniboard.googlecode.com/files/waveform1.jpg
+
 The above waveform represents a one byte transmission from the Keyboard. The data line only has to be valid on the falling edge of the clock. The Keyboard will generate the clock. The frequency of the clock signal typically ranges from 10 to 20 KHz.
 
 ===What comes on the data line when you press a key of keyboard?===
