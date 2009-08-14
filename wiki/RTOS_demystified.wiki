@@ -13,7 +13,7 @@ Before you are enlightened with what an RTOS is, let me ask you this simple ques
 
 *Operating system controls system resources like the processor time, memory etc.* Again a reasonably good explanation (though straight out of an OS textbook…:P)
 
-http://uniboard.googlecode.com/files/rtos_demystified_image3.JPG
+http://uniboard.googlecode.com/files/rtos_demystified_image1.JPG
 
 *Operating system sets up a GUI based environment for users to utilize system resources.* The advent of GUI based interfaces for an operating system has abstracted the role of an OS so much that unfortunately people have started believing that a sophisticated graphical user interface, a good web browser, lots of commonly used accessories like text editor, image editor, image viewing software package support and more are the benchmarking factors for a good operating system.
 
