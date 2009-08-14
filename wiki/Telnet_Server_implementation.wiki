@@ -61,7 +61,7 @@ The above application can be downloaded from this link:
 http://code.google.com/p/uniboard/wiki/uIP_based_Telnet_application
 
 ===Authors:===
- # Mr. Aditya Gawand
- # Mr. Nitin Gadmale
- # Mr. Pravin Saini
- # Mr. Dhiraj Shinde 
+ # [http://groups.google.com/groups/profile?enc_user=NkrI9hcAAABU_nb8--s-7yWUyP2bGZKsatZc1V3Nc280dLHqonrV6A Aditya Gawand]
+ # [http://groups.google.com/groups/profile?enc_user=Ym00SRAAAAB3R59mZHNyicUJRLqO-q5r Nitin Gadmale]
+ # [http://groups.google.com/groups/profile?enc_user=0ZN-8xYAAABJztqaXVTOnCoqa-NLYXvvo4cocwWvDVg2RHsu8f1bCg Pravin Saini]
+ # Dhiraj Shinde 
