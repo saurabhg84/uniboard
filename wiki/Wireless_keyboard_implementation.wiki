@@ -24,6 +24,7 @@ Xbee is a specification for a suite of high level communication protocols using 
 Xbee is used in its default settings, unicast mode with baud rate 9600 bps. XBee and Xbee - PRO Modules interface to a host device through a logic-level asynchronous serial port. Devices that have a UART interface can connect directly to the pins of the XBee Module as shown in the diagram.
 
 http://uniboard.googlecode.com/files/keyboard11.png
+
 Figure: System Data Flow Diagram in a UART interfaced environment 
 
 ===AT Keyboard:===
@@ -66,11 +67,19 @@ The above waveform represents a one byte transmission from the Keyboard. The dat
 
 When you press a key, the keyboard controller sends three frames on data pin, which consist of scan-code and break-code (or release code). The value of the break code is always 0xF0 and value of the scan code depends on the key being pressed. The debugged frame at the transmitter section is shown below 
 
+http://uniboard.googlecode.com/files/keyboard3.png
+
+http://uniboard.googlecode.com/files/keyboard4.png
+
 ===Transmitter section:===
+
+http://uniboard.googlecode.com/files/keyboard5.png
 
 Keyboard is connected to Uniboard through PS2 Connector. When a key is pressed the data is transmitted to UART0 at every falling edge of the clock pulse.PS2 Connector’s data line is given to a port pin of ATMEGA128 and clock pin to the external INT pin. Xbee is connected to the UART0 interface. ATMega128 transmits data to UART0 and hence forwarded to Xbee to transmitting it to receiver section.
 
 ===Receiver section:===
+
+http://uniboard.googlecode.com/files/keyboard61.png
 
 Xbee receives the data transmitted from xbee on transmitter side using wireless communication and send it to UART0. When a frame is received at UART0 of uNiBoard, it is processed to extract the required data from the whole frame and decode data to its equivalent ASCII character. The character could be then either transmitted to UART1 via MAX232 and simultaneously displayed on gtkterminal or could be processed as user wants it to be.
 
