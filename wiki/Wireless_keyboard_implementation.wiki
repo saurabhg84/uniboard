@@ -1,0 +1,26 @@
+#summary Wireless keyboard using uNiBoard v1.1
+#labels Phase-Implementation,Phase-Design
+
+The uNiBoard version 1.1 is an ideal development platform for Embedded and Real Time systems programming. To make uNiBoard more interactive, we thought of interfacing a regular PS2 keyboard to it. Prior aim was to interface keyboard to uNiBoard, later we thought of making it wireless which empowers it to be used for various remote applications. Xbee PRO OEM RF module is chosen for wireless communication which can be easily interface to ATMega128 through one of the UART lines. Keyboard is interfaced to ATMega128 using PS2 protocol.
+
+This provides users with facility to remote controlling by giving command through keyboard. With some programming effort some RTOS based applications like movement of snake in snake game which is introduced in earlier article can also be controlled remotely using this keyboard.
+
+===Why would you want to interface the Keyboard?===
+
+The IBM keyboard can be a cheap alternative to a keyboard on a Microprocessor development system. Maybe you have a RS-232 Barcode Scanner or other input devices, which you want to use with existing software which only allows you to key in numbers or letters. You could design yourself a little box to convert RS-232 into a Keyboard Transmission, making it transparent to the software. This keyboard interfacing provides more functionality.
+
+===Features:===
+
+    * Interfacing Standard PC AT Keyboards.
+    * Requires Only Two I/O Pins. One of them must be an External Interrupt Pin.
+    * No Extra Hardware Required for interfacing keyboard to Microcontroller.
+    * Xbee PRO provides long range data integrity.
+    * Xbee requires low power and is easy to use.
+
+===What is Xbee?===
+
+Xbee is a specification for a suite of high level communication protocols using small, low-power digital radios based on the IEEE 802.15.4-2003 standard for wireless personal area networks. The technology defined by the Xbee specification is intended to be simpler and less expensive than other WPANs, such as Bluetooth. Xbee is targeted at radio-frequency (RF) applications that require a low data rate, long battery life, and secure networking. Xbee protocols are intended for use in embedded applications requiring low data rates and low power consumption.
+
+Xbee is used in its default settings, unicast mode with baud rate 9600 bps. XBee and Xbee - PRO Modules interface to a host device through a logic-level asynchronous serial port. Devices that have a UART interface can connect directly to the pins of the XBee Module as shown in the diagram.
+
+Figure: System Data Flow Diagram in a UART interfaced environment 
