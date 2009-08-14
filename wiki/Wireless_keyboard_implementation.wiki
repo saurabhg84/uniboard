@@ -39,7 +39,7 @@ The diagram below shows the Scan Code assigned to the individual keys. The Scan 
 
 The PC’s AT Keyboard is connected to external equipment using four wires. These wires are shown below for PS/2 Plug & Socket.
 
-===6-pin Mini-DIN (PS/2):===
+6-pin Mini-DIN (PS/2):
 1 - Data
 2 - Not Implemented
 3 - Ground
