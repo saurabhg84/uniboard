@@ -23,6 +23,7 @@ Xbee is a specification for a suite of high level communication protocols using 
 
 Xbee is used in its default settings, unicast mode with baud rate 9600 bps. XBee and Xbee - PRO Modules interface to a host device through a logic-level asynchronous serial port. Devices that have a UART interface can connect directly to the pins of the XBee Module as shown in the diagram.
 
+http://uniboard.googlecode.com/files/keyboard11.png
 Figure: System Data Flow Diagram in a UART interfaced environment 
 
 ===AT Keyboard:===
@@ -35,9 +36,13 @@ However keyboard will also send another code when the key has been released. Tak
 
 The diagram below shows the Scan Code assigned to the individual keys. The Scan code is shown on the bottom of the key. E.g. The Scan Code for ESC is 76. All the scan codes are shown in Hex. 
 
+http://uniboard.googlecode.com/files/scancode.gif
+
 ===Keyboard Connector (PS2 Connector)===
 
 The PC’s AT Keyboard is connected to external equipment using four wires. These wires are shown below for PS/2 Plug & Socket.
+
+http://uniboard.googlecode.com/files/Screenshot.png
 
 6-pin Mini-DIN (PS/2):
 1 - Data
@@ -48,6 +53,8 @@ The PC’s AT Keyboard is connected to external equipment using four wires. Thes
 6 - Not Implemented
 
 Physically interface looks as shown in figure below:
+
+http://uniboard.googlecode.com/files/keyboard21.png
 
 There are four lines that comprise the channel between the PC and the keyboard. Two of these, the power and ground lines, are used to provide power to the keyboard which is provided through uNiBoard. The other two are clock and data lines. This is the line over which data bits are sent to the system from the keyboard, and commands sent from the system to the keyboard. The purpose of the clock signal is to synchronize the keyboard and the system. This is a repetitive, regular clock signal, with a value that switches from 1 to 0 to 1 to 0 in a regular pattern.
 
