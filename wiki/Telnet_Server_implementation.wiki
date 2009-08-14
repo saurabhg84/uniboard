@@ -15,12 +15,12 @@ To overcome this difficulty, uIP TCP/IP stack was devised. uIP is a protocol sui
 
 The uIP stack can be divided into the following layers for understanding:
 
- # Applications layer: These are the in-built libraries for applications such as E-Mail, Telnet, Web server, Web client, etc. 
- # uIP Application functions layer: This layer consists of different function calls used by uIP; like uip_rexmit(), uip_connected(), etc. results of which are used in application for decision making, and uip_send() for sending data. Some of these functions can be used in application as mentioned above, but some of them are for house-keeping.
- # uIP Initialization functions: These consist some functions which initialize the different structures like ‘uip_conn’ and ‘uip_stats’, etc. These are used at the time of booting uIP.
- # uIP Configuration functions: These are used to set run-time parameters such as IP address, MAC address, port used, etc.
- # Network device driver functions: These are used by the ethernet interface i.e the network device driver to communicate with uIP. In our case. The network device driver is the our Ethernet Interface Board v1.0 . These functions read & write the data packets received or to be sent on through the network. These functions have to be implemented by us (by the party which writes a port for a particular architecture). The communication with device driver is done through SPI protocol, so we have to write driver for SPI based ENC28J60.
- # Architecture specific functions: These are the functions like Internet checksum calculation over calculation, 32-bit addition, etc. Since 32-bit addition is not native on all targets on which uIP can be implemented, thus the necessity of this 32-bit addition function.
+ # *Applications layer:* These are the in-built libraries for applications such as E-Mail, Telnet, Web server, Web client, etc. 
+ # *uIP Application functions layer:* This layer consists of different function calls used by uIP; like uip_rexmit(), uip_connected(), etc. results of which are used in application for decision making, and uip_send() for sending data. Some of these functions can be used in application as mentioned above, but some of them are for house-keeping.
+ # *uIP Initialization functions:* These consist some functions which initialize the different structures like ‘uip_conn’ and ‘uip_stats’, etc. These are used at the time of booting uIP.
+ # *uIP Configuration functions:* These are used to set run-time parameters such as IP address, MAC address, port used, etc.
+ # *Network device driver functions:* These are used by the ethernet interface i.e the network device driver to communicate with uIP. In our case. The network device driver is the our Ethernet Interface Board v1.0 . These functions read & write the data packets received or to be sent on through the network. These functions have to be implemented by us (by the party which writes a port for a particular architecture). The communication with device driver is done through SPI protocol, so we have to write driver for SPI based ENC28J60.
+ # *Architecture specific functions:* These are the functions like Internet checksum calculation over calculation, 32-bit addition, etc. Since 32-bit addition is not native on all targets on which uIP can be implemented, thus the necessity of this 32-bit addition function.
 
 ===Telnet server:===
 The idea of this project is a very simple one. The Internet technology has always been “Fat Server/Thin Client” oriented. In our case it is pretty much the opposite. The uNiBoard will be the Server, and any web enabled device can be the client.
