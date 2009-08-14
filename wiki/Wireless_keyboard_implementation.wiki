@@ -24,3 +24,49 @@ Xbee is a specification for a suite of high level communication protocols using 
 Xbee is used in its default settings, unicast mode with baud rate 9600 bps. XBee and Xbee - PRO Modules interface to a host device through a logic-level asynchronous serial port. Devices that have a UART interface can connect directly to the pins of the XBee Module as shown in the diagram.
 
 Figure: System Data Flow Diagram in a UART interfaced environment 
+
+===AT Keyboard:===
+
+The IBM keyboard sends scan codes to computer. The scan code tells Keyboard BIOS, which keys have been pressed or released. Take for example the ‘A’ Key. The ‘A’ key has a scan code of $1C. When the ‘A’ key is pressed, keyboard will send $1C down its serial line. Holding it down, for longer than it’s typematic delay, another $1C will be sent. This keeps occurring until another key has been pressed, or if the ‘A’ key has been released.
+
+However keyboard will also send another code when the key has been released. Take the example of the ‘A’ key again, when released, the keyboard will send $F0 to tell you that the key with the proceeding scan code has been released. It will then send 1C, so you know which key has been released.
+
+===Scan code:===
+
+The diagram below shows the Scan Code assigned to the individual keys. The Scan code is shown on the bottom of the key. E.g. The Scan Code for ESC is 76. All the scan codes are shown in Hex. 
+
+===Keyboard Connector (PS2 Connector)===
+
+The PC’s AT Keyboard is connected to external equipment using four wires. These wires are shown below for PS/2 Plug & Socket.
+
+===6-pin Mini-DIN (PS/2):===
+1 - Data
+2 - Not Implemented
+3 - Ground
+4 - Vcc (+5V)
+5 - Clock
+6 - Not Implemented
+
+Physically interface looks as shown in figure below:
+
+There are four lines that comprise the channel between the PC and the keyboard. Two of these, the power and ground lines, are used to provide power to the keyboard which is provided through uNiBoard. The other two are clock and data lines. This is the line over which data bits are sent to the system from the keyboard, and commands sent from the system to the keyboard. The purpose of the clock signal is to synchronize the keyboard and the system. This is a repetitive, regular clock signal, with a value that switches from 1 to 0 to 1 to 0 in a regular pattern.
+
+The transmission of data in the forward direction, i.e. Keyboard to Host is done with a frame of 11 bits. The first bit is a Start Bit (Logic 0) followed by 8 data bits (LSB First), one Parity Bit (Odd Parity) and a Stop Bit (Logic 1). Each bit should be read on the falling edge of the clock. The parity bit is set if there is an even number of 1’s in the data bits and reset (0) if there is an odd number of 1’s in the data bits.  This is used for error detection. 
+
+The above waveform represents a one byte transmission from the Keyboard. The data line only has to be valid on the falling edge of the clock. The Keyboard will generate the clock. The frequency of the clock signal typically ranges from 10 to 20 KHz.
+
+===What comes on the data line when you press a key of keyboard?===
+
+When you press a key, the keyboard controller sends three frames on data pin, which consist of scan-code and break-code (or release code). The value of the break code is always 0xF0 and value of the scan code depends on the key being pressed. The debugged frame at the transmitter section is shown below 
+
+===Transmitter section:===
+
+Keyboard is connected to Uniboard through PS2 Connector. When a key is pressed the data is transmitted to UART0 at every falling edge of the clock pulse.PS2 Connector’s data line is given to a port pin of ATMEGA128 and clock pin to the external INT pin. Xbee is connected to the UART0 interface. ATMega128 transmits data to UART0 and hence forwarded to Xbee to transmitting it to receiver section.
+
+===Receiver section:===
+
+Xbee receives the data transmitted from xbee on transmitter side using wireless communication and send it to UART0. When a frame is received at UART0 of uNiBoard, it is processed to extract the required data from the whole frame and decode data to its equivalent ASCII character. The character could be then either transmitted to UART1 via MAX232 and simultaneously displayed on gtkterminal or could be processed as user wants it to be.
+
+===Authors:===
+
+Mrs. Vignya Mistry and Ms. Kruttika Pendharkar (Ex-student(s) ERTOS)
