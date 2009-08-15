@@ -5,6 +5,8 @@ Since you have been already introduced to RTOS concepts and our open source deve
 
 This article however, aims at introducing you to the components of an RTOS and the approach for a Real Time Application Design. Platform selection, as mentioned earlier, is a different ball game. Having said all this, *uC/OS-II (popularly known as MicroC/OS-II)* is the real time kernel we will use for application design. We could have taken complex scenarios to exemplify RTOS usage but to keep your interest till the end of this article (Someone has rightly said, “The problem with a great end is that you have to reach it!!”) we thought what better than taking the case of a game design, and since we are discussing games, Snake would unanimously qualify as the most popular one, which we all have been playing right from the time Nokia introduced their very first game based handsets in India.
 
+http://uniboard.googlecode.com/files/snake-game.gif
+
 If we forget RTOS for time being, the Snake game broadly involves the following functional modules:
 
     * Snake food generator module
@@ -18,6 +20,8 @@ You don’t need to be a software engineer to identify the above modules. Since 
     * Display device with bit-mapped graphics and a decent resolution (100×80)
     * Controller to process sensor input, drive the display device and perform the functional modules listed above
 
+http://uniboard.googlecode.com/files/unibrd_pic.bmp
+
 With the uNiBoard v1.1, we have an onboard analog joystick (PS2 rocks !!) and a powerful controller of the likes of AVR which can easily perform the above functions (even without an RTOS). We could have used the Nokia 3310’s LCD, but I decided to skip it this time and use something different instead. The VT102 command set empowers us to use the hyperterminal (on Windows XP…Sorry :-( Vista users) / Gtkterm (Linux equivalent) as a graphic display with resolution of 132 (horizontal) x 80 (vertical). On-chip UART can be used to control these VT102 compatible terminals.
 
 Next step would be to proceed with the high-level design of Embedded software for the application. One look at the functional modules listed above and you can be sure that a multi-tasking environment is needed out here, where the snake food generator, snake movement control, score updater and collision detector would be concurrently (atleast apparently) running tasks. So, having a real time kernel would surely make sense and ensure that the application remains responsive. Responsiveness cannot be ensured just by have a multi-tasking kernel. In any priority based completely pre-emptive kernel, it is the developer who has to judiciously assign priorities to each of the identified tasks. Correct selection of priorities is what makes the end product responsive. Majority of the times, I have found people selecting the busiest task as the highest priority task. For e.g.: If asked to made a choice, I bet every second reader would surely choose snake movement control task as the highest priority task, which is a bad choice.
@@ -30,11 +34,13 @@ To understand why, lets define a priority based kernel. In simplest of words, a 
     * *The snake movement control task (Priority: 3)* receives the lowest priority as is obvious now, but executes for most of the time since the above three tasks remain blocked and resume only on certain events which are signaled by this snake movement task. So, apart from reading the joystick value and deciding the new position of the snake, this task does the following things.
 
      # Signals the score update task (by writing to the message mailbox) and snake food generator task whenever the coordinates of the snake head and the snake food become equal
-     # Signals the collision detection task whenever the coordinates of the snake head become equal to the coordinates of the snake body
+     # Signals the collision detection task whenever the coordinates of the snake head become equal to the coordinates of the snake body.
 
 Apart from these things, while assigning priorities one should take care of reserved priority numbers which are used by the RTOS itself for some housekeeping work. Using these numbers is not advisable as it may lead to unanticipated scenarios.
 
 For any RTOS that you plan to use, you should be able to identify the following blocks:
+
+http://uniboard.googlecode.com/files/hwnsw_arch.JPG
 
 Every RTOS project/source code consists of (as shown in the above figure):
 
