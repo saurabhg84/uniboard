@@ -1,0 +1,57 @@
+#summary RTOS based application development using uNiBoard v1.1
+#labels Phase-Implementation,Phase-Design
+
+Since you have been already introduced to RTOS concepts and our open source development hardware called uNiBoard v1.1 in the earlier articles, lets have a look at some of its capabilities. Through this article, let us explore the process of RTOS porting and RTOS based application development. There are many commercial as well as free Real Time Operating Systems available and choosing an RTOS is not at all a trivial job, even for the gray-haired people. In a separate article which follows, we will discuss factors (benchmarks) to be considered while selecting an RTOS.
+
+This article however, aims at introducing you to the components of an RTOS and the approach for a Real Time Application Design. Platform selection, as mentioned earlier, is a different ball game. Having said all this, uC/OS-II (popularly known as MicroC/OS-II) is the real time kernel we will use for application design. We could have taken complex scenarios to exemplify RTOS usage but to keep your interest till the end of this article (Someone has rightly said, “The problem with a great end is that you have to reach it!!”) we thought what better than taking the case of a game design, and since we are discussing games, Snake would unanimously qualify as the most popular one, which we all have been playing right from the time Nokia introduced their very first game based handsets in India.
+
+ If we forget RTOS for time being, the Snake game broadly involves the following functional modules:
+
+    * Snake food generator module
+    * Snake movement control module (which takes input from the Joystick/keypad)
+    * Score update module (which incidentally is also responsible for elongating the Snake’s tail every time it eats food)
+    * Collision detection module (which also happens to signal the Game End condition)
+
+You don’t need to be a software engineer to identify the above modules. Since the functional modules have now been identified, lets look at how we can implement all these using our uNiBoard platform. So, we now have the following hardware requirements in hand:
+
+    * Joystick (sensor) for allowing users to control the movement of snake
+    * Display device with bit-mapped graphics and a decent resolution (100×80)
+    * Controller to process sensor input, drive the display device and perform the functional modules listed above
+
+With the uNiBoard v1.1, we have an onboard analog joystick (PS2 rocks !!) and a powerful controller of the likes of AVR which can easily perform the above functions (even without an RTOS). We could have used the Nokia 3310’s LCD, but I decided to skip it this time and use something different instead. The VT102 command set empowers us to use the hyperterminal (on Windows XP…Sorry :-( Vista users) / Gtkterm (Linux equivalent) as a graphic display with resolution of 132 (horizontal) x 80 (vertical). On-chip UART can be used to control these VT102 compatible terminals.
+
+Next step would be to proceed with the high-level design of Embedded software for the application. One look at the functional modules listed above and you can be sure that a multi-tasking environment is needed out here, where the snake food generator, snake movement control, score updater and collision detector would be concurrently (atleast apparently) running tasks. So, having a real time kernel would surely make sense and ensure that the application remains responsive. Responsiveness cannot be ensured just by have a multi-tasking kernel. In any priority based completely pre-emptive kernel, it is the developer who has to judiciously assign priorities to each of the identified tasks. Correct selection of priorities is what makes the end product responsive. Majority of the times, I have found people selecting the busiest task as the highest priority task. For e.g.: If asked to made a choice, I bet every second reader would surely choose snake movement control task as the highest priority task, which is a bad choice.
+
+uCos-ii Architechture
+To understand why, lets define a priority based kernel. In simplest of words, a priority based kernel runs the highest priority task which is ready. If the snake movement control task has the highest priority all the other tasks will be severely starved since there is no blocking condition. So a correct selection would be:
+
+    * The collision detection task (Priority: 0) can be made the highest priority task which simply blocks itself at the onset. Blocked tasks can be resumed by signaling them when a condition/resource on which they are blocked gets fulfilled. In this case, lets assume that this task is blocked and resumes only when the snake movement control task signals it. As is obvious, snake movement task will signal whenever there is an overlap (in programming terms, it means when the coordinates become equal) of the Snake’s head coordinates and its body coordinates.
+    * The score update task (Priority: 1) would be next in terms of priority. It shares a message mailbox (a mechanism for inter-task communication provided by the kernel) with the snake movement task. The mailbox is initially empty and hence the score update task get blocked. The score update task is said to be the consumer (reader) of the mailbox while the snake movement control task is the producer (writer). Since the reader has nothing to read till the writer writes on this mailbox the score update task blocks on the empty mailbox.
+    * The snake food generator task (Priority: 2) needs to be given a higher priority than snake movement task for sure due to the simple logic that if there is no food generated what would the snake eat? The snake food generator is more or less a periodic task which generates food periodically and places it at some coordinates (obtained using a random number generator algorithm) and then blocks itself. It will resume either after a pre-decided time interval or the moment snake movement control task eats the food (in programming terms, when the coordinate of the snake’s head overlaps with the snake food coordinates), whichever is earlier.
+    * The snake movement control task (Priority: 3) receives the lowest priority as is obvious now, but executes for most of the time since the above three tasks remain blocked and resume only on certain events which are signaled by this snake movement task. So, apart from reading the joystick value and deciding the new position of the snake, this task does the following things.
+
+   # Signals the score update task (by writing to the message mailbox) and snake food generator task whenever the coordinates of the snake head and the snake food become equal
+   # Signals the collision detection task whenever the coordinates of the snake head become equal to the coordinates of the snake body
+
+Apart from these things, while assigning priorities one should take care of reserved priority numbers which are used by the RTOS itself for some housekeeping work. Using these numbers is not advisable as it may lead to unanticipated scenarios.
+
+For any RTOS that you plan to use, you should be able to identify the following blocks:
+
+Every RTOS project/source code consists of (as shown in the above figure):
+
+   # Portable kernel code: This is generally a code written in ANSI C which can be ported to any platform fulfilling certain requirements like memory footprint, computational power, number of registers etc.
+   # BSP or port files: These are specific to an architecture, so for every architecture / board there is a unique BSP / port files. We have used port files for Atmega128.
+   # Configuration files: These are files which can be used to optimize the kernel and reduce the memory footprint of the kernel image based on what features of the kernel would be used by any application program.
+   # Application program: This is generally written on top of the kernel code (like the Snake application that we just designed) and utilizes kernel API’s and functions exported by the OS for the users of the RTOS.
+
+Once all these things have been clearly identified and understood one can proceed with the implementation.
+
+What we have done might not be a full-fledged Snake game comparable to the game we have been playing on the mobile phone but is still worth a play. Check out the video, it might give you a better insight to everything said and done. I await your comments on this one, as well as someone to take up more such interesting work….How about Arkanoid…anyone out there interested?
+
+Courtesy:
+
+   # Mr Jean Labrosse (uC/OS-II Kernel code)
+   # Mr. Jesper Hansen (Atmega128 port using avr-gcc)
+   # Mr. Julius Lukko (VT102 library usage)
+
+NOTE: uC/OS-II is available from www.micirum.com. The RTOS is open source and available for evaluation if used for educational purposes/peaceful research. For commercial usage of uC/OS-II, refer to the Micrium website for a detailed clarification on the licensing policy.
