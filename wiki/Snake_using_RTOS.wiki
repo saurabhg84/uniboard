@@ -18,7 +18,7 @@ You don’t need to be a software engineer to identify the above modules. Since 
 
     * Joystick (sensor) for allowing users to control the movement of snake
     * Display device with bit-mapped graphics and a decent resolution (100×80)
-    * Controller to process sensor input, drive the display device and perform the functional modules listed above
+    * Controller to process sensor input, drive the display device and perform the functional modules listed above.
 
 http://uniboard.googlecode.com/files/unibrd_pic.bmp
 
