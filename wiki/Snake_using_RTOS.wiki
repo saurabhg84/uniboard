@@ -22,8 +22,7 @@ You don’t need to be a software engineer to identify the above modules. Since 
 
 With the uNiBoard v1.1, we have an onboard analog joystick (PS2 rocks !!) and a powerful controller of the likes of AVR which can easily perform the above functions (even without an RTOS). We could have used the Nokia 3310’s LCD, but I decided to skip it this time and use something different instead. The VT102 command set empowers us to use the hyperterminal (on Windows XP…Sorry :-( Vista users) / Gtkterm (Linux equivalent) as a graphic display with resolution of 132 (horizontal) x 80 (vertical). On-chip UART can be used to control these VT102 compatible terminals.
 
-http://uniboard.googlecode.com/files/unibrd_pic.xcf
-http://uniboard.googlecode.com/files/unibrd_pic.bmp
+http://uniboard.googlecode.com/files/unibrd.jpg
 
 Next step would be to proceed with the high-level design of Embedded software for the application. One look at the functional modules listed above and you can be sure that a multi-tasking environment is needed out here, where the snake food generator, snake movement control, score updater and collision detector would be concurrently (atleast apparently) running tasks. So, having a real time kernel would surely make sense and ensure that the application remains responsive. Responsiveness cannot be ensured just by have a multi-tasking kernel. In any priority based completely pre-emptive kernel, it is the developer who has to judiciously assign priorities to each of the identified tasks. Correct selection of priorities is what makes the end product responsive. Majority of the times, I have found people selecting the busiest task as the highest priority task. For e.g.: If asked to made a choice, I bet every second reader would surely choose snake movement control task as the highest priority task, which is a bad choice.
 
