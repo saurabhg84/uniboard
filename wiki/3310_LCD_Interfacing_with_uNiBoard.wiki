@@ -1,4 +1,0 @@
-#summary 3310 LCD Interfacing
-#labels Phase-Design,Phase-Implementation
-
-<wiki:video url="http://www.youtube.com/watch?v=TI7zGAQ3jt8"/>
