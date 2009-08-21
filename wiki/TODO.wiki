@@ -149,3 +149,10 @@ Status:  Pending
 Author: N.A.
 
 Information: Yet to be uploaded
+
+===21. interfacing CC2500 RF module on uNiBoard===
+Status:  Pending
+
+Author: N.A.
+
+Information: [http://focus.ti.com/docs/prod/folders/print/cc2500.html#features features]
