@@ -1,5 +1,5 @@
 #summary Embedded System Design Contest based on uNiBoard v1.1
-#labels Phase-Requirements,Featured
+#labels Phase-Requirements
 
 ==Purpose==
 
