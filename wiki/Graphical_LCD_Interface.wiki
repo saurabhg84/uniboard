@@ -9,43 +9,43 @@ _Inrefacing Nokia 3310 Graphical LCD to uNiBoard v1.1_
 
  http://uniboard.googlecode.com/files/welcome.jpg
 
- === *NOKIA connecting people* ===
+ === NOKIA connecting people ===
  http://uniboard.googlecode.com/files/connecting_people.jpg
 
- === *TRI-India* ===
+ === TRI-India ===
  http://uniboard.googlecode.com/files/TRI-india.jpg
 
- === *Kingston* ===
+ === Kingston ===
  http://uniboard.googlecode.com/files/Kingston.jpg
 
- === *Cell-Phone* ===
+ === Cell-Phone ===
  http://uniboard.googlecode.com/files/phone.jpg
  
- === *Giraffe* ===
+ === Giraffe ===
  http://uniboard.googlecode.com/files/giraffe.jpg
 
- === *Clock* ===
+ === Clock ===
  http://uniboard.googlecode.com/files/clock.jpg
 
- === *Star* ===
+ === Star ===
  http://uniboard.googlecode.com/files/star.jpg
 
- === *Authors* ===
+ === Authors ===
  http://uniboard.googlecode.com/files/authors.jpg
 
-== *Videos* ==
+== Videos ==
 
-=== *Video1 :* ===
+=== Video1 : ===
  <wiki:video url="http://www.youtube.com/watch?v=BAJNkDnu54U"/>
 
-=== *Video1 :* ===
+=== Video1 : ===
  <wiki:video url="http://www.youtube.com/watch?v=Z9GtDjrb9ik"/>
 
 == *Downloads* ==
 
 Source code : http://uniboard.googlecode.com/files/GLCD_source.zip
-*Schematic   : [http://uniboard.googlecode.com/files/GLCD_schematic.zip Click here]
+Schematic   : [http://uniboard.googlecode.com/files/GLCD_schematic.zip Click here]
 
 == *Authors* ==
  Mr. Naveen Goyal
- *Mr. Anmol Mitthal
+ Mr. Anmol Mitthal
