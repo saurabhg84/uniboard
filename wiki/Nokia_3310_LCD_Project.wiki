@@ -5,6 +5,60 @@
 
 The Project is to implement graphic library for Nokia 3310 LCD.It involves studying the LCD protocol and implementing frame buffer based graphics library to render images and games.
 
+
+= *Description* =
+
+    This Project was done by students Mr Naveen Goyal and Me Anmol Mitthal of STIP-E workshop conducted in Delhi on 22nd June 2009.
+    The Nokia 3310 Graphical LCD has PCD8544 controller (48 × 84 pixels matrix LCD controller/driver) which has an SPI interface. Commands and data are sent to the LCD using SPI pins on uNiBoard.
+    The bitmaps are converted to hex code using FASTLCD v1.2.0 software by Bojan I. MICRODESIGN which are then stored in flash memory. They are fetched from flash and then displayed on GLCD, This is achieved through the use of "pgmspace.h" which enables user to access data stored in program space i.e. flash memory.e.
+
+
+ http://uniboard.googlecode.com/files/welcome.jpg
+
+ === NOKIA connecting people ===
+ http://uniboard.googlecode.com/files/connecting_people.jpg
+
+ === TRI-India ===
+ http://uniboard.googlecode.com/files/TRI-india.jpg
+
+ === Kingston ===
+ http://uniboard.googlecode.com/files/Kingston.jpg
+
+ === Cell-Phone ===
+ http://uniboard.googlecode.com/files/phone.jpg
+ 
+ === Giraffe ===
+ http://uniboard.googlecode.com/files/giraffe.jpg
+
+ === Clock ===
+ http://uniboard.googlecode.com/files/clock.jpg
+
+ === Star ===
+ http://uniboard.googlecode.com/files/star.jpg
+
+ === Authors ===
+ http://uniboard.googlecode.com/files/authors.jpg
+
+== Videos ==
+
+=== Video1 : ===
+ <wiki:video url="http://www.youtube.com/watch?v=BAJNkDnu54U"/>
+
+=== Video1 : ===
+ <wiki:video url="http://www.youtube.com/watch?v=Z9GtDjrb9ik"/>
+
+== *Downloads* ==
+
+Source code : http://uniboard.googlecode.com/files/GLCD_source.zip 
+
+Schematic   : [http://uniboard.googlecode.com/files/GLCD_schematic.jpg Click here]
+
+== *Authors* ==
+ Mr. Naveen Goyal
+
+ Mr. Anmol Mitthal
+
+
 == References ==
 1) [http://uniboard.googlecode.com/files/PCD8544.pdf PCD8544 datasheet ]
 
