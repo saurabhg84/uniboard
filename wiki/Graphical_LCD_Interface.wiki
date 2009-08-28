@@ -44,4 +44,4 @@ _Inrefacing Nokia 3310 Graphical LCD to uNiBoard v1.1_
 == *Downloads* ==
 
 Source code : http://uniboard.googlecode.com/files/GLCD_source.zip
-[Schematic   : http://uniboard.googlecode.com/files/GLCD_schematic.jpg]
+Schematic   : [http://uniboard.googlecode.com/files/GLCD_schematic.jpg]
