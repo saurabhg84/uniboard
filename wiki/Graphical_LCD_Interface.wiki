@@ -20,7 +20,7 @@ _Inrefacing Nokia 3310 Graphical LCD to uNiBoard v1.1_
 
  === *Cell-Phone* ===
  http://uniboard.googlecode.com/files/phone.jpg
-
+ 
  === *Giraffe* ===
  http://uniboard.googlecode.com/files/giraffe.jpg
 
@@ -44,3 +44,4 @@ _Inrefacing Nokia 3310 Graphical LCD to uNiBoard v1.1_
 == *Downloads* ==
 
 Source code : http://uniboard.googlecode.com/files/GLCD_source.zip
+Schematic   : [http://uniboard.googlecode.com/files/GLCD_schematic.zip Click here]
