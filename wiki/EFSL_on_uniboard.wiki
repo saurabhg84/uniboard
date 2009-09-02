@@ -55,7 +55,7 @@ The uNiBoard version 1.1 is an ideal open source development platform for Embedd
 
 Before reading this you can download the uNiBoard port for EFSL from this link:
 
-[http://uniboard.googlecode.com/files/figure4___sdcard_beforecopying.JPG EFSL on uNiBoard]
+[http://uniboard.googlecode.com/files/efsl_date_time_support_test_program.zip EFSL on uNiBoard]
 
 The sample code consists of the EFSL library with port code of Atmega128 and Date and time support. I have tested for Date and time support in EFSL library for which you need to include this macro #define DATE_TIME_SUPPORT in EFSL’s configuration file i.e. config.h and you have to provide the API’s of date and time in your code. You need to provide the correct date and time return values of these functions which the EFSL uses this API’s to store the file’s date and time attributes on SD card. The uNiBoard v1.1 has RTC chip from which the date and time is given to these API’s.
 
