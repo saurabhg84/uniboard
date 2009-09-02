@@ -43,7 +43,7 @@ I have successfully tested the EFSL library using this interface on uNiBoard v1.
 
 http://uniboard.googlecode.com/files/figure1___sd_mmc_card_interface.JPG
 
-The SD/MMC card interface provides you the SD/MMC slot where you can insert your card and the SPI lines on backside which you can connect to your target controller’s SPI lines. This interface requires +5V supply voltage, since the module takes care of providing a 3.3v output to the SD/MMC card.
+The SD/MMC card interface provides you the SD/MMC slot where you can insert your card and the SPI lines on backside which you can connect to your target controller’s SPI lines. This interface requires +5V supply voltage, since the module takes care of providing a 3.3v output to the SD/MMC card. The SD card user manual can be downloaded from the following link: http://uniboard.googlecode.com/files/SD-MMC_reference_manual.pdf
 
 ===What is uNiBoard v1.1?===
 
