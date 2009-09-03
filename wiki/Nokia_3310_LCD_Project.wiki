@@ -57,14 +57,14 @@ Video 2:
  
 
 == Authors ==
-# Mr. Naveen Goyal
+ # Mr. Naveen Goyal
 
-# Mr. Anmol Mitthal
+ # Mr. Anmol Mitthal
 
 
 == References ==
-# [http://uniboard.googlecode.com/files/PCD8544.pdf PCD8544 datasheet ]
+ # [http://uniboard.googlecode.com/files/PCD8544.pdf PCD8544 datasheet ]
 
-# [http://uniboard.googlecode.com/files/3310_schematic.jpg LCD schematic]
+ # [http://uniboard.googlecode.com/files/3310_schematic.jpg LCD schematic]
 
-# [http://uniboard.googlecode.com/files/nokia3310picture.jpg LCD images ]
+ # [http://uniboard.googlecode.com/files/nokia3310picture.jpg LCD images ]
