@@ -8,7 +8,6 @@ AVR Studio is an Integrated Development Environment (IDE) that includes an Assem
 In this article we will concentrate more on how one can write programs in AVR Studio, how to generate hex files. And finally how to load the .hex files on to the controller.
 
 Before beginning, obviously we would expect you to download the software and install it. The setup can be downloaded from this link:
-
 http://www.atmel.com/dyn/Products/tools_card.asp?tool_id=2725
 
 ===NOTE: ===
