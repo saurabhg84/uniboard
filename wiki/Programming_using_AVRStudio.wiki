@@ -25,5 +25,9 @@ To start with, let’s know how to create a project and work with it.
  # Build -> Build: This creates the .hex file which one needs to load in the micro-controller.
  # Load the program into the micro-controller.
 
-We need to use another software named: AVRDUDE from the link
-http://sourceforge.net/projects/avrdude-gui/
+Check out a video tutorial for the same:
+
+There is another software called avrdude as mentioned earlier which can be used to dump the hex file to the controller. It can be downloaded from the below mentioned link:
+http://uniboard.googlecode.com/files/avrdude-gui_v0.2.0.zip
+
+A video tutorial on its usage follows:
