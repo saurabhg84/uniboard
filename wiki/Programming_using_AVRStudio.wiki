@@ -16,15 +16,10 @@ You will need to register to download if you are not already a registered user.
 
 To start with, let’s know how to create a project and work with it.
 
- # Open the AVR Studio            
-
- # Create NEW PROJECT
-
- * Creating a project for AVR Assembler will enable the user write programs in ASSEMBLY LANGUAGE for AVR
- * Creating an AVR GCC project facilitates the user with writing code in C. (For this one needs to install WinAVR along with AVR Studio).          
-
+ # Open AVR Studio  
+ # Create a NEW PROJECT: Creating a project for AVR Assembler will enable the user write programs in ASSEMBLY LANGUAGE for AVR. Creating an AVR GCC project facilitates the user with writing code in C. (For this one needs to install WinAVR along with AVR Studio).
  # Select the desired debug platform from the options mentioned therein and Finish.
- # Write the piece of code you want the microcontroller to execute in the editor and save it.
+ # Write the piece of code you want the micro-controller to execute in the editor and save it.
  # Build -> Clean: This command removes all the files being created due to previous compilation of this program, if any.
  # Build -> Compile: This creates the object file needed for linking.
  # Build -> Build: This creates the .hex file which one needs to load in the micro-controller.
