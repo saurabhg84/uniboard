@@ -1,0 +1,34 @@
+#summary Programming uNiBoard v1.1 using AVR Studio and avrdude GUI:
+#labels Phase-Deploy
+
+Off late we have been getting requests to publish a tutorial based of how to use uNiBoard v1.1 with the very popular AVR Studio. So, let’s look at how AVR Studio can be used. Specifically for fans of GUI based software packages we have also discussed avrdude GUI which can be used to dump the hex file generated from AVR Studio.
+
+AVR Studio is an Integrated Development Environment (IDE) that includes an Assembler and a Simulator and many more useful utilities bundled into one package. To write programs in C, one needs to install the C compiler, WinAVR (also referred as AVR gcc compiler), along with AVR Studio. 
+
+In this article we will concentrate more on how one can write programs in AVR Studio, how to generate hex files. And finally how to load the .hex files on to the controller.
+
+Before beginning, obviously we would expect you to download the software and install it. The setup can be downloaded from this link:
+
+http://www.atmel.com/dyn/Products/tools_card.asp?tool_id=2725
+
+===NOTE: ===
+You will need to register to download if you are not already a registered user. 
+
+To start with, let’s know how to create a project and work with it.
+
+ # Open the AVR Studio            
+
+ # Create NEW PROJECT
+
+ * Creating a project for AVR Assembler will enable the user write programs in ASSEMBLY LANGUAGE for AVR
+ * Creating an AVR GCC project facilitates the user with writing code in C. (For this one needs to install WinAVR along with AVR Studio).          
+
+ # Select the desired debug platform from the options mentioned therein and Finish.
+ # Write the piece of code you want the microcontroller to execute in the editor and save it.
+ # Build -> Clean: This command removes all the files being created due to previous compilation of this program, if any.
+ # Build -> Compile: This creates the object file needed for linking.
+ # Build -> Build: This creates the .hex file which one needs to load in the micro-controller.
+ # Load the program into the micro-controller.
+
+We need to use another software named: AVRDUDE from the link
+http://sourceforge.net/projects/avrdude-gui/
