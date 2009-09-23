@@ -1,4 +1,4 @@
-#summary Programming uNiBoard v1.1 using AVR Studio and avrdude GUI:
+#summary Programming uNiBoard v1.1 using AVR Studio and avrdude GUI
 #labels Phase-Deploy
 
 Off late we have been getting requests to publish a tutorial based of how to use uNiBoard v1.1 with the very popular AVR Studio. So, let’s look at how AVR Studio can be used. Specifically for fans of GUI based software packages we have also discussed avrdude GUI which can be used to dump the hex file generated from AVR Studio.
