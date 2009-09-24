@@ -53,6 +53,10 @@ Once all these things have been clearly identified and understood one can procee
 
 What we have done might not be a full-fledged Snake game comparable to the game we have been playing on the mobile phone but is still worth a play. Check out the video, it might give you a better insight to everything said and done. I await your comments on this one, as well as someone to take up more such interesting work….How about Arkanoid…anyone out there interested?
 
+===Videos===
+
+<wiki:video url="http://www.youtube.com/watch?v=B1vOkhmnmJg"/>
+
 ===Downloads===
 Interested in trying out SNAKE on uNiBoard v1.1. Click [http://code.google.com/p/uniboard/wiki/winxpsetup here]
 
