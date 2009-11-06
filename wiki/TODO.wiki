@@ -132,7 +132,7 @@ Information: Yet to be uploaded
 ===18. UART Bootloader===
 Status: Ongoing (partially done)
 
-Author: Durvesh Kulkarni, Sunand Sudhakaran, Abhishek Tyagi, Ashit Tiwari
+Author: Mr. Durvesh Kulkarni, Mr. Sunand Sudhakaran, Mr. Abhishek Tyagi, Mr. Ashit Tiwari
 
 Information: Yet to be uploaded
 
