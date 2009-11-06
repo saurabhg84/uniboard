@@ -87,7 +87,7 @@ Author: N.A.
 
 Information: Yet to be uploaded
 
-===12. Command interpreter on uNiBoard (using boot-loader)===
+===12. Command interpreter on uNiBoard (within boot-loader)===
 Status: Pending
 
 Author: N.A.
@@ -129,10 +129,10 @@ Author: N.A.
 
 Information: Yet to be uploaded
 
-===18. Wireless Bootloader===
-Status: Pending
+===18. UART Bootloader===
+Status: Ongoing (partially done)
 
-Author: N.A.
+Author: Durvesh Kulkarni, Sunand Sudhakaran, Abhishek Tyagi, Ashit Tiwari
 
 Information: Yet to be uploaded
 
@@ -156,3 +156,10 @@ Status:  Pending
 Author: N.A.
 
 Information: [http://focus.ti.com/docs/prod/folders/print/cc2500.html#features features]
+
+===22. Wireless Bootloader (using 2G4 wireless module)===
+Status: Pending
+
+Author: N.A.
+
+Information: Yet to be uploaded
