@@ -1,3 +1,6 @@
+#labels Phase-Requirements
+#Summary Discussion on education
+
 = Education & you =
 
 More over robotics and embedded systems, an aspect that obviously concerns all of us as citizens of a developing nation is the purpose of education. Do we as knowledge donors or seekers comprehend what education has to offer? More than an article, this is meant to be an open discussion to reaffirm the fact that we understand simple but long forgotten goals of the education system and in the process also discover a few which need to be addressed given the current situation. The views presented in this article are not personal and have been influenced by varied personalities and scenarios.
@@ -17,4 +20,3 @@ Linus Torvalds (needless to say, author of Linux OS), in his book “Just for fu
 *Entertainment:* This one might raise many an eye-brows but education does bring in entertainment and vice-versa. As an organization with the philosophy, “excite-entertain-educate” we have observed that it is very much possible for education and entertainment to go hand in hand (a trend which can be marked in our workshops); its just that at times education becomes the cause while entertainment becomes the effect and vice versa.
 
 At this point you might wonder what we are trying to arrive at, but the purpose was never to conclude; it was to make you “think”.  So, if you have  started thinking already, we would love to hear your viewpoint...
-
