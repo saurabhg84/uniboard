@@ -31,10 +31,8 @@ Here we are using PE4(INT4) and PE5(INT5) port pins to generate horizontal and v
 
 The project algorithm of rendering the image is traditional enough, the main know-how of the project is the bit-by-bit shifting of the image, utilizing the SPI shift register SPDR via the MOSI pin. Thus two jobs are performed at the same time, when the subsequent byte for rendering is sent, the previous byte is shifted out through the shift register (SPI SPDR MOSI).
 
-<img src="http://uniboard.googlecode.com/files/3_VGA.JPG" width="801" height="540"/>
-
 == Procedure ==
-<img src="http://uniboard.googlecode.com/files/4_VGA.JPG" width="800" height="437"/>
+
 
  # Make the connection as per the circuit diagram
  # Upload the program in uC using make utility.
