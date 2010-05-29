@@ -105,4 +105,4 @@
     <img src="http://uniboard.googlecode.com/files/15_EclipseIDE.png"  width="892" height="524"/>
 
  5. Now you can burn the program by selecting AVR menu > Upload project to Target Device.
-    <img src="http://uniboard.googlecode.com/files/16_EclipseIDE.png"  width="892" height="500"/>
+    <img src="http://uniboard.googlecode.com/files/16_EclipseIDE.png"  width="892" height="450"/>
