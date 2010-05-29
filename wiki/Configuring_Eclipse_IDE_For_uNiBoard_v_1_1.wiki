@@ -3,7 +3,7 @@
 *Steps to install Eclipse IDE:*
 
  1. Download Eclipse from for C/C++ developers as shown below:
-    <img src="http://uniboard.googlecode.com/files/1_EclipseIDE.png"  width="200" height="85"/>
+    <img src="http://uniboard.googlecode.com/files/1_EclipseIDE.png"  width="800" height="600"/>
 
  2. Now Extract the package:
 
