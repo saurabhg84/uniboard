@@ -8,7 +8,7 @@
  2. Now Extract the package:
 
     Right click the package and open with Archive Manager and extract it to home directory as shown below:
-    <img src="http://uniboard.googlecode.com/files/2_EclipseIDE.png"  width="480" height="300"/>
+    <img src="http://uniboard.googlecode.com/files/2_EclipseIDE.png"  width="700" height="600"/>
 
  3. Open the eclipse executable to the folder that you have extracted ~/eclipse/ as shown below:
     http://uniboard.googlecode.com/files/3_EclipseIDE.png
