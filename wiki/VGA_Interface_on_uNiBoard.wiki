@@ -15,7 +15,7 @@ The LCD monitor interfaced with the uniboard using VGA connector. The system is 
  # Frequency of vertical synchronization: 60Hz
  # Speed of exchange UART 19200 bps
 
-[Image:http://uniboard.googlecode.com/files/1_VGA.JPG|200px]
+http://uniboard.googlecode.com/files/1_VGA.JPG
 
 == Hardware Description ==
 
