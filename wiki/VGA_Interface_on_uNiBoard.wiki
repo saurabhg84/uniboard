@@ -15,8 +15,8 @@ The LCD monitor interfaced with the uniboard using VGA connector. The system is 
  # Frequency of vertical synchronization: 60Hz
  # Speed of exchange UART 19200 bps
 
-http://uniboard.googlecode.com/files/1_VGA.JPG
-
+<img src="http://uniboard.googlecode.com/files/1_VGA.JPG"/>
+ 
 == Hardware Description ==
 
 Initial calculations showed that the AVR 8-bit micro-controller from ATMEL, with its 16Mhz clock speed providing approximately 16 MIPS Therefore I concluded that with a clock of 16 MHz I could achieve something in the order of 8 MHz speed of data being transferred out of a port. Following circuit diagram shows minimum hardware required for project.
