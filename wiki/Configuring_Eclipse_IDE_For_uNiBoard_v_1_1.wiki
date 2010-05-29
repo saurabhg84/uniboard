@@ -91,10 +91,11 @@
     <img src="http://uniboard.googlecode.com/files/13_EclipseIDE.png"  width="892" height="524"/>
 
  3. Click on Edit and follow the steps given below:
-  1. Configuration name as uNiBoard
+  1. Configuration name as uNiBoard.
   2. In programmer Harware select USBasp.
   3. In override default port -P   USB.
   4. Click on OK button to save the configuration.
+
     <img src="http://uniboard.googlecode.com/files/14_EclipseIDE.png"  width="892" height="524"/>
 
  4. Select programmer configuration as uNiBoard and click on Apply  button and OK button.
