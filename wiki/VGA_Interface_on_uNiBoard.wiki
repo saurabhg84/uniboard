@@ -34,6 +34,7 @@ The project algorithm of rendering the image is traditional enough, the main kno
 <img src="http://uniboard.googlecode.com/files/3_VGA.JPG" width="801" height="540"/>
 
 == Procedure ==
+<img src="http://uniboard.googlecode.com/files/4_VGA.JPG" width="800" height="437"/>
 
  # Make the connection as per the circuit diagram
  # Upload the program in uC using make utility.
@@ -52,7 +53,7 @@ The project algorithm of rendering the image is traditional enough, the main kno
 
 == Output on LCD monitor == 
 
-<img src="http://uniboard.googlecode.com/files/5_VGA.JPG" width="892" height="540"/>
+<img src="http://uniboard.googlecode.com/files/6_VGA.JPG" width="892" height="540"/>
 
 == Download Sourcecode ==
 http://uniboard.googlecode.com/files/VGA_code.zip
