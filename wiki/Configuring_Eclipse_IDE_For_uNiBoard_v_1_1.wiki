@@ -44,10 +44,10 @@
  1. Open with the Archive manager and drag features folder and plugins to the eclipse folder individually as given below:
 
   1.1. Inside the Archive Manager you will see “.” folder, double click it and go to the features folder and select the folders as shown below and drag it to eclispe/features folder:
-      http://uniboard.googlecode.com/files/7_EclipseIDE.png
+    <img src="http://uniboard.googlecode.com/files/7_EclipseIDE.png"  width="892" height="524"/>
 
   1.2. Similarly inside the Archive Manager, go for the plugins folder and select the folders/files as displayed  below and drag it to eclispe/plugins folder:
-      http://uniboard.googlecode.com/files/8_EclipseIDE.png
+    <img src="http://uniboard.googlecode.com/files/8_EclipseIDE.png"  width="892" height="524"/>
 
 
 *Steps to write down AVR programs on Eclipse IDE.*
@@ -60,15 +60,15 @@
       thinklabs@thinklabs:~$ sudo ~/eclipse/eclipse
 
    3. It will popup the page as shown below:
-      http://uniboard.googlecode.com/files/9_EclipseIDE.png
+    <img src="http://uniboard.googlecode.com/files/9_EclipseIDE.png"  width="892" height="524"/>
 
  2. Create a new project go to file menu > New > C Project
-    http://uniboard.googlecode.com/files/10_EclipseIDE.png
+    <img src="http://uniboard.googlecode.com/files/10_EclipseIDE.png"  width="892" height="524"/>
 
  NOTE: If it doesnot display this “AVR GCC Toolchain plugins” than there AVR Eclipse plugin is missing, try to install it as given in the above section steps to install AVR Eclipse plugin.
 
  3. Write a new project name and click on next. It will ask for selection of CPU name and its frequency and click on finish.
-    http://uniboard.googlecode.com/files/11_EclipseIDE.png
+    <img src="http://uniboard.googlecode.com/files/11_EclipseIDE.png"  width="892" height="524"/>
 
  4. Goto file menu > new > c source file and save it.
 
@@ -79,7 +79,7 @@
 
  7. Now goto the project menu > Build All
     You can see that inside release folder executable binary is generated as shown below:
-    http://uniboard.googlecode.com/files/12_EclipseIDE.png
+    <img src="http://uniboard.googlecode.com/files/12_EclipseIDE.png"  width="892" height="524"/>
 
 
 *Steps to burn your program on uNiBoard v 1.1*
@@ -88,7 +88,7 @@
  1. Goto the properties window of the project by right click on project and properties.
 
  2. Select AVR>Avrdude tab it will display window as shown below:
-http://uniboard.googlecode.com/files/13_EclipseIDE.png
+    <img src="http://uniboard.googlecode.com/files/13_EclipseIDE.png"  width="892" height="524"/>
 
  3. Click on Edit and follow the steps given below:
 
@@ -99,10 +99,10 @@ http://uniboard.googlecode.com/files/13_EclipseIDE.png
   3. In override default port -P   USB.
 
   4. Click on OK button to save the configuration.
-     http://uniboard.googlecode.com/files/14_EclipseIDE.png
+    <img src="http://uniboard.googlecode.com/files/14_EclipseIDE.png"  width="892" height="524"/>
 
  4. Select programmer configuration as uNiBoard and click on Apply  button and OK button.
-    http://uniboard.googlecode.com/files/15_EclipseIDE.png
+    <img src="http://uniboard.googlecode.com/files/15_EclipseIDE.png"  width="892" height="524"/>
 
  5. Now you can burn the program by selecting AVR menu > Upload project to Target Device.
-    http://uniboard.googlecode.com/files/16_EclipseIDE.png
+    <img src="http://uniboard.googlecode.com/files/16_EclipseIDE.png"  width="892" height="524"/>
