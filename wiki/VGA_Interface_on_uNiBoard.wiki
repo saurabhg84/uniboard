@@ -54,9 +54,10 @@ http://uniboard.googlecode.com/files/5_VGA.JPG
 
 == Output on LCD monitor == 
 
-http://uniboard.googlecode.com/files/6_VGA.JPG
+<img src="http://uniboard.googlecode.com/files/6_VGA.JPG width="400" height="600"/>
 
 == Download Sourcecode ==
 http://uniboard.googlecode.com/files/VGA_code.zip
+
 == Author == 
 Amol Jagtap
