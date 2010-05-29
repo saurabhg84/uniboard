@@ -11,7 +11,7 @@
     <img src="http://uniboard.googlecode.com/files/2_EclipseIDE.png"  width="700" height="450"/>
 
  3. Open the eclipse executable to the folder that you have extracted ~/eclipse/ as shown below:
-    http://uniboard.googlecode.com/files/3_EclipseIDE.png
+    <img src="http://uniboard.googlecode.com/files/3_EclipseIDE.png"  width="700" height="450"/>
 
    If it displays the error than there is no JRE in your system, you will need to install it. Follow the steps given to install JRE or else skip the step.
 
@@ -24,7 +24,7 @@
 
     Now start eclipse again an Eclipse IDE will start as shown below:
 
-    http://uniboard.googlecode.com/files/4_EclipseIDE.png
+    <img src="http://uniboard.googlecode.com/files/4_EclipseIDE.png"  width="700" height="450"/>
 
 
 *Steps to install AVR Eclipse plugin:*
@@ -34,10 +34,10 @@
    http://avr-eclipse.sourceforge.net/
 
  Now go to download section and select direct download as shown below:
-   http://uniboard.googlecode.com/files/5_EclipseIDE.png
+    <img src="http://uniboard.googlecode.com/files/5_EclipseIDE.png"  width="892" height="524"/>
 
  Once you have selected Direct download it will go to the sourceforge where plugin can be downloaded as shown below:
-   http://uniboard.googlecode.com/files/6_EclipseIDE.png
+    <img src="http://uniboard.googlecode.com/files/6_EclipseIDE.png"  width="892" height="524"/>
 
  Be careful while extracting the zip files to the ~/eclispe folder.
 
