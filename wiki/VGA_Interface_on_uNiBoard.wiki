@@ -15,7 +15,7 @@ The LCD monitor interfaced with the uniboard using VGA connector. The system is 
  # Frequency of vertical synchronization: 60Hz
  # Speed of exchange UART 19200 bps
 
-<img src="http://uniboard.googlecode.com/files/1_VGA.JPG" width="400" height="600"/>
+<img src="http://uniboard.googlecode.com/files/1_VGA.JPG" width="600" height="800"/>
  
 == Hardware Description ==
 
@@ -25,12 +25,13 @@ NOTE : All the required port pins as well as the UART1 interface are readily ava
 
 Here we are using PE4(INT4) and PE5(INT5) port pins to generate horizontal and vertical synchronization signals respectively where as PB2(MOSI) port pin to output the data from controller. UART1 interface is readily available on uniboard using which the controller receiving the data which is to be send to display.     
 
-http://uniboard.googlecode.com/files/2_VGA.JPG
+<img src="http://uniboard.googlecode.com/files/2_VGA.JPG" width="796" height="772"/>
 
 == Algorithm == 
 
 The project algorithm of rendering the image is traditional enough, the main know-how of the project is the bit-by-bit shifting of the image, utilizing the SPI shift register SPDR via the MOSI pin. Thus two jobs are performed at the same time, when the subsequent byte for rendering is sent, the previous byte is shifted out through the shift register (SPI SPDR MOSI).
 
+<img src="http://uniboard.googlecode.com/files/3_VGA.JPG" width="801" height="540"/>
 
 == Procedure ==
 
@@ -46,11 +47,12 @@ The project algorithm of rendering the image is traditional enough, the main kno
 
 == Compiler and code snapshot ==
 
-http://uniboard.googlecode.com/files/5_VGA.JPG
+<img src="http://uniboard.googlecode.com/files/5_VGA.JPG" width="892" height="540"/>
+
 
 == Output on LCD monitor == 
 
-<img src="http://uniboard.googlecode.com/files/6_VGA.JPG" width="400" height="600"/>
+<img src="http://uniboard.googlecode.com/files/5_VGA.JPG" width="892" height="540"/>
 
 == Download Sourcecode ==
 http://uniboard.googlecode.com/files/VGA_code.zip
