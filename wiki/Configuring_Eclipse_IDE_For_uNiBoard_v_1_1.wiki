@@ -35,20 +35,20 @@
    http://avr-eclipse.sourceforge.net/
 
  Now go to download section and select direct download as shown below:
-    <img src="http://uniboard.googlecode.com/files/5_EclipseIDE.png"  width="897" height="720"/>
+ <img src="http://uniboard.googlecode.com/files/5_EclipseIDE.png"  width="897" height="720"/>
 
  Once you have selected Direct download it will go to the sourceforge where plugin can be downloaded as shown below:
-    <img src="http://uniboard.googlecode.com/files/6_EclipseIDE.png"  width="892" height="524"/>
+ <img src="http://uniboard.googlecode.com/files/6_EclipseIDE.png"  width="892" height="524"/>
 
  Be careful while extracting the zip files to the ~/eclispe folder.
 
  1. Open with the Archive manager and drag features folder and plugins to the eclipse folder individually as given below:
 
   1.1. Inside the Archive Manager you will see “.” folder, double click it and go to the features folder and select the folders as shown below and drag it to eclispe/features folder:
-    <img src="http://uniboard.googlecode.com/files/7_EclipseIDE.png"  width="892" height="524"/>
+ <img src="http://uniboard.googlecode.com/files/7_EclipseIDE.png"  width="892" height="524"/>
 
   1.2. Similarly inside the Archive Manager, go for the plugins folder and select the folders/files as displayed  below and drag it to eclispe/plugins folder:
-    <img src="http://uniboard.googlecode.com/files/8_EclipseIDE.png"  width="892" height="524"/>
+ <img src="http://uniboard.googlecode.com/files/8_EclipseIDE.png"  width="892" height="524"/>
 
 
 *Steps to write down AVR programs on Eclipse IDE.*
@@ -61,15 +61,15 @@
       thinklabs@thinklabs:~$ sudo ~/eclipse/eclipse
 
    3. It will popup the page as shown below:
-    <img src="http://uniboard.googlecode.com/files/9_EclipseIDE.png"  width="892" height="524"/>
+ <img src="http://uniboard.googlecode.com/files/9_EclipseIDE.png"  width="892" height="524"/>
 
  2. Create a new project go to file menu > New > C Project
-    <img src="http://uniboard.googlecode.com/files/10_EclipseIDE.png"  width="892" height="524"/>
+ <img src="http://uniboard.googlecode.com/files/10_EclipseIDE.png"  width="892" height="524"/>
 
  NOTE: If it doesnot display this “AVR GCC Toolchain plugins” than there AVR Eclipse plugin is missing, try to install it as given in the above section steps to install AVR Eclipse plugin.
 
  3. Write a new project name and click on next. It will ask for selection of CPU name and its frequency and click on finish.
-    <img src="http://uniboard.googlecode.com/files/11_EclipseIDE.png"  width="605" height="573"/>
+ <img src="http://uniboard.googlecode.com/files/11_EclipseIDE.png"  width="605" height="573"/>
 
  4. Goto file menu > new > c source file and save it.
 
@@ -80,7 +80,7 @@
 
  7. Now goto the project menu > Build All
     You can see that inside release folder executable binary is generated as shown below:
-    <img src="http://uniboard.googlecode.com/files/12_EclipseIDE.png"  width="892" height="524"/>
+ <img src="http://uniboard.googlecode.com/files/12_EclipseIDE.png"  width="892" height="524"/>
 
 
 *Steps to burn your program on uNiBoard v 1.1*
@@ -89,7 +89,7 @@
  1. Goto the properties window of the project by right click on project and properties.
 
  2. Select AVR > Avrdude tab it will display window as shown below:
-    <img src="http://uniboard.googlecode.com/files/13_EclipseIDE.png"  width="892" height="524"/>
+ <img src="http://uniboard.googlecode.com/files/13_EclipseIDE.png"  width="892" height="524"/>
 
  3. Click on Edit and follow the steps given below:
    1. Configuration name as uNiBoard.
@@ -97,10 +97,10 @@
    3. In override default port -P   USB.
    4. Click on OK button to save the configuration.
 
-   <img src="http://uniboard.googlecode.com/files/14_EclipseIDE.png"  width="892" height="524"/>
+ <img src="http://uniboard.googlecode.com/files/14_EclipseIDE.png"  width="892" height="524"/>
 
  4. Select programmer configuration as uNiBoard and click on Apply  button and OK button.
-    <img src="http://uniboard.googlecode.com/files/15_EclipseIDE.png"  width="892" height="524"/>
+ <img src="http://uniboard.googlecode.com/files/15_EclipseIDE.png"  width="892" height="524"/>
 
  5. Now you can burn the program by selecting AVR menu > Upload project to Target Device.
-    <img src="http://uniboard.googlecode.com/files/16_EclipseIDE.png"  width="892" height="475"/>
+ <img src="http://uniboard.googlecode.com/files/16_EclipseIDE.png"  width="892" height="475"/>
