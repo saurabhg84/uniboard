@@ -13,9 +13,8 @@
 
 ==Steps to install AVR Eclipse plugin:==
 
- # Now close the Eclipse IDE and download the AVR Eclipse plugin from the link given below:
-   http://avr-eclipse.sourceforge.net/
-   Now go to download section and select direct download as shown below: <img src="http://uniboard.googlecode.com/files/5_EclipseIDE.png"  width="897" height="720"/> Once you have selected Direct download it will go to the sourceforge where plugin can be downloaded as shown below: <img src="http://uniboard.googlecode.com/files/6_EclipseIDE.png"  width="892" height="524"/> Be careful while extracting the zip files to the ~/eclispe folder.<br>
+ # Now close the Eclipse IDE and download the AVR Eclipse plugin from the link given below: <br> http://avr-eclipse.sourceforge.net/
+ # Now go to download section and select direct download as shown below: <img src="http://uniboard.googlecode.com/files/5_EclipseIDE.png"  width="897" height="720"/> <br> Once you have selected Direct download it will go to the sourceforge where plugin can be downloaded as shown below: <img src="http://uniboard.googlecode.com/files/6_EclipseIDE.png"  width="892" height="524"/> Be careful while extracting the zip files to the ~/eclispe folder.<br>
  # Open with the Archive manager and drag features folder and plugins to the eclipse folder individually as given below:<br>
   # Inside the Archive Manager you will see “.” folder, double click it and go to the features folder and select the folders as shown below and drag it to eclispe/features folder: <img src="http://uniboard.googlecode.com/files/7_EclipseIDE.png"  width="892" height="524"/><br>
   # Similarly inside the Archive Manager, go for the plugins folder and select the folders/files as displayed  below and drag it to eclispe/plugins folder: <img src="http://uniboard.googlecode.com/files/8_EclipseIDE.png"  width="892" height="524"/>
