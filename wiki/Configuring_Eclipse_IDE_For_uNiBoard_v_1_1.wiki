@@ -2,8 +2,8 @@
 
 ==Steps to install Eclipse IDE:==
 
- # Download Eclipse from for C/C++ developers as shown below: <img src="http://uniboard.googlecode.com/files/1_EclipseIDE.png"  width="892" height="524"/> {{{}}}
- # Now Extract the package: Right click the package and open with Archive Manager and extract it to home directory as shown below: <img src="http://uniboard.googlecode.com/files/2_EclipseIDE.png"  width="892" height="524"/> {{{}}}
+ # Download Eclipse from for C/C++ developers as shown below: <img src="http://uniboard.googlecode.com/files/1_EclipseIDE.png"  width="892" height="524"/> <br>
+ # Now Extract the package: Right click the package and open with Archive Manager and extract it to home directory as shown below: <img src="http://uniboard.googlecode.com/files/2_EclipseIDE.png"  width="892" height="524"/> <br>
  # Open the eclipse executable to the folder that you have extracted ~/eclipse/ as shown below: <img src="http://uniboard.googlecode.com/files/3_EclipseIDE.png"  width="892" height="524"/> If it displays the error than there is no JRE in your system, you will need to install it. Follow the steps given to install JRE or else skip the step. <br> # Run the following command on the prompt to install JRE as shown below:
   # Open Applications > Accessories > Terminal
   # Execute the command given below
