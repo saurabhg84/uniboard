@@ -10,7 +10,7 @@
   # Execute the command given below
  _thinklabs@thinklabs:~$ sudo aptitude install default-jre_<br> <br> This will take some time to install. <br><br> Now start eclipse again an Eclipse IDE will start as shown below: <img src="http://uniboard.googlecode.com/files/4_EclipseIDE.png"  width="892" height="524"/>
 
-
+<br><br>
 ==Steps to install AVR Eclipse plugin:==
 
  # Now close the Eclipse IDE and download the AVR Eclipse plugin from the link given below: <br> http://avr-eclipse.sourceforge.net/ <br> <br>
@@ -19,7 +19,7 @@
   # Inside the Archive Manager you will see “.” folder, double click it and go to the features folder and select the folders as shown below and drag it to eclispe/features folder: <img src="http://uniboard.googlecode.com/files/7_EclipseIDE.png"  width="892" height="524"/> <br> 
   # Similarly inside the Archive Manager, go for the plugins folder and select the folders/files as displayed  below and drag it to eclispe/plugins folder: <img src="http://uniboard.googlecode.com/files/8_EclipseIDE.png"  width="892" height="524"/>
 
-
+<br><br>
 ==Steps to write down AVR programs on Eclipse IDE.==
 
  # Open the eclipse executable as a root user, issue the command on the prompt as shown below:<br> 
@@ -34,7 +34,7 @@
  # Select the active build configuration as Release <br>Project menu > Build configurations > set active > 2 Release <br>
  # Now goto the project menu > Build All <br> You can see that inside release folder executable binary is generated as shown below: <img src="http://uniboard.googlecode.com/files/12_EclipseIDE.png"  width="892" height="524"/>
 
-
+<br><br>
 ==Steps to burn your program on uNiBoard v 1.1==
 
  # Now if you want  to load the executable on uNiBoard v 1.1, you will need to setup the avrdude programmer.<br> 
