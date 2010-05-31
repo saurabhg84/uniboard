@@ -2,9 +2,9 @@
 
 ==Steps to install Eclipse IDE:==
 
- # Download Eclipse from for C/C++ developers as shown below: <br> <img src="http://uniboard.googlecode.com/files/1_EclipseIDE.png"  width="892" height="524"/> <br>
+ # Download Eclipse from for C/C++ developers as shown below: <img src="http://uniboard.googlecode.com/files/1_EclipseIDE.png"  width="892" height="524"/> <br>
  # Now Extract the package: Right click the package and open with Archive Manager and extract it to home directory as shown below: <img src="http://uniboard.googlecode.com/files/2_EclipseIDE.png"  width="892" height="524"/> <br>
- # Open the eclipse executable to the folder that you have extracted ~/eclipse/ as shown below: <br> <img src="http://uniboard.googlecode.com/files/3_EclipseIDE.png"  width="892" height="524"/> If it displays the error than there is no JRE in your system, you will need to install it. Follow the steps given to install JRE or else skip the step. <br> # Run the following command on the prompt to install JRE as shown below:
+ # Open the eclipse executable to the folder that you have extracted ~/eclipse/ as shown below: <img src="http://uniboard.googlecode.com/files/3_EclipseIDE.png"  width="892" height="524"/> If it displays the error than there is no JRE in your system, you will need to install it. Follow the steps given to install JRE or else skip the step. <br> # Run the following command on the prompt to install JRE as shown below:
   # Open Applications > Accessories > Terminal
   # Execute the command given below
     thinklabs@thinklabs:~$ sudo aptitude install default-jre
@@ -16,22 +16,22 @@
 
  # Now close the Eclipse IDE and download the AVR Eclipse plugin from the link given below:
    http://avr-eclipse.sourceforge.net/
-   Now go to download section and select direct download as shown below: <img src="http://uniboard.googlecode.com/files/5_EclipseIDE.png"  width="897" height="720"/> Once you have selected Direct download it will go to the sourceforge where plugin can be downloaded as shown below: <img src="http://uniboard.googlecode.com/files/6_EclipseIDE.png"  width="892" height="524"/> Be careful while extracting the zip files to the ~/eclispe folder.
- # Open with the Archive manager and drag features folder and plugins to the eclipse folder individually as given below:
-  # Inside the Archive Manager you will see “.” folder, double click it and go to the features folder and select the folders as shown below and drag it to eclispe/features folder: <img src="http://uniboard.googlecode.com/files/7_EclipseIDE.png"  width="892" height="524"/>
+   Now go to download section and select direct download as shown below: <img src="http://uniboard.googlecode.com/files/5_EclipseIDE.png"  width="897" height="720"/> Once you have selected Direct download it will go to the sourceforge where plugin can be downloaded as shown below: <img src="http://uniboard.googlecode.com/files/6_EclipseIDE.png"  width="892" height="524"/> Be careful while extracting the zip files to the ~/eclispe folder.<br>
+ # Open with the Archive manager and drag features folder and plugins to the eclipse folder individually as given below:<br>
+  # Inside the Archive Manager you will see “.” folder, double click it and go to the features folder and select the folders as shown below and drag it to eclispe/features folder: <img src="http://uniboard.googlecode.com/files/7_EclipseIDE.png"  width="892" height="524"/><br>
   # Similarly inside the Archive Manager, go for the plugins folder and select the folders/files as displayed  below and drag it to eclispe/plugins folder: <img src="http://uniboard.googlecode.com/files/8_EclipseIDE.png"  width="892" height="524"/>
 
 
 ==Steps to write down AVR programs on Eclipse IDE.==
 
- # Open the eclipse executable as a root user, issue the command on the prompt as shown below:
+ # Open the eclipse executable as a root user, issue the command on the prompt as shown below:<br>
   # Open Applications > Accessories > Terminal
   # Execute the command given below:
     thinklabs@thinklabs:~$ sudo ~/eclipse/eclipse
   # It will popup the page as shown below: <img src="http://uniboard.googlecode.com/files/9_EclipseIDE.png"  width="892" height="524"/>
 
- # Create a new project go to file menu > New > C Project <img src="http://uniboard.googlecode.com/files/10_EclipseIDE.png"  width="892" height="524"/> NOTE: If it doesnot display this “AVR GCC Toolchain plugins” than there AVR Eclipse plugin is missing, try to install it as given in the above section steps to install AVR Eclipse plugin.
- # Write a new project name and click on next. It will ask for selection of CPU name and its frequency and click on finish. <img src="http://uniboard.googlecode.com/files/11_EclipseIDE.png"  width="605" height="573"/>
+ # Create a new project go to file menu > New > C Project <img src="http://uniboard.googlecode.com/files/10_EclipseIDE.png"  width="892" height="524"/> NOTE: If it doesnot display this “AVR GCC Toolchain plugins” than there AVR Eclipse plugin is missing, try to install it as given in the above section steps to install AVR Eclipse plugin.<br>
+ # Write a new project name and click on next. It will ask for selection of CPU name and its frequency and click on finish. <img src="http://uniboard.googlecode.com/files/11_EclipseIDE.png"  width="605" height="573"/><br>
  # Goto file menu > new > c source file and save it.
  # Write down the code given below
  # Select the active build configuration as Release
