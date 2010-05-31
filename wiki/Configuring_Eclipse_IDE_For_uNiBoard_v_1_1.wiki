@@ -1,6 +1,6 @@
 =_Article to Develop AVR programs on Eclipse IDE_=
 
-==Steps to install<content type="html"><BR></content> Eclipse IDE:==
+==Steps to install<content type="html">br</content> Eclipse IDE:==
 
  # Download Eclipse from for C/C++ developers as shown below: <img src="http://uniboard.googlecode.com/files/1_EclipseIDE.png"  width="892" height="524"/>
  # Now Extract the package: Right click the package and open with Archive Manager and extract it to home directory as shown below: <img src="http://uniboard.googlecode.com/files/2_EclipseIDE.png"  width="892" height="524"/>
