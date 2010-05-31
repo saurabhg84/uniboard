@@ -27,7 +27,7 @@
   # Execute the command given below:
     thinklabs@thinklabs:~$ sudo ~/eclipse/eclipse
   # It will popup the page as shown below: <img src="http://uniboard.googlecode.com/files/9_EclipseIDE.png"  width="892" height="524"/> <br>
- # Create a new project go to file menu > New > C Project <img src="http://uniboard.googlecode.com/files/10_EclipseIDE.png"  width="892" height="524"/> NOTE: If it doesnot display this “AVR GCC Toolchain plugins” than there AVR Eclipse plugin is missing, try to install it as given in the above section steps to install AVR Eclipse plugin. <br>
+ # Create a new project go to file menu > New > C Project <img src="http://uniboard.googlecode.com/files/10_EclipseIDE.png"  width="892" height="524"/> NOTE: If it doesnot display this “AVR GCC Toolchain plugins” than there AVR Eclipse plugin is missing, try to install it as given in the above section steps to install AVR Eclipse plugin. <br><br>
  # Write a new project name and click on next. It will ask for selection of CPU name and its frequency and click on finish. <img src="http://uniboard.googlecode.com/files/11_EclipseIDE.png"  width="605" height="573"/> <br> 
  # Goto file menu > new > c source file and save it. <br>
  # Write down the code given below:
