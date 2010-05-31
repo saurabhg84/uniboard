@@ -42,13 +42,13 @@
 
 ==Steps to burn your program on uNiBoard v 1.1==
 
- # Now if you want  to load the executable on uNiBoard v 1.1, you will need to setup the avrdude programmer.
- # Goto the properties window of the project by right click on project and properties.
- # Select AVR > Avrdude tab it will display window as shown below: <img src="http://uniboard.googlecode.com/files/13_EclipseIDE.png"  width="892" height="524"/>
+ # Now if you want  to load the executable on uNiBoard v 1.1, you will need to setup the avrdude programmer. <br> 
+ # Goto the properties window of the project by right click on project and properties. <br> 
+ # Select AVR > Avrdude tab it will display window as shown below: <img src="http://uniboard.googlecode.com/files/13_EclipseIDE.png"  width="892" height="524"/> <br> 
  # Click on Edit and follow the steps given below:
   # Configuration name as uNiBoard.
   # In programmer Hardware select USBasp.
   # In override default port -P   USB.
-  # Click on OK button to save the configuration. <img src="http://uniboard.googlecode.com/files/14_EclipseIDE.png"  width="892" height="524"/>
+  # Click on OK button to save the configuration. <img src="http://uniboard.googlecode.com/files/14_EclipseIDE.png"  width="892" height="524"/> <br> 
  # Select programmer configuration as uNiBoard and click on Apply  button and OK button. <img src="http://uniboard.googlecode.com/files/15_EclipseIDE.png"  width="892" height="524"/> <br> 
  # Now you can burn the program by selecting AVR menu > Upload project to Target Device. <img src="http://uniboard.googlecode.com/files/16_EclipseIDE.png"  width="892" height="475"/>
