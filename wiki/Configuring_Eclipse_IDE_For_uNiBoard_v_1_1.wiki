@@ -31,7 +31,7 @@
  # Goto file menu > new > c source file and save it. <br><br>
  # Write down the code given below:<br><br>
  # Select the active build configuration as Release <br>Project menu > Build configurations > set active > 2 Release <br><br>
- # Now goto the project menu > Build All <br> You can see that inside release folder executable binary is generated as shown below: <img src="http://uniboard.googlecode.com/files/12_EclipseIDE.png"  width="892" height="524"/>
+ # Now goto the project menu > Build All <br><br> You can see that inside release folder executable binary is generated as shown below: <img src="http://uniboard.googlecode.com/files/12_EclipseIDE.png"  width="892" height="524"/>
 
 <br><br>
 ==Steps to burn your program on uNiBoard v 1.1==
