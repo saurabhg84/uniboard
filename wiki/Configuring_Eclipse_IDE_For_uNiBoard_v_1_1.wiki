@@ -22,15 +22,15 @@
 <br><br>
 ==Steps to write down AVR programs on Eclipse IDE.==
 
- # Open the eclipse executable as a root user, issue the command on the prompt as shown below:<br> 
-  # Open Applications > Accessories > Terminal <br> 
-  # Execute the command given below: <br>_thinklabs@thinklabs:~$ sudo ~/eclipse/eclipse_
-  # It will popup the page as shown below: <img src="http://uniboard.googlecode.com/files/9_EclipseIDE.png"  width="892" height="524"/> <br>
+ # Open the eclipse executable as a root user, issue the command on the prompt as shown below:
+  # Open Applications > Accessories > Terminal <br><br> 
+  # Execute the command given below: <br>_thinklabs@thinklabs:~$ sudo ~/eclipse/eclipse_ <br><br>
+  # It will popup the page as shown below: <img src="http://uniboard.googlecode.com/files/9_EclipseIDE.png"  width="892" height="524"/> <br><br>
  # Create a new project go to file menu > New > C Project <img src="http://uniboard.googlecode.com/files/10_EclipseIDE.png"  width="892" height="524"/> NOTE: If it doesnot display this “AVR GCC Toolchain plugins” than there AVR Eclipse plugin is missing, try to install it as given in the above section steps to install AVR Eclipse plugin. <br><br>
- # Write a new project name and click on next. It will ask for selection of CPU name and its frequency and click on finish. <img src="http://uniboard.googlecode.com/files/11_EclipseIDE.png"  width="605" height="573"/> <br> 
- # Goto file menu > new > c source file and save it. <br>
- # Write down the code given below:
- # Select the active build configuration as Release <br>Project menu > Build configurations > set active > 2 Release <br>
+ # Write a new project name and click on next. It will ask for selection of CPU name and its frequency and click on finish. <img src="http://uniboard.googlecode.com/files/11_EclipseIDE.png"  width="605" height="573"/> <br><br> 
+ # Goto file menu > new > c source file and save it. <br><br>
+ # Write down the code given below:<br>
+ # Select the active build configuration as Release <br>Project menu > Build configurations > set active > 2 Release <br><br>
  # Now goto the project menu > Build All <br> You can see that inside release folder executable binary is generated as shown below: <img src="http://uniboard.googlecode.com/files/12_EclipseIDE.png"  width="892" height="524"/>
 
 <br><br>
