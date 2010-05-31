@@ -1,6 +1,6 @@
-*_Article to Develop AVR programs on Eclipse IDE_*
+=_Article to Develop AVR programs on Eclipse IDE_=
 
-=Steps to install Eclipse IDE:=
+==Steps to install Eclipse IDE:==
 
 # Download Eclipse from for C/C++ developers as shown below:
  <img src="http://uniboard.googlecode.com/files/1_EclipseIDE.png"  width="892" height="524"/>
@@ -22,7 +22,7 @@
  <img src="http://uniboard.googlecode.com/files/4_EclipseIDE.png"  width="892" height="524"/>
 
 
-*Steps to install AVR Eclipse plugin:*
+==Steps to install AVR Eclipse plugin:==
 
  Now close the Eclipse IDE and download the AVR Eclipse plugin from the link given below:
 
@@ -48,7 +48,7 @@
  <img src="http://uniboard.googlecode.com/files/8_EclipseIDE.png"  width="892" height="524"/>
 
 
-*Steps to write down AVR programs on Eclipse IDE.*
+==Steps to write down AVR programs on Eclipse IDE.==
 
  1. Open the eclipse executable as a root user, issue the command on the prompt as shown below:
 
@@ -83,7 +83,7 @@
  <img src="http://uniboard.googlecode.com/files/12_EclipseIDE.png"  width="892" height="524"/>
 
 
-*Steps to burn your program on uNiBoard v 1.1*
+==Steps to burn your program on uNiBoard v 1.1==
 
  Now if you want  to load the executable on uNiBoard v 1.1, you will need to setup the avrdude programmer.
  1. Goto the properties window of the project by right click on project and properties.
