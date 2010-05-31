@@ -50,5 +50,5 @@
   # In programmer Hardware select USBasp.
   # In override default port -P   USB.
   # Click on OK button to save the configuration. <img src="http://uniboard.googlecode.com/files/14_EclipseIDE.png"  width="892" height="524"/>
- # Select programmer configuration as uNiBoard and click on Apply  button and OK button. <img src="http://uniboard.googlecode.com/files/15_EclipseIDE.png"  width="892" height="524"/><br>
+ # Select programmer configuration as uNiBoard and click on Apply  button and OK button. <img src="http://uniboard.googlecode.com/files/15_EclipseIDE.png"  width="892" height="524"/> <br> 
  # Now you can burn the program by selecting AVR menu > Upload project to Target Device. <img src="http://uniboard.googlecode.com/files/16_EclipseIDE.png"  width="892" height="475"/>
