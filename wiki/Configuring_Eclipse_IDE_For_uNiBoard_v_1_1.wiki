@@ -17,15 +17,15 @@
    If it displays the error than there is no JRE in your system, you will need to install it. Follow the steps given to install JRE or else skip the step.
 
  4. Run the following command on the prompt to install JRE as shown below:
-  1. Open Applications > Accessories > Terminal
-  2. Execute the command given below:
-     thinklabs@thinklabs:~$ sudo aptitude install default-jre
+   1. Open Applications > Accessories > Terminal
+   2. Execute the command given below:
+      thinklabs@thinklabs:~$ sudo aptitude install default-jre
  
-    This will take some time to install.
+     This will take some time to install.
 
-    Now start eclipse again an Eclipse IDE will start as shown below:
+     Now start eclipse again an Eclipse IDE will start as shown below:
 
-    <img src="http://uniboard.googlecode.com/files/4_EclipseIDE.png"  width="892" height="524"/>
+ <img src="http://uniboard.googlecode.com/files/4_EclipseIDE.png"  width="892" height="524"/>
 
 
 *Steps to install AVR Eclipse plugin:*
