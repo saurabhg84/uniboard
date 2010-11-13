@@ -1,0 +1,27 @@
+#summary Videos/Images of projects based on uNiBoard v1.1 (Courtesy:Google/youtube search)
+#labels Phase-Implementation,Featured
+
+= Introduction =
+
+Its been pretty long since the site has seen any major updates. A recent search on you-tube made me aware of some cool projects / videos that people have posted based on uNiBoard v1.1. Just consolidating a few of them here:
+
+
+== Home Automation & security using uNiBoard ==
+
+<wiki:video url="http://www.youtube.com/watch?v=I8Diuyly1O0"/>
+
+== Temperature sensing using uNiBoard ==
+
+<wiki:video url="http://www.youtube.com/watch?v=92yvsfuKHC8"/>
+
+== Cyclometer using uNiBoard ==
+
+<wiki:video url="http://www.youtube.com/watch?v=SwpSz1vHkRM"/>
+
+== Highway speed sensing & automatic braking system using uNiBoard ==
+
+<wiki:video url="http://www.youtube.com/watch?v=JTnyS5_lWnk"/>
+
+===Author===
+[http://groups.google.com/groups/profile?enc_user=z-Q1xhQAAAA5Iqpc8pSi5i01mS42QePiOPANdqfI6prRsqjc7uCt1A Saurabh Gandhi]
+
