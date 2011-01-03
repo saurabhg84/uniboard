@@ -3,7 +3,7 @@
 
 = Introduction =
 
-Its been pretty long since the site has seen any major updates. A recent search on you-tube made me aware of some cool projects / videos that people have posted based on uNiBoard v1.1. Just consolidating a few of them here:
+Its been pretty long since the site has seen any major updates. A recent search on you-tube made us aware of some cool projects / videos that people have posted based on uNiBoard v1.1. Just consolidating a few of them here:
 
 
 == Home Automation & security using uNiBoard ==
