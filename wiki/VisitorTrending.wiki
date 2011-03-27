@@ -1,4 +1,4 @@
-#summary Interesting visitor trending and statistics (Courtesy: Google Analytics):
+#summary Interesting visitor trending and statistics (Courtesy: Google Analytics)
 
 == Analytics ==
 
@@ -40,3 +40,11 @@ http://uniboard.googlecode.com/files/traffic_sources2.jpg
 Our earlier claim of organic growth can be once again proved here since the traffic on the portal is mainly either direct traffic or through search engines (mainly google). No online marketing / publicity through referral sites has been carried out.
 
 Interestingly, a few of our articles on http://beagleboard.org, http://thinklabs.in (parent site) and http://embedded.com have also generated a large number of leads.
+
+== Browser and OS ==
+
+Last but not the least, let us have a look at the web browsers and operating systems used by visitors and which one tops the list...
+
+http://uniboard.googlecode.com/files/browsers.jpg
+
+http://uniboard.googlecode.com/files/os.jpg
