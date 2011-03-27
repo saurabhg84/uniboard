@@ -1,0 +1,10 @@
+#summary Interesting visitor trending and statistics (Courtesy: Google Analytics):
+
+== Analytics ==
+
+Over the couple of years, we have been monitoring interesting parameters of the visitors coming on the uNiBoard portal which include total unique visits over a period of time, geographical distribution (national as well as international), visitor loyalty (i.e. same visitor visiting the website again), traffic sources, etc. Sharing this would give some interesting insights, so here it goes...
+
+
+== Visitor overview ==
+
+http://uniboard.googlecode.com/files/analytics1.JPG
