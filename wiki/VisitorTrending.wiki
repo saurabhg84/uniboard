@@ -21,3 +21,12 @@ As can be expected maximum number of visits have been registered from India foll
 http://uniboard.googlecode.com/files/analytics3.jpg
 
 Apart from these, there have been more than 100 unique visitors from Italy, Netherlands, Canada, Pakistan, Russia, Sweden, South Korea, Sri-Lanka and Bangladesh.
+
+
+== Geographical distribution of visitors (National) ==
+
+Within India the distribution goes this way...
+
+http://uniboard.googlecode.com/files/indian_distribution1.jpg
+
+http://uniboard.googlecode.com/files/indian_distribution2.jpg
