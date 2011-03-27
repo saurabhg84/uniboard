@@ -16,4 +16,8 @@ As can be seen, the number of visitors peaked during October 2009 period and at 
 
 http://uniboard.googlecode.com/files/international_visitors.jpg
 
+As can be expected maximum number of visits have been registered from India followed by the United States. A summary of the top ten countries from where maximum visitors have shown up is pasted below:
+
 http://uniboard.googlecode.com/files/analytics3.jpg
+
+Apart from these, there have been more than 100 unique visitors from Italy, Netherlands, Canada, Pakistan, Russia, Sweden, South Korea, Sri-Lanka and Bangladesh.
