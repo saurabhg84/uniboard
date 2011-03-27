@@ -45,6 +45,15 @@ Interestingly, a few of our articles on http://beagleboard.org, http://thinklabs
 
 Last but not the least, let us have a look at the web browsers and operating systems used by visitors and which one tops the list...
 
-http://uniboard.googlecode.com/files/browsers.jpg
+http://uniboard.googlecode.com/files/browsers1.jpg
 
-http://uniboard.googlecode.com/files/os.jpg
+http://uniboard.googlecode.com/files/os1.jpg
+
+Encouraging to see firefox as the top rated browser and linux as still the second most preferred OS..any comments?
+
+== Author ==
+[http://groups.google.com/groups/profile?enc_user=z-Q1xhQAAAA5Iqpc8pSi5i01mS42QePiOPANdqfI6prRsqjc7uCt1A Saurabh Gandhi]
+
+== Courtesy ==
+
+[http://analytics.google.com Google Analytics]
