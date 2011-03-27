@@ -7,4 +7,4 @@ Over the couple of years, we have been monitoring interesting parameters of the 
 
 == Visitor overview ==
 
-http://uniboard.googlecode.com/files/analytics1.JPG
+http://uniboard.googlecode.com/files/analytics1.jpg
