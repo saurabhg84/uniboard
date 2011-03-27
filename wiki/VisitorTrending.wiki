@@ -1,4 +1,4 @@
-#summary Interesting visitor trending and statistics (Courtesy: Google Analytics)
+#summary Interesting visitor trends and statistics (Courtesy: Google Analytics)
 #labels Featured,Phase-Support
 
 == Analytics ==
