@@ -38,3 +38,5 @@ http://uniboard.googlecode.com/files/traffic_sources1.jpg
 http://uniboard.googlecode.com/files/traffic_sources2.jpg
 
 Our earlier claim of organic growth can be once again proved here since the traffic on the portal is mainly either direct traffic or through search engines (mainly google). No online marketing / publicity through referral sites has been carried out.
+
+Interestingly, a few of our articles on beagleboard.org, thinklabs.in (parent site) and embedded.com have also generated a large number of leads.
