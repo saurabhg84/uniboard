@@ -9,3 +9,11 @@ The statistics shown below represent data gathered during the period from 30th M
 == Visitor overview ==
 
 http://uniboard.googlecode.com/files/analytics2.jpg
+
+As can be seen, the number of visitors peaked during October 2009 period and at present the portal registers around 25 unique visits per day. This is purely organic which can be concluded from the further statistics represented below.
+
+== Geographical distribution of visitors (International) ==
+
+http://uniboard.googlecode.com/files/international_visitors.jpg
+
+http://uniboard.googlecode.com/files/analytics3.jpg
