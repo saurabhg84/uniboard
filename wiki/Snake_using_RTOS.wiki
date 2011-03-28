@@ -70,4 +70,4 @@ Interested in trying out SNAKE on uNiBoard v1.1. Click [http://code.google.com/p
    # Mr. Julius Lukko (VT102 library usage)
 
 ===NOTE:===
-uC/OS-II is available from www.micirum.com. The RTOS is open source and available for evaluation if used for educational purposes/peaceful research. For commercial usage of uC/OS-II, refer to the Micrium website for a detailed clarification on the licensing policy.
+uC/OS-II is available from http://www.micirum.com. The RTOS is open source and available for evaluation if used for educational purposes/peaceful research. For commercial usage of uC/OS-II, refer to the Micrium website for a detailed clarification on the licensing policy.
