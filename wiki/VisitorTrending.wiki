@@ -3,7 +3,7 @@
 
 == Analytics ==
 
-Over the past couple of years, we have been monitoring interesting parameters of the visitors coming on the uNiBoard portal which include total unique visits over a period of time, geographical distribution (national as well as international), visitor loyalty (i.e. same visitor visiting the website again), traffic sources, etc. Sharing this would give some interesting insights, so here it goes...
+Over the past couple of years, we have been monitoring interesting parameters of the visitors coming on the uNiBoard portal which include total unique visits over a period of time, geographical distribution (national as well as international), visitor loyalty (i.e. same visitor visiting the website again), traffic sources, etc. Sharing this should give some interesting insights, so here it goes...
 
 The statistics shown below represent data gathered during the period from 30th March 2008 to 30th March 2011.
 
