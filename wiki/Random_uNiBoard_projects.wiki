@@ -32,7 +32,7 @@ Nilkanth Pathak
 
 == Electronic Voting System using uNiBoard ==
 
-<wiki:video url="http://youtu.be/fs12ZEK2veA"/>
+<wiki:video url="http://www.youtube.com/watch?v=fs12ZEK2veA&feature=related"/>
 
 === Author(s) ===
 
