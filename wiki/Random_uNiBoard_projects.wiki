@@ -41,8 +41,7 @@ Purvi Shah
 == Scrolling LED display using uNiBoard ==
 
 
-<wiki:video url="http://www.youtube.com/watch?v=Tb_YyJa71Co
-"/>
+<wiki:video url="http://www.youtube.com/watch?v=Tb_YyJa71Co"/>
 
 === Author(s) ===
 
