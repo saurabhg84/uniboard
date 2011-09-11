@@ -40,15 +40,23 @@ Purvi Shah
 
 == Scrolling LED display using uNiBoard ==
 
-
 <wiki:video url="http://www.youtube.com/watch?v=Tb_YyJa71Co"/>
 
 === Author(s) ===
 
 Sohil Patel
 
+== Clock with memory using uNiBoard ==
+
+<wiki:video url="http://www.youtube.com/watch?v=JRCJJgbY5q4"/>
+
+=== Author(s) ===
+
+Parshv Sanghvi
+
+
 ===NOTE===
-People who were involved in these projects please post a comment here so that we can edit this section
+People who were involved in these projects (or other uNiBoard projects not mentioned here) please post a comment here so that we can edit this section. It would be great if you could write a wikipage on your project and put up the source code here. Interested people can send a mail on openuniboard@googlegroups.com.
 
 ===Compiled by:===
 [http://groups.google.com/groups/profile?enc_user=z-Q1xhQAAAA5Iqpc8pSi5i01mS42QePiOPANdqfI6prRsqjc7uCt1A Saurabh Gandhi]
