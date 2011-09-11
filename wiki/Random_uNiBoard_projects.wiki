@@ -22,8 +22,25 @@ Its been pretty long since the site has seen any major updates. A recent search 
 
 <wiki:video url="http://www.youtube.com/watch?v=JTnyS5_lWnk"/>
 
-===Authors===
-Unknown (People who were involved in these projects please post a comment here so that we can edit this section)
+== PIN Lock using uNiBoard ==
+
+<wiki:video url="http://youtu.be/SQG8ilblMbI"/>
+
+=== Author(s) ===
+
+Nilkanth Pathak
+
+== Electronic Voting System using uNiBoard ==
+
+<wiki:video url="http://youtu.be/fs12ZEK2veA"/>
+
+=== Author(s) ===
+
+Purvi Shah
+
+
+===NOTE===
+People who were involved in these projects please post a comment here so that we can edit this section
 
 ===Compiled by:===
 [http://groups.google.com/groups/profile?enc_user=z-Q1xhQAAAA5Iqpc8pSi5i01mS42QePiOPANdqfI6prRsqjc7uCt1A Saurabh Gandhi]
