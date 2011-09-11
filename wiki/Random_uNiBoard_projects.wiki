@@ -38,6 +38,15 @@ Nilkanth Pathak
 
 Purvi Shah
 
+== Scrolling LED display using uNiBoard ==
+
+
+<wiki:video url="http://www.youtube.com/watch?v=Tb_YyJa71Co
+"/>
+
+=== Author(s) ===
+
+Sohil Patel
 
 ===NOTE===
 People who were involved in these projects please post a comment here so that we can edit this section
