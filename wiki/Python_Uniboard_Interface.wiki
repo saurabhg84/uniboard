@@ -14,9 +14,9 @@ One of Python application is using it in embedded C. I have attempted to explain
 
 == Packages for Python: ==
     * Python IDE 2.6 (a GUI front end for Python, get that from Ubuntu Software Center)
-    * PySerial Module
-    * NumPy Module (Numerical Python, get that from Ubuntu Software Center)
-    * MatPlotLib (MATLAB like Plotting Library, get that from Ubuntu Software Center)
+    * PySerial    Module
+    * NumPy    Module (Numerical Python, get that from Ubuntu Software Center)
+    * MatPlotLib   (MATLAB like Plotting Library, get that from Ubuntu Software Center)
 
 == Packages for uNiboard: ==
     * avrdude_5.10-1ubuntu1_i386.deb (AVR DUDE is software to read/write contents of ROM-EEPROM of AVR micro-controllers )
