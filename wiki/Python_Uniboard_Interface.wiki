@@ -1,0 +1,27 @@
+#summary Interfacing uNiBoard's serial port to Python
+
+= Introduction =
+
+Python is very flexible high level language which is easy to understand as well as easy to work with. Scope of Python is wide, it can be used in web technology, systems, to make GUI (Graphical User Interface) softwares, scientific computation etc. One of the largest benefit of using Python is that it is open source and it has large user based modules which can be directly used and saves lot of work and effort. Read more about Python  
+[http://en.wikipedia.org/wiki/Python_%28programming_language%29 here]
+
+One of Python application is using it in embedded C. I have attempted to explain one of its application by using serial port communication between our uNiBoard and our PC. Note that all the software/hardwares which I have used are open source so that everybody can get access to it.
+
+= Pre-requisites =
+
+== Operating System: ==
+    * Ubuntu 11.04 (essentially a Linux variant, you can get that directly from Internet)
+
+== Packages for Python: ==
+    * Python IDE 2.6 (a GUI front end for Python, get that from Ubuntu Software Center)
+    * PySerial Module (get that from Ubuntu Software Center)
+    * NumPy Module (Numerical Python, get that from Ubuntu Software Center)
+    * MatPlotLib (MATLAB like Plotting Library, get that from Ubuntu Software Center)
+
+== Packages for uNiboard: ==
+    * avrdude_5.10-1ubuntu1_i386.deb (AVR DUDE is software to read/write contents of ROM-EEPROM of AVR micro-controllers )
+    * avr-libc_1%3a1.6.7-1ubuntu2_all.deb (AVR Library)
+    * binutils-avr_2.20-2_i386.deb (To manipulate binary and object files of AVR, optional)
+    * gcc-avr_1%3a4.3.4-1_i386.deb (GNU C cross-compiler for AVR)
+    * gedit-plugins_2.30.0-0ubuntu1_i386.deb (for text editor)
+    * gtkterm_0.99.5-1ubuntu3_i386.deb (Serial Port Terminal to view serial values)
