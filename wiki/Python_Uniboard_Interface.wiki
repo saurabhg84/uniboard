@@ -13,15 +13,13 @@ One of Python application is using it in embedded C. I have attempted to explain
     * Ubuntu 11.04 (essentially a Linux variant, you can get that directly from Internet)
 
 == Packages for Python: ==
-    * Python IDE 2.6 (a GUI front end for Python, get that from Ubuntu Software Center)
-    * PySerial Module
-    * NumPy Module (Numerical Python, get that from Ubuntu Software Center)
+    * Python IDE 2.6 (a GUI front end for Python, get that from Ubuntu Software Center), PySerial Module, NumPy Module (Numerical Python, get that from Ubuntu Software Center)
     * MatPlotLib (MATLAB like Plotting Library, get that from Ubuntu Software Center)
 
 == Packages for uNiboard: ==
     * avrdude_5.10-1ubuntu1_i386.deb (AVR DUDE is software to read/write contents of ROM-EEPROM of AVR micro-controllers )
-    * avr-libc_1%3a1.6.7-1ubuntu2_all.deb (AVR Library)
+    * avr-libc_13a1.6.7-1ubuntu2_all.deb (AVR Library)
     * binutils-avr_2.20-2_i386.deb (To manipulate binary and object files of AVR, optional)
-    * gcc-avr_1%3a4.3.4-1_i386.deb (GNU C cross-compiler for AVR)
+    * gcc-avr_13a4.3.4-1_i386.deb (GNU C cross-compiler for AVR)
     * gedit-plugins_2.30.0-0ubuntu1_i386.deb (for text editor)
     * gtkterm_0.99.5-1ubuntu3_i386.deb (Serial Port Terminal to view serial values)
