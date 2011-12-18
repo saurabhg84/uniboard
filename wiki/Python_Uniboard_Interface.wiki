@@ -67,5 +67,5 @@ Keep interfacing other types of sensors and keep developing new projects on uNiB
 Enjoy!
 
 
-Tutorial by:
+Tutorial and work by:
 Manoj Gudi (manoj.p.gudi@gmail.com)
