@@ -7,6 +7,9 @@ Python is very flexible high level language which is easy to understand as well 
 
 One of Python application is using it in embedded C. I have attempted to explain one of its application by using serial port communication between our uNiBoard and our PC. Note that all the software/hardwares which I have used are open source so that everybody can get access to it.
 
+<wiki:video url="http://youtu.be/4MVbS_cjE40">
+
+
 = Pre-requisites =
 
 == Operating System: ==
