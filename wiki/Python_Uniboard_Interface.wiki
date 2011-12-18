@@ -13,6 +13,25 @@ Concept :
 	I have interfaced a temperature sensor LM-35 (~ Rs 40 / $1) to uNiboard. The analog values from sensor is sent to uNiboard ADC which converts it into digital values. Then those values are sent from serial port. Python fetches those serial values, parses them into integer values and plots it. Here's a simplified flow diagram. The plot is time vs temperature graph. The values which are displayed in plot are written/stored into a specific path in text file with current time-date so that user can use it in future. Check serial.ogv video to see it in action.
 
 
+= Pre-requisites =
+
+== Operating System: ==
+    * Ubuntu 11.04 (essentially a Linux variant, you can get that directly from Internet)
+
+== Packages for Python: ==
+    * Python IDE 2.6 (a GUI front end for Python, get that from Ubuntu Software Center), PySerial Module, NumPy Module (Numerical Python, get that from Ubuntu Software Center)
+    * MatPlotLib (MATLAB like Plotting Library, get that from Ubuntu Software Center)
+
+== Packages for uNiboard: ==
+    * avrdude_5.10-1ubuntu1_i386.deb (AVR DUDE is software to read/write contents of ROM-EEPROM of AVR micro-controllers )
+    * avr-libc_13a1.6.7-1ubuntu2_all.deb (AVR Library)
+    * binutils-avr_2.20-2_i386.deb (To manipulate binary and object files of AVR, optional)
+    * gcc-avr_13a4.3.4-1_i386.deb (GNU C cross-compiler for AVR)
+    * gedit-plugins_2.30.0-0ubuntu1_i386.deb (for text editor)
+    * gtkterm_0.99.5-1ubuntu3_i386.deb (Serial Port Terminal to view serial values)
+
+
+
 Getting it running:
 Interfacing:
 	It is very easy to interface LM35 to our uNiboard-
@@ -51,19 +70,3 @@ Enjoy!
 Tutorial by:
 Manoj Gudi (manoj.p.gudi@gmail.com)
 
-= Pre-requisites =
-
-== Operating System: ==
-    * Ubuntu 11.04 (essentially a Linux variant, you can get that directly from Internet)
-
-== Packages for Python: ==
-    * Python IDE 2.6 (a GUI front end for Python, get that from Ubuntu Software Center), PySerial Module, NumPy Module (Numerical Python, get that from Ubuntu Software Center)
-    * MatPlotLib (MATLAB like Plotting Library, get that from Ubuntu Software Center)
-
-== Packages for uNiboard: ==
-    * avrdude_5.10-1ubuntu1_i386.deb (AVR DUDE is software to read/write contents of ROM-EEPROM of AVR micro-controllers )
-    * avr-libc_13a1.6.7-1ubuntu2_all.deb (AVR Library)
-    * binutils-avr_2.20-2_i386.deb (To manipulate binary and object files of AVR, optional)
-    * gcc-avr_13a4.3.4-1_i386.deb (GNU C cross-compiler for AVR)
-    * gedit-plugins_2.30.0-0ubuntu1_i386.deb (for text editor)
-    * gtkterm_0.99.5-1ubuntu3_i386.deb (Serial Port Terminal to view serial values)
