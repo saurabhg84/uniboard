@@ -9,6 +9,47 @@ One of Python application is using it in embedded C. I have attempted to explain
 
 <wiki:video url="http://www.youtube.com/watch?v=4MVbS_cjE40">
 
+Concept :
+	I have interfaced a temperature sensor LM-35 (~ Rs 40 / $1) to uNiboard. The analog values from sensor is sent to uNiboard ADC which converts it into digital values. Then those values are sent from serial port. Python fetches those serial values, parses them into integer values and plots it. Here's a simplified flow diagram. The plot is time vs temperature graph. The values which are displayed in plot are written/stored into a specific path in text file with current time-date so that user can use it in future. Check serial.ogv video to see it in action.
+
+
+Getting it running:
+Interfacing:
+	It is very easy to interface LM35 to our uNiboard-
+	1.	Get LM35 (for appx. Rs40/$1) and 3 wires with one end female connector and a small general purpose pcb.
+	2.	The three terminals of LM35 should be in three distinct holes
+	3.	Solder LM35 terminals, connect each end of wire should be connected to terminal on board
+	4.	Refer the figure below to know which terminal corresponds to what.
+
+VCC is 1st Pin data Pin is Middle-2ndPin Ground is 3rd Pin
+
+	1.	Attach it to sensor port as shown
+	2.	
+
+Jumper Settings- ADC-LDR jumper should be connected to ADC pin as shown-
+ADC-Joystick Switch should in unpressed position as shown
+
+
+
+Software Part:
+	1.	Download LM35.zip
+	2.	Burn LM35.c into uNiBoard using gedit in Ubuntu
+	3.	Open serial.py located in LM35.zip from Python IDE
+	4.	I have been using RS232 to USB converter, hence I have used port /dev/USB0 if you are using serial port of PC to connect to uNiboard type port='/dev/ttyS0',  
+	5.	
+
+1.	
+	2.	Power ON uNiBoard and run Python Script serial.py (by pressing F5). You will be asked about “Enter Sampling Time”. Sampling time is time for which Script will accept the values and plot, after which you will be asked again to continue or not.
+	3.	Dont forget to CHECK Serial.ogv Video for live action !
+	4.	Well for convenience, I have commented in LM35.C script as well as serial.py which will give you fair idea about its working of code. Also in 'image' folder I have put all the images used here so that one can see them clearly by zooming.
+
+
+Keep interfacing other types of sensors and keep developing new projects on uNiBoard 
+Enjoy!
+
+
+Tutorial by:
+Manoj Gudi (manoj.p.gudi@gmail.com)
 
 = Pre-requisites =
 
