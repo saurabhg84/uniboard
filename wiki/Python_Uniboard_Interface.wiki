@@ -51,7 +51,7 @@ ADC-Joystick Switch should in unpressed position as shown
 
 
 Software Part:
-	1.	Download LM35.zip
+	1.	Download LM35.zip (http://code.google.com/p/uniboard/downloads/detail?name=LM35.zip&can=2&q=)
 	2.	Burn LM35.c into uNiBoard using gedit in Ubuntu
 	3.	Open serial.py located in LM35.zip from Python IDE
 	4.	I have been using RS232 to USB converter, hence I have used port /dev/USB0 if you are using serial port of PC to connect to uNiboard type port='/dev/ttyS0',  
@@ -69,4 +69,3 @@ Enjoy!
 
 Tutorial by:
 Manoj Gudi (manoj.p.gudi@gmail.com)
-
