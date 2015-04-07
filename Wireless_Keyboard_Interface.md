@@ -1,0 +1,17 @@
+## Description ##
+
+Keyboard is interfaced with the uNiBoard v1.1 using four lines of PS2 connector, two for power, one for clock and one for data. The Clock is connected to INT7(external interrupt line) and data is connected to a GPIO Pin PC0. We are using Xbee modules (from maxstream), between two uNiBoard to make the keyboard wireless.
+
+http://uniboard.googlecode.com/files/IMG_3619.JPG
+
+There are two sections, transmitter section and Receiver section. On transmitter side, the frames sent by keyboard is buffered and sent to the receiver section and then the frames are processed. After decoding the scan code, the related ASCII value of the key pressed is returned.
+
+## Authors ##
+Mrs. Vignya Mistry and Ms. Kruttika Pendharkar
+
+
+## Download links ##
+Project details: http://uniboard.googlecode.com/files/Wireless_Kbd_Prj_report.pdf
+
+Source code:
+http://uniboard.googlecode.com/files/wireless_keyboard_interface_using_zigbee_sourcecode.zip

@@ -1,0 +1,92 @@
+The uNiBoard version 1.1 is an ideal development platform for Embedded and Real Time systems programming. To make uNiBoard more interactive, we thought of interfacing a regular PS2 keyboard to it. Prior aim was to interface keyboard to uNiBoard, later we thought of making it wireless which empowers it to be used for various remote applications. Xbee PRO OEM RF module is chosen for wireless communication which can be easily interface to ATMega128 through one of the UART lines. Keyboard is interfaced to ATMega128 using PS2 protocol.
+
+http://uniboard.googlecode.com/files/IMG_3619.JPG
+
+This provides users with facility to remote controlling by giving command through keyboard. With some programming effort some RTOS based applications like movement of snake in snake game which is introduced in earlier article can also be controlled remotely using this keyboard.
+
+### Why would you want to interface the Keyboard? ###
+
+The IBM keyboard can be a cheap alternative to a keyboard on a Microprocessor development system. Maybe you have a RS-232 Barcode Scanner or other input devices, which you want to use with existing software which only allows you to key in numbers or letters. You could design yourself a little box to convert RS-232 into a Keyboard Transmission, making it transparent to the software. This keyboard interfacing provides more functionality.
+
+### Features: ###
+
+  * Interfacing Standard PC AT Keyboards.
+  * Requires Only Two I/O Pins. One of them must be an External Interrupt Pin.
+  * No Extra Hardware Required for interfacing keyboard to Microcontroller.
+  * Xbee PRO provides long range data integrity.
+  * Xbee requires low power and is easy to use.
+
+### What is Xbee? ###
+
+Xbee is a specification for a suite of high level communication protocols using small, low-power digital radios based on the IEEE 802.15.4-2003 standard for wireless personal area networks. The technology defined by the Xbee specification is intended to be simpler and less expensive than other WPANs, such as Bluetooth. Xbee is targeted at radio-frequency (RF) applications that require a low data rate, long battery life, and secure networking. Xbee protocols are intended for use in embedded applications requiring low data rates and low power consumption.
+
+Xbee is used in its default settings, unicast mode with baud rate 9600 bps. XBee and Xbee - PRO Modules interface to a host device through a logic-level asynchronous serial port. Devices that have a UART interface can connect directly to the pins of the XBee Module as shown in the diagram.
+
+![http://uniboard.googlecode.com/files/keyboard11.png](http://uniboard.googlecode.com/files/keyboard11.png)
+
+Figure: System Data Flow Diagram in a UART interfaced environment
+
+### AT Keyboard: ###
+
+The IBM keyboard sends scan codes to computer. The scan code tells Keyboard BIOS, which keys have been pressed or released. Take for example the ‘A’ Key. The ‘A’ key has a scan code of $1C. When the ‘A’ key is pressed, keyboard will send $1C down its serial line. Holding it down, for longer than it’s typematic delay, another $1C will be sent. This keeps occurring until another key has been pressed, or if the ‘A’ key has been released.
+
+However keyboard will also send another code when the key has been released. Take the example of the ‘A’ key again, when released, the keyboard will send $F0 to tell you that the key with the proceeding scan code has been released. It will then send 1C, so you know which key has been released.
+
+### Scan code: ###
+
+The diagram below shows the Scan Code assigned to the individual keys. The Scan code is shown on the bottom of the key. E.g. The Scan Code for ESC is 76. All the scan codes are shown in Hex.
+
+![http://uniboard.googlecode.com/files/scancode.gif](http://uniboard.googlecode.com/files/scancode.gif)
+
+### Keyboard Connector (PS2 Connector) ###
+
+The PC’s AT Keyboard is connected to external equipment using four wires. These wires are shown below for PS/2 Plug & Socket.
+
+![http://uniboard.googlecode.com/files/Screenshot.png](http://uniboard.googlecode.com/files/Screenshot.png)
+
+6-pin Mini-DIN (PS/2):
+1 - Data
+2 - Not Implemented
+3 - Ground
+4 - Vcc (+5V)
+5 - Clock
+6 - Not Implemented
+
+Physically interface looks as shown in figure below:
+
+![http://uniboard.googlecode.com/files/keyboard21.png](http://uniboard.googlecode.com/files/keyboard21.png)
+
+There are four lines that comprise the channel between the PC and the keyboard. Two of these, the power and ground lines, are used to provide power to the keyboard which is provided through uNiBoard. The other two are clock and data lines. This is the line over which data bits are sent to the system from the keyboard, and commands sent from the system to the keyboard. The purpose of the clock signal is to synchronize the keyboard and the system. This is a repetitive, regular clock signal, with a value that switches from 1 to 0 to 1 to 0 in a regular pattern.
+
+The transmission of data in the forward direction, i.e. Keyboard to Host is done with a frame of 11 bits. The first bit is a Start Bit (Logic 0) followed by 8 data bits (LSB First), one Parity Bit (Odd Parity) and a Stop Bit (Logic 1). Each bit should be read on the falling edge of the clock. The parity bit is set if there is an even number of 1’s in the data bits and reset (0) if there is an odd number of 1’s in the data bits.  This is used for error detection.
+
+![http://uniboard.googlecode.com/files/waveform1.jpg](http://uniboard.googlecode.com/files/waveform1.jpg)
+
+The above waveform represents a one byte transmission from the Keyboard. The data line only has to be valid on the falling edge of the clock. The Keyboard will generate the clock. The frequency of the clock signal typically ranges from 10 to 20 KHz.
+
+### What comes on the data line when you press a key of keyboard? ###
+
+When you press a key, the keyboard controller sends three frames on data pin, which consist of scan-code and break-code (or release code). The value of the break code is always 0xF0 and value of the scan code depends on the key being pressed. The debugged frame at the transmitter section is shown below
+
+![http://uniboard.googlecode.com/files/keyboard3.png](http://uniboard.googlecode.com/files/keyboard3.png)
+
+![http://uniboard.googlecode.com/files/keyboard4.png](http://uniboard.googlecode.com/files/keyboard4.png)
+
+### Transmitter section: ###
+
+![http://uniboard.googlecode.com/files/keyboard5.png](http://uniboard.googlecode.com/files/keyboard5.png)
+
+Keyboard is connected to Uniboard through PS2 Connector. When a key is pressed the data is transmitted to UART0 at every falling edge of the clock pulse.PS2 Connector’s data line is given to a port pin of ATMEGA128 and clock pin to the external INT pin. Xbee is connected to the UART0 interface. ATMega128 transmits data to UART0 and hence forwarded to Xbee to transmitting it to receiver section.
+
+### Receiver section: ###
+
+![http://uniboard.googlecode.com/files/keyboard61.png](http://uniboard.googlecode.com/files/keyboard61.png)
+
+Xbee receives the data transmitted from xbee on transmitter side using wireless communication and send it to UART0. When a frame is received at UART0 of uNiBoard, it is processed to extract the required data from the whole frame and decode data to its equivalent ASCII character. The character could be then either transmitted to UART1 via MAX232 and simultaneously displayed on gtkterminal or could be processed as user wants it to be.
+
+### Downloads ###
+http://code.google.com/p/uniboard/wiki/Wireless_Keyboard_Interface
+
+### Authors: ###
+  1. [Vignya Mistry](http://groups.google.com/groups/profile?enc_user=VM1MkBYAAADBCHrLneuc5CNEkAg91q9do4cocwWvDVg2RHsu8f1bCg)
+  1. [Kruttika Pendharkar](http://groups.google.com/groups/profile?enc_user=KPs6DxwAAACggx1eFbZD-lf5N0KUy6PljZqoufU18RuXZi5-_VnlcQ)

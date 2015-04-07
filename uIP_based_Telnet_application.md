@@ -1,0 +1,20 @@
+## Description ##
+
+This is one of the better projects that has been built using the Ethernet interface board. The project involves the Ethernet Interface board based on ENC28J60 interfaced to uNiBoard with the uIP stack ported on uNiBoard running a telnet server on the uNiBoard v1.1. On the client side we have developed a windows telnet client through which we can access and control all the peripherals on the board.
+
+![http://uniboard.googlecode.com/files/uNiBoard_Ethernet_rev1.png](http://uniboard.googlecode.com/files/uNiBoard_Ethernet_rev1.png)
+
+Interesting applications can be built using this concept including remote monitoring and control of sensors, remotely configuring or programming the board and more. More details of the telnet project on uNiBoard v1.1 can be found on this [link](http://code.google.com/p/uniboard/wiki/Telnet_Server_implementation)
+
+## Authors ##
+Mr. Nitin Gadmale, Mr. Pravin Saini, Mr. Dhiraj Shinde
+
+## Download links ##
+Telnet server (Embedded C code includes uIP stack for uNiBoard): http://uniboard.googlecode.com/files/Telnet_Server.zip
+
+Telnet client (Based on Windows): http://uniboard.googlecode.com/files/Remote%20Monitoring%20Setup.zip
+
+Tutorial on getting started with the sample code: http://uniboard.googlecode.com/files/Telnet_tutorial.pdf
+
+## Courtesy ##
+Adam Dunkels (author of uIP): http://www.sics.se/~adam/uip/index.php/Main_Page

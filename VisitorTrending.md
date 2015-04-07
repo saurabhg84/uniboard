@@ -1,0 +1,57 @@
+## Analytics ##
+
+Over the past couple of years, we have been monitoring interesting parameters of the visitors coming on the uNiBoard portal which include total unique visits over a period of time, geographical distribution (national as well as international), visitor loyalty (i.e. same visitor visiting the website again), traffic sources, etc. Sharing this should give some interesting insights, so here it goes...
+
+The statistics shown below represent data gathered during the period from 30th March 2008 to 30th March 2011.
+
+## Visitor overview ##
+
+![http://uniboard.googlecode.com/files/analytics2.jpg](http://uniboard.googlecode.com/files/analytics2.jpg)
+
+As can be seen, the number of visitors peaked during October 2009 period and at present the portal registers around 25 unique visits per day. This is purely organic which can be concluded from the further statistics represented below.
+
+## Geographical distribution of visitors (International) ##
+
+![http://uniboard.googlecode.com/files/international_visitors.jpg](http://uniboard.googlecode.com/files/international_visitors.jpg)
+
+As can be expected maximum number of visits have been registered from India followed by the United States. A summary of the top ten countries from where maximum visitors have shown up is pasted below:
+
+![http://uniboard.googlecode.com/files/analytics3.jpg](http://uniboard.googlecode.com/files/analytics3.jpg)
+
+Apart from these, there have been more than 100 unique visitors from Italy, Netherlands, Canada, Pakistan, Russia, Sweden, South Korea, Sri-Lanka and Bangladesh.
+
+
+## Geographical distribution of visitors (National) ##
+
+Within India the distribution goes this way...
+
+![http://uniboard.googlecode.com/files/indian_distribution1.jpg](http://uniboard.googlecode.com/files/indian_distribution1.jpg)
+
+![http://uniboard.googlecode.com/files/indian_distribution2.jpg](http://uniboard.googlecode.com/files/indian_distribution2.jpg)
+
+## Traffic sources ##
+
+![http://uniboard.googlecode.com/files/traffic_sources1.jpg](http://uniboard.googlecode.com/files/traffic_sources1.jpg)
+
+![http://uniboard.googlecode.com/files/traffic_sources2.jpg](http://uniboard.googlecode.com/files/traffic_sources2.jpg)
+
+Our earlier claim of organic growth can be once again proved here since the traffic on the portal is mainly either direct traffic or through search engines (mainly google). No online marketing / publicity through referral sites has been carried out.
+
+Interestingly, a few of our articles on http://beagleboard.org, http://thinklabs.in (parent site) and http://embedded.com have also generated a large number of leads.
+
+## Browser and OS ##
+
+Last but not the least, let us have a look at the web browsers and operating systems used by visitors and which one tops the list...
+
+![http://uniboard.googlecode.com/files/browsers1.jpg](http://uniboard.googlecode.com/files/browsers1.jpg)
+
+![http://uniboard.googlecode.com/files/os1.jpg](http://uniboard.googlecode.com/files/os1.jpg)
+
+Encouraging to see firefox as the top rated browser and linux as still the second most preferred OS..any comments?
+
+## Author ##
+[Saurabh Gandhi](http://groups.google.com/groups/profile?enc_user=z-Q1xhQAAAA5Iqpc8pSi5i01mS42QePiOPANdqfI6prRsqjc7uCt1A)
+
+## Courtesy ##
+
+[Google Analytics](http://analytics.google.com)

@@ -1,0 +1,99 @@
+## Purpose ##
+
+ThinkLABS comes up with an Embedded System Design contest based on uNiBoard v1.1, an open source development platform for Embedded and Real Time Systems Programming.The contest aims at recognizing and rewarding the best talents in logic, creativity and software design.
+
+## Benefits ##
+
+  * Compete with the best designers and developers from elite universities / companies
+  * Chance to become an embedded geek
+  * Prizes worth INR 200000 to be won in different categories
+  * Get nurtured by ThinkLABS team of experts
+  * Become a part of the ever­ growing open source community
+
+## Why participate? ##
+
+Over the years, engineering students have been found reinventing the wheel by focusing mostly on hardware development during their formative years instead of embedded software which is the dominant part of an Embedded product development life-cycle. The uNiBoard v1.1 and related peripherals are meant to overcome this drawback and serve the following purposes:
+
+  * Provide a common development platform to all teams to make the contest unbiased
+  * Help the teams focus on embedded software and algorithm development
+  * Seek reference designs, applications and extensions featuring the uNiBoard v1.1 and to inturn widen the community base
+  * Compel students / hobbyists / enthusiasts to work on the most powerful and promising 8­-bit architecture (AVR) and look beyond legacy architecture (8051) discussed in curriculum
+  * Inculcate Embedded C programming skills which the industry demands rather than knowledge of ALP (Assembly Language Programming) skills which refrains one from switching platforms
+
+## Rules ##
+  1. The base board for the contest has to be uNiBoard v1.1, which is an ATMega128 based microcontroller board with 128KB flash memory, 4KB Internal SRAM and 4KB Internal EEPROM working at 16 MIPS.
+  1. Additional controllers (8-bit) and peripherals can be added if required.
+  1. A registering team will need to purchase the base board from ThinkLABS roboshop.
+  1. Students, professionals, embedded enthusiasts and hobbyists are all allowed to participate.
+  1. Participants can select any problem statement of their choice, however selection of a relevant problem statement carries weight-age.
+  1. Participants can form a team of maximum two people. Individual entry is also allowed. Every team participating is allowed to submit just a single entry.
+  1. Peripherals can be procured from ThinkLABS roboshop or any other sources. Procurement assistance would be provided.
+  1. There are two rounds in the contest. Teams clearing the first round successfully will qualify for the second and final round.
+  1. All content generated (documentation, source code, schematics) for the contest has to adhere to Creative Commons license, which has the philosophy of “Share, Remix, Reuse – Legally".
+
+The contest winner title will be conferred to the team which has the highest cumulative total from both the rounds. The ruling of the judges is final.
+
+## Round 1 ##
+  1. This would be an online round in which the teams will need to submit their project synopsis, a presentation (might include videos and photographs if required) explaining their project, along with source code. Sample template has been provided for download.click here to download [pdf](http://uniboard.googlecode.com/files/ESDC_Reference_template.pdf)/[ppt](http://uniboard.googlecode.com/files/ESDC_Reference_template.ppt)
+  1. Qualifying teams would be selected based on the following parameters:
+    * Innovativeness of the project.
+    * Hardware/software complexity and resource utilization.
+    * Neatness and efficiency of source code.
+    * Quality of submission (presentation, synopsis, code documentation).
+
+## Round 2 ##
+Teams (atleast one member) would need to be present for Round 2 of the contest. Round 2 will be held at SINE, IIT Bombay. It will involve two compulsory stages.
+  * Stage-I would be demonstration of the project developed on the board with a Q&A session from the judges.
+  * In Stage-II we will be hosting an On-the-spot contest, in which the participants would be given common problem statement to work on. Participants in this round would be graded on the following parameters:
+    * High level design.
+    * Efficiency.
+    * Power consumption.
+    * Resource utilization.
+
+## Register ##
+Interested? Click [here](http://thinklabs.in/esdc/register.php) to register
+
+## FAQs ##
+**What is Embedded System Design Contest?**
+
+The Embedded System Design Contest is a open software contest based on uNiBoard v1.1, which is an open source hardware platform designed by ThinkLABS for Embedded and Real Time Systems Programming. The contest is open for students, hobbyists and embedded enthusiasts of any age group.
+
+**What is the format of this contest?**
+
+The contest is comprises of two rounds. The first round would be an online round in which the participating teams would be required to send (by email) the source code, synopsis and presentation of the project undertaken. Based on this round, teams would be shortlisted for the second round which would comprise of a demonstration round followed by an on­the­ spot competition based on the same platform. A detailed draft on the competition format including benefits, prizes, rules, rounds, judging criteria is given above. Refer the above draft for details.
+
+**Where and when will the Finals of this competition be held?**
+
+The finals of the competition would be held at ThinkLABS, SINE, IIT Bombay.
+
+**How are the judges chosen and where do they come from?**
+
+The judging panel would be a combination of team members of the ThinkLABS embedded team (associated with the uNiBoard project) along with other invited industry stalwarts.
+
+**Is this Competition limited to Indian participants?**
+
+No. We welcome international entries for the competition. For international participants who cannot be physically present for Round 2 we would be floating a separate policy. Contact us for more information.
+
+**Can I make my own uNiBoard and participate?**
+
+Yes. Again we would advise you to instead put the effort in building something more unique. In any case you are still liable to the entry fees. You can use the vouchers to purchase other stuff from the shop as and when required.
+
+**I already have a uNiBoard which I have bought recently. Do I still need to pay the entry fees?**
+
+Yes. You still need to pay the entry fees. In any case the voucher can be utilized to purchase other stuff from the shop as and when required. FYI, the voucher is also transferable in case you have other colleagues who are interested in buying the board or other related peripherals.
+
+**Is the competition certified?**
+
+The competition is certified by ThinkLABS, SINE IITB
+
+**What sort of support will I get for the competition and from whom?**
+
+You can make use of forums, our resource pool and googlegroups.
+
+**How to register?**
+
+Every registering team will need to pay an entry fee of Rs. 5000/- against which ThinkLABS will issue a shop voucher of an equal amount.This voucher can be utilized to purchase relevant components from the ThinkLABS shop.Post registration, every team will receive a sample project report format to be used for the competition.
+
+**What are the prizes to be won?**
+
+Participation certificates would be given to all team members on submission of their entries for Round 1. Prizes worth Rs. 2,00,000 to be won including four consolation prizes.

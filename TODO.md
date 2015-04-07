@@ -1,0 +1,162 @@
+## Projects to be undertaken for uNiBoard v1.1 ##
+
+The following are projects which we plan to undertake/delegate. The list is not exhaustive and open for more additions.
+
+Lately, we have seen quite some positive developments on most of the below mentioned projects. We thought of updating the status of these projects as well as do a DOE (Design of Experiment) for projects still in the pipeline. Hope it helps. Thanks to all the contributors. Keep up the good work...
+
+
+## Recommended topics ##
+
+### 1. Adding PS2 interface ###
+Status: Done
+
+Author: Mrs. Vignya Mistry and Ms. Kruttika Pendharkar
+
+Information: http://code.google.com/p/uniboard/wiki/Wireless_Keyboard_Interface
+
+### 2. Interfacing GLCD (Nokia 3310) ###
+Status: Pending
+
+Author: N.A.
+
+Information:  http://code.google.com/p/uniboard/wiki/Nokia_3310_LCD_Project
+
+### 3. Interfacing Color LCD ###
+Status: Pending
+
+Author: N.A.
+
+Information: Yet to be uploaded
+
+### 4. Converting VT102 (Hyper-terminal/GTk-term) based game applications to GLCD based game applications ###
+Status: Pending
+
+Author: N.A.
+
+Information: Yet to be uploaded
+
+### 5. Adding CMOS Image sensor (C3088) module interface ###
+Status: Pending
+
+Author: N.A.
+
+Information: http://code.google.com/p/uniboard/wiki/Camera_driver_project
+
+### 6. Software UART (to have additional virtual UART interfaces on the board) ###
+Status: Done
+
+Author: Prashant Mehta
+
+Information: http://code.google.com/p/uniboard/wiki/Software_UART
+
+### 7. Porting uip stack (along with SPI based Ethernet controller) ###
+Status: Done
+
+Author: Mr. Nitin Gadmale, Mr. Pravin Saini, Mr. Dhiraj Shinde
+
+Information: http://code.google.com/p/uniboard/wiki/uIP_based_Telnet_application
+
+### 8. Demonstrating Telnet on uNiBoard ###
+Status: Done
+
+Author: Mr. Nitin Gadmale, Mr. Pravin Saini, Mr. Dhiraj Shinde
+
+Information: http://code.google.com/p/uniboard/wiki/uIP_based_Telnet_application
+
+### 9. Multi-board communication using CAN transceivers ###
+Status: Pending
+
+Author: N.A.
+
+Information: Yet to be uploaded
+
+### 10. Mesh Network using Xbee modules ###
+Status: Pending
+
+Author: N.A.
+
+Information: Yet to be uploaded
+
+### 11. FTP using Xbee ###
+Status: Pending
+
+Author: N.A.
+
+Information: Yet to be uploaded
+
+### 12. Command interpreter on uNiBoard (within boot-loader) ###
+Status: Pending
+
+Author: N.A.
+
+Information: Yet to be uploaded
+
+### 13. Text editor on uNiBoard using EFSL ###
+Status: Pending
+
+Author: N.A.
+
+Information: Yet to be uploaded
+
+### 14. Bluetooth API's for uNiBoard ###
+Status: Pending
+
+Author: N.A.
+
+Information: Yet to be uploaded
+
+### 15. Audio (`*`.wav,`*`.mp3) playback from uNiBoard ###
+Status: Pending
+
+Author: N.A.
+
+Information: http://www.sparkfun.com/commerce/product_info.php?products_id=519
+
+### 16. Pymite porting on uNiBoard ###
+Status: Pending
+
+Author: N.A.
+
+Information: Yet to be uploaded
+
+### 17. Cheap and reliable RF protocol for multi-board communication ###
+Status: Pending
+
+Author: N.A.
+
+Information: Yet to be uploaded
+
+### 18. UART Bootloader ###
+Status: Ongoing (partially done)
+
+Author: Mr. Durvesh Kulkarni, Mr. Sunand Sudhakaran, Mr. Abhishek Tyagi, Mr. Ashit Tiwari
+
+Information: Yet to be uploaded
+
+### 19. Developing a JTAG hardware for uNiBoard v1.1 for on-chip debugging (AVR studio compliant) ###
+Status: Pending
+
+Author: N.A.
+
+Information: Yet to be uploaded
+
+### 20. nanoVM porting on uNiBoard ###
+Status:  Pending
+
+Author: N.A.
+
+Information: Yet to be uploaded
+
+### 21. interfacing CC2500 RF module on uNiBoard ###
+Status:  Pending
+
+Author: N.A.
+
+Information: [features](http://focus.ti.com/docs/prod/folders/print/cc2500.html#features)
+
+### 22. Wireless Bootloader (using 2G4 wireless module) ###
+Status: Pending
+
+Author: N.A.
+
+Information: Yet to be uploaded

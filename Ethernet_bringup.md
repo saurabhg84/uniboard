@@ -1,0 +1,64 @@
+Talking of communication interfaces, its an ethernet interface which would truly allow us the flexibility to remotely communicate with an embedded product. With this requirement in hand, we present yet another valuable add-on module for the uNiBoard, which is the SPI based ENC28J60 Ethernet controller which empowers our uNiBoard to communicate over a Local Area Network (LAN), not to forget that with some programming effort this can be extended to communication over the internet.
+
+This opens possibilities like remotely collecting (over LAN) readings of sensors connected to the uNiBoard or controlling devices connected to the uNiBoard. Ofcourse, all this could have been accomplished by connecting devices/sensors to a PC hooked onto a network, but why dedicate a PC for that purpose when you can do it using a low power, cost effective 8-bit controller?
+
+### What Ethernet means ? ###
+
+Ethernet is a local area technology, which is used for reliable and efficient access of information across the devices connected to the network. Once a device is attached to the network through a cable, it will have the ability to communicate with any other attached device. This allows the network to expand to accommodate new devices without requiring any modification to those devices already on the network.
+
+### About Ethernet Interface Board: ###
+
+![http://uniboard.googlecode.com/files/image1.png](http://uniboard.googlecode.com/files/image1.png)
+
+The Ethernet interface Board is an add-on module which enables any embedded device equipped with an SPI communication capability to be connected to a network. This Ethernet Interface contains an Ethernet Controller which implements the necessary functionalities required at the PHY (Physical) and MAC (Data link) layers.
+
+Before you conclude that making your board ethernet ready is as trivial as plugging in an add-on module, let us clarify a few more concepts. We all know that the TCP/IP protocol suite for communication between systems connected on a network defines a hierarchical structure for communication. So, when systems on a network need to transmit/receive data, the data packet has to be pass through the below mentioned layers (Application layer, transport layer, Internet layer, Network access layer) before it is finally transmitted in the form of a digital signal as a sequence of zeros and ones.
+
+![http://uniboard.googlecode.com/files/image61.png](http://uniboard.googlecode.com/files/image61.png)
+
+Also each of these layers add their own information to the packet to be transmitted to make the transmission reliable. This includes adding checksum information, sequence number, the source IP address, the destination IP address to name a few things. On the receiver side, the information added to the packet by the corresponding layer on the transmitter side is stripped off from the packet and interpreted to ensure that the packets are received in an error free state. If not, a retransmission is initiated. Other things like the packet sequencing are taken care of by the transport layer.
+
+In case of the Ethernet interface board, the hardware (ENC28J60 ethernet controller from Microchip) implements only the network access layer, which means that the other layers need to be implemented in software. This is analogous to the situation in your PC where the network card performs the role of Ethernet PHY whereas the remaining layers are implemented in the software as a part of the operating system’s network protocol stack.
+
+An application engineer working at the top layer is able to transmit data over the network by using Socket API (Application Program Interface), which relieves him from the task of generating packet information at every layer (this work is handled by the operating system which provides the implementation of the socket APIs). However, in an embedded scenario like ours we cannot use socket APIs since they need a file system and a huge memory footprint (UNIX sockets). Due to memory constraints we port uIP (The open-source uIP TCP/IP by Mr. Adam Dunkels stack provides TCP/IP connectivity to tiny embedded 8- bit microcontrollers) on to our board, which is small and simple.
+
+### About uIP: ###
+
+The uIP TCP/IP stack is intended to make it possible to communicate using the TCP/IP protocol suite even on small 8-bit micro-controllers. Despite being small and simple, uIP does not require their peers to have complex, full-size stacks, but can communicate with peers running a similar light-weight stack. The code size is of the order of a few kilobytes and RAM usage can be configured to be as low as a few hundred bytes.
+
+### Features: ###
+
+  * Well documented and well commented source code
+  * Very small code size
+  * Very low RAM usage, configurable at compile time
+  * ARP, IP, UDP, ICMP (ping) and TCP protocols
+  * Free for both commercial and non-commercial use
+
+### Ethernet Interface Board and uNiBoard ###
+
+The Ethernet Interface Board can be powered from the Development Board (uNiBoard) as shown below or can be given an external 3.3v supply.
+
+![http://uniboard.googlecode.com/files/image2.png](http://uniboard.googlecode.com/files/image2.png)
+
+### Configurations ###
+
+There are two different configurations that you can have with the board as shown below of which the first configuration can be used for testing and development purposes while the second one would be used for application purposes.
+
+  1. Connecting uNiBoard directly to the PC: Connection between the uNiBoard and Ethernet Interface Board is done as described below and PC is interfaced with the Ethernet Interface Board using the network cable.
+
+![http://uniboard.googlecode.com/files/image3.png](http://uniboard.googlecode.com/files/image3.png)
+
+> 2. Connecting uNiBoard directly on to the Network: Connection between the uNiBoard and Ethernet Interface Board is done as described above and Ethernet Interface Board is connected to the network directly.
+
+![http://uniboard.googlecode.com/files/image4.png](http://uniboard.googlecode.com/files/image4.png)
+
+### Demonstration using Wireshark ###
+
+In the demonstration shown out here we are using a network protocol analyzer called wireshark. We have connected the uNiBoard v1.1 and the Ethernet controller in the configuration two shown above and we are running wireshark on one of the PC connected on to the network. Whenever a link is up this PC on the network will start sending an ARP request first to the board through Ethernet interface and in reply an ARP and an IP packet is sent from the board and received which is shown in the figure as the 3rd and 4th packets. (These ARP and IP packets are generated by our source code). You can get the details of the packet by clicking on them and on the lower half details like the target PC’s IP address and sender’s IP address etc. are displayed. Our Ethernet controller is identified out here as Gemtek.
+
+![http://uniboard.googlecode.com/files/image5.png](http://uniboard.googlecode.com/files/image5.png)
+
+The above demonstration thus exhibits that an ARP packet sent on the network was successfully received by the board and in response to this an ARP packet was sent back by the uNiBoard v1.1 through the ENC28J60, which proves that the board is ethernet ready. In the next article we will have a look at uIP porting on uNiBoard v1.1 and a telnet server running on the uNiBoard to enable us to monitor analog sensor readings. To order a uNiBoard or Ethernet Interface add on board click here.
+
+### Author ###
+[Kiran George Varghese](http://groups.google.com/groups/profile?enc_user=MCplMxMAAAAxYHCIREhuOXev2sEEz7AnWMj6vob75xS36mXc24h6ww)

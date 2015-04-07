@@ -1,0 +1,48 @@
+# _Article to Develop AVR programs on Eclipse IDE_ #
+
+## Steps to install Eclipse IDE: ##
+
+  1. Download Eclipse from for C/C++ developers as shown below: <img src='http://uniboard.googlecode.com/files/1_EclipseIDE.png' width='892' height='524' /> <br>
+<ol><li>Now Extract the package: Right click the package and open with Archive Manager and extract it to home directory as shown below: <img src='http://uniboard.googlecode.com/files/2_EclipseIDE.png' width='892' height='524' /> <br>
+</li><li>Open the eclipse executable to the folder that you have extracted ~/eclipse/ as shown below: <img src='http://uniboard.googlecode.com/files/3_EclipseIDE.png' width='892' height='524' /> If it displays the error than there is no JRE in your system, you will need to install it. Follow the steps given to install JRE or else skip the step.      <br><br>
+</li><li>Run the following command on the prompt to install JRE as shown below:<br>
+<ol><li>Open Applications > Accessories > Terminal<br>
+</li><li>Execute the command given below<br>
+</li></ol></li></ol><blockquote><i>thinklabs@thinklabs:~$ sudo aptitude install default-jre</i><br> <br> This will take some time to install. <br><br> Now start eclipse again an Eclipse IDE will start as shown below: <img src='http://uniboard.googlecode.com/files/4_EclipseIDE.png' width='892' height='524' /></blockquote>
+
+<br><br>
+<h2>Steps to install AVR Eclipse plugin:</h2>
+
+<ol><li>Now close the Eclipse IDE and download the AVR Eclipse plugin from the link given below: <br> <a href='http://avr-eclipse.sourceforge.net/'>http://avr-eclipse.sourceforge.net/</a> <br> <br>
+</li><li>Now go to download section and select direct download as shown below: <img src='http://uniboard.googlecode.com/files/5_EclipseIDE.png' width='897' height='720' /> <br> Once you have selected Direct download it will go to the sourceforge where plugin can be downloaded as shown below: <img src='http://uniboard.googlecode.com/files/6_EclipseIDE.png' width='892' height='524' /> Be careful while extracting the zip files to the ~/eclispe folder. <br> <br>
+</li><li>Open with the Archive manager and drag features folder and plugins to the eclipse folder individually as given below: <br>
+<ol><li>Inside the Archive Manager you will see “.” folder, double click it and go to the features folder and select the folders as shown below and drag it to eclispe/features folder: <img src='http://uniboard.googlecode.com/files/7_EclipseIDE.png' width='892' height='524' /> <br>
+</li><li>Similarly inside the Archive Manager, go for the plugins folder and select the folders/files as displayed  below and drag it to eclispe/plugins folder: <img src='http://uniboard.googlecode.com/files/8_EclipseIDE.png' width='892' height='524' /></li></ol></li></ol>
+
+<br><br>
+<h2>Steps to write down AVR programs on Eclipse IDE.</h2>
+
+<ol><li>Open the eclipse executable as a root user, issue the command on the prompt as shown below:<br>
+<ol><li>Open Applications > Accessories > Terminal <br><br>
+</li><li>Execute the command given below: <br><i>thinklabs@thinklabs:~$ sudo ~/eclipse/eclipse</i> <br><br>
+</li><li>It will popup the page as shown below: <img src='http://uniboard.googlecode.com/files/9_EclipseIDE.png' width='892' height='524' /> <br><br>
+</li></ol></li><li>Create a new project go to file menu > New > C Project <img src='http://uniboard.googlecode.com/files/10_EclipseIDE.png' width='892' height='524' /> NOTE: If it doesnot display this “AVR GCC Toolchain plugins” than there AVR Eclipse plugin is missing, try to install it as given in the above section steps to install AVR Eclipse plugin. <br><br>
+</li><li>Write a new project name and click on next. It will ask for selection of CPU name and its frequency and click on finish. <img src='http://uniboard.googlecode.com/files/11_EclipseIDE.png' width='605' height='573' /> <br><br>
+</li><li>Goto file menu > new > c source file and save it. <br><br>
+</li><li>Write down the code given below:<br><br>
+</li><li>Select the active build configuration as Release <br>Project menu > Build configurations > set active > 2 Release <br><br>
+</li><li>Now goto the project menu > Build All <br><br> You can see that inside release folder executable binary is generated as shown below: <img src='http://uniboard.googlecode.com/files/12_EclipseIDE.png' width='892' height='524' /></li></ol>
+
+<br><br>
+<h2>Steps to burn your program on uNiBoard v 1.1</h2>
+
+<ol><li>Now if you want  to load the executable on uNiBoard v 1.1, you will need to setup the avrdude programmer.<br>
+</li><li>Goto the properties window of the project by right click on project and properties. <br>
+</li><li>Select AVR > Avrdude tab it will display window as shown below: <img src='http://uniboard.googlecode.com/files/13_EclipseIDE.png' width='892' height='524' /> <br>
+</li><li>Click on Edit and follow the steps given below:<br>
+<ol><li>Configuration name as uNiBoard.<br>
+</li><li>In programmer Hardware select USBasp.<br>
+</li><li>In override default port -P   USB.<br>
+</li><li>Click on OK button to save the configuration. <img src='http://uniboard.googlecode.com/files/14_EclipseIDE.png' width='892' height='524' /> <br>
+</li></ol></li><li>Select programmer configuration as uNiBoard and click on Apply  button and OK button. <img src='http://uniboard.googlecode.com/files/15_EclipseIDE.png' width='892' height='524' /> <br>
+</li><li>Now you can burn the program by selecting AVR menu > Upload project to Target Device. <img src='http://uniboard.googlecode.com/files/16_EclipseIDE.png' width='892' height='475' />

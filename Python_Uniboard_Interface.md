@@ -1,0 +1,69 @@
+# Introduction #
+
+Python is very flexible high level language which is easy to understand as well as easy to work with. Scope of Python is wide, it can be used in web technology, systems, to make GUI (Graphical User Interface) softwares, scientific computation etc. One of the largest benefit of using Python is that it is open source and it has large user based modules which can be directly used and saves lot of work and effort. Read more about Python
+[here](http://en.wikipedia.org/wiki/Python_%28programming_language%29)
+
+One of Python application is using it in embedded C. I have attempted to explain one of its application by using serial port communication between our uNiBoard and our PC. Note that all the software/hardwares which I have used are open source so that everybody can get access to it.
+
+<a href='http://www.youtube.com/watch?feature=player_embedded&v=4MVbS_cjE40' target='_blank'><img src='http://img.youtube.com/vi/4MVbS_cjE40/0.jpg' width='425' height=344 /></a>
+
+Concept :
+> I have interfaced a temperature sensor LM-35 (~ Rs 40 / $1) to uNiboard. The analog values from sensor is sent to uNiboard ADC which converts it into digital values. Then those values are sent from serial port. Python fetches those serial values, parses them into integer values and plots it. Here's a simplified flow diagram. The plot is time vs temperature graph. The values which are displayed in plot are written/stored into a specific path in text file with current time-date so that user can use it in future. Check serial.ogv video to see it in action.
+
+
+# Pre-requisites #
+
+## Operating System: ##
+  * Ubuntu 11.04 (essentially a Linux variant, you can get that directly from Internet)
+
+## Packages for Python: ##
+  * Python IDE 2.6 (a GUI front end for Python, get that from Ubuntu Software Center), PySerial Module, NumPy Module (Numerical Python, get that from Ubuntu Software Center)
+  * MatPlotLib (MATLAB like Plotting Library, get that from Ubuntu Software Center)
+
+## Packages for uNiboard: ##
+  * avrdude\_5.10-1ubuntu1\_i386.deb (AVR DUDE is software to read/write contents of ROM-EEPROM of AVR micro-controllers )
+  * avr-libc\_13a1.6.7-1ubuntu2\_all.deb (AVR Library)
+  * binutils-avr\_2.20-2\_i386.deb (To manipulate binary and object files of AVR, optional)
+  * gcc-avr\_13a4.3.4-1\_i386.deb (GNU C cross-compiler for AVR)
+  * gedit-plugins\_2.30.0-0ubuntu1\_i386.deb (for text editor)
+  * gtkterm\_0.99.5-1ubuntu3\_i386.deb (Serial Port Terminal to view serial values)
+
+
+
+Getting it running:
+Interfacing:
+> It is very easy to interface LM35 to our uNiboard-
+  1. Get LM35 (for appx. Rs40/$1) and 3 wires with one end female connector and a small general purpose pcb.
+> 2.	The three terminals of LM35 should be in three distinct holes
+> 3.	Solder LM35 terminals, connect each end of wire should be connected to terminal on board
+> 4.	Refer the figure below to know which terminal corresponds to what.
+
+VCC is 1st Pin data Pin is Middle-2ndPin Ground is 3rd Pin
+
+  1. Attach it to sensor port as shown
+> 2.
+
+Jumper Settings- ADC-LDR jumper should be connected to ADC pin as shown-
+ADC-Joystick Switch should in unpressed position as shown
+
+
+
+Software Part:
+  1. Download LM35.zip (http://code.google.com/p/uniboard/downloads/detail?name=LM35.zip&can=2&q=)
+> 2.	Burn LM35.c into uNiBoard using gedit in Ubuntu
+> 3.	Open serial.py located in LM35.zip from Python IDE
+> 4.	I have been using RS232 to USB converter, hence I have used port /dev/USB0 if you are using serial port of PC to connect to uNiboard type port='/dev/ttyS0',
+> 5.
+
+1.
+> 2.	Power ON uNiBoard and run Python Script serial.py (by pressing F5). You will be asked about “Enter Sampling Time”. Sampling time is time for which Script will accept the values and plot, after which you will be asked again to continue or not.
+> 3.	Dont forget to CHECK Serial.ogv Video for live action !
+> 4.	Well for convenience, I have commented in LM35.C script as well as serial.py which will give you fair idea about its working of code. Also in 'image' folder I have put all the images used here so that one can see them clearly by zooming.
+
+
+Keep interfacing other types of sensors and keep developing new projects on uNiBoard
+Enjoy!
+
+
+Tutorial and work by:
+Manoj Gudi (manoj.p.gudi@gmail.com)

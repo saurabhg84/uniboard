@@ -1,0 +1,29 @@
+Off late we have been getting requests to publish a tutorial based of how to use uNiBoard v1.1 with the very popular AVR Studio. So, let’s look at how AVR Studio can be used. Specifically for fans of GUI based software packages we have also discussed avrdude GUI which can be used to dump the hex file generated from AVR Studio.
+
+AVR Studio is an Integrated Development Environment (IDE) that includes an Assembler and a Simulator and many more useful utilities bundled into one package. To write programs in C, one needs to install the C compiler, WinAVR (also referred as AVR gcc compiler), along with AVR Studio.
+
+In this article we will concentrate more on how one can write programs in AVR Studio, how to generate hex files. And finally how to load the .hex files on to the controller.
+
+Before beginning, obviously we would expect you to download the software and install it. The setup can be downloaded from this link:
+http://www.atmel.com/dyn/Products/tools_card.asp?tool_id=2725
+
+### NOTE: ###
+You will need to register to download if you are not already a registered user.
+
+To start with, let’s know how to create a project and work with it.
+
+  1. Open AVR Studio
+  1. Create a NEW PROJECT: Creating a project for AVR Assembler will enable the user write programs in ASSEMBLY LANGUAGE for AVR. Creating an AVR GCC project facilitates the user with writing code in C. (For this one needs to install WinAVR along with AVR Studio).
+  1. Select the desired debug platform from the options mentioned therein and Finish.
+  1. Write the piece of code you want the micro-controller to execute in the editor and save it.
+  1. Build -> Clean: This command removes all the files being created due to previous compilation of this program, if any.
+  1. Build -> Compile: This creates the object file needed for linking.
+  1. Build -> Build: This creates the .hex file which one needs to load in the micro-controller.
+  1. Load the program into the micro-controller.
+
+Check out a video tutorial for the same:
+
+There is another software called avrdude as mentioned earlier which can be used to dump the hex file to the controller. It can be downloaded from the below mentioned link:
+http://uniboard.googlecode.com/files/avrdude-gui_v0.2.0.zip
+
+A video tutorial on its usage follows:
